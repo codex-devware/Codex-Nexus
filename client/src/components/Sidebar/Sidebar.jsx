@@ -1,4 +1,144 @@
+import SidebarData from "./SidebarData";
+
 const Sidebar = () => {
+  const sideBarData = [
+    {
+      id: 1,
+      section: "Sales Overview",
+      subSection: [
+        "Total Sales",
+        "Net Sales",
+        "Sales by date range",
+        "Top-selling products",
+      ],
+    },
+    {
+      id: 2,
+      section: "Order Management",
+      subSection: [
+        "Total Orders",
+        "Pending Orders",
+        "Completed Orders",
+        "On-Hold Orders",
+        "Refunded Orders",
+        "Failed Orders",
+      ],
+    },
+    {
+      id: 3,
+      section: "Customer Insights",
+      subSection: [
+        "Total Customers",
+        "New Customers",
+        "Returning Customers",
+        "Customer lifetime value",
+        "Customer demographics",
+      ],
+    },
+    {
+      id: 4,
+      section: "Product Performance",
+      subSection: [
+        "Top-selling products",
+        "Low-selling products",
+        "Product-wise sales trends",
+        "Inventory status",
+      ],
+    },
+    {
+      id: 5,
+      section: "Revenue Analytics",
+      subSection: [
+        "Revenue by date range",
+        "Revenue by product category",
+        "Revenue by location (if applicable)",
+        "Tax and shipping revenue",
+      ],
+    },
+    {
+      id: 6,
+      section: "Shipping and Tax",
+      subSection: [
+        "Shipping costs",
+        "Tax collection",
+        "Shipping methods performance",
+      ],
+    },
+    {
+      id: 7,
+      section: "Coupon and Discount Analytics",
+      subSection: [
+        "Total coupons used",
+        "Coupon effectiveness",
+        "Discount distribution",
+      ],
+    },
+    {
+      id: 8,
+      section: "Stock and Inventory Management",
+      subSection: [
+        "Low stock alerts",
+        "Out of stock products",
+        "Stock level trends",
+      ],
+    },
+    {
+      id: 9,
+      section: "Refund and Returns",
+      subSection: ["Refund requests", "Return status", "Refund trends"],
+    },
+    {
+      id: 10,
+      section: "Performance subSection",
+      subSection: [
+        "Pageviews",
+        "Conversion rate",
+        "Bounce rate",
+        "Average order value",
+      ],
+    },
+    {
+      id: 11,
+      section: "User Management",
+      subSection: [
+        "Admin and user roles",
+        "User activity log",
+        "Login history",
+      ],
+    },
+    {
+      id: 12,
+      section: "Payment Gateway Analytics",
+      subSection: [
+        "Payment methods used",
+        "Transaction success rates",
+        "Payment gateway performance",
+      ],
+    },
+    {
+      id: 13,
+      section: "Marketing Analytics",
+      subSection: [
+        "Traffic sources",
+        "Conversion sources",
+        "Marketing campaign performance",
+      ],
+    },
+    {
+      id: 14,
+      section: "Customization and Insights",
+      subSection: [
+        "Dashboard customization options",
+        "Data export and reporting",
+        "Real-time updates",
+      ],
+    },
+    {
+      id: 15,
+      section: "Security",
+      subSection: ["Security alerts", "Login attempt history"],
+    },
+  ];
   return (
     <section>
       <div>
@@ -6,23 +146,10 @@ const Sidebar = () => {
           Codex Devware
         </h1>
         <div className="m-6 font-semibold text-md">
-          <div
-            tabIndex={0}
-            className="collapse collapse-arrow border-none -mb-6"
-          >
-            <div className="collapse-title text-md font-semibold">
-              Sales Overview
-            </div>
-            <div className="collapse-content">
-              <ul>
-                <li>Total Sales</li>
-                <li>Net Sales</li>
-                <li>Sales by date range</li>
-                <li>Top-selling products</li>
-              </ul>
-            </div>
-          </div>
-          <div tabIndex={1} className="collapse collapse-arrow border-none">
+          {sideBarData.map((sections) => (
+            <SidebarData key={sections.id} sections={sections} />
+          ))}
+          {/* <div tabIndex={1} className="collapse collapse-arrow border-none">
             <div className="collapse-title text-md font-semibold">
               Order Management
             </div>
@@ -35,8 +162,8 @@ const Sidebar = () => {
                 <li>Failed Orders</li>
               </ul>
             </div>
-          </div>
-          <div tabIndex={2} className="collapse collapse-arrow border-none">
+          </div> */}
+          {/* <div tabIndex={2} className="collapse collapse-arrow border-none">
             <div className="collapse-title text-md font-semibold">
               Customer Insights
             </div>
@@ -123,7 +250,7 @@ const Sidebar = () => {
           </div>
           <div tabIndex={9} className="collapse collapse-arrow border-none">
             <div className="collapse-title text-md font-semibold">
-              Performance Metrics
+              Performance subSection
             </div>
             <div className="collapse-content">
               <ul>
@@ -190,7 +317,7 @@ const Sidebar = () => {
                 <li>Login attempt history</li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

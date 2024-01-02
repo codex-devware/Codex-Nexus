@@ -1,4 +1,4 @@
-import Sidebar from "../SideBar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 
 const TopBanner = () => {
   return (

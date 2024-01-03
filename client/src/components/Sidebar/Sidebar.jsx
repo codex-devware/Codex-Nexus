@@ -1,10 +1,27 @@
+import { useState } from "react";
+import sideBarDataDB from "./SideBarDB";
+import SidebarData from "./SidebarData";
+
 const Sidebar = () => {
+  const [menuStates, setMenuStates] = useState("");
+  const [menuHide, setMenuHide] = useState(true);
+  const toggleMenu = (menuName) => {
+    setMenuStates(menuName);
+
+    // Toggle the state for the clicked section
+    setMenuHide((prevMenuStates) => ({
+      ...prevMenuStates,
+      [menuName]: !prevMenuStates[menuName],
+    }));
+  };
+
   return (
     <section>
       <div>
         <h1 className="text-2xl font-bold text-center mt-6 underline text-blue-500">
-          Codex Devware
+          Codex Nexus
         </h1>
+<<<<<<< HEAD
         <div className=" font-semibold text-sm">
           <div className="collapse-title text-sm font-semibold">Sales Overview</div>
           <div
@@ -42,6 +59,18 @@ const Sidebar = () => {
               </ul>
             </div>
           </div>
+=======
+        <div className="m-6 font-semibold text-md">
+          {sideBarDataDB?.map((sections, index) => (
+            <SidebarData
+              toggleMenu={toggleMenu}
+              menuHide={menuHide}
+              menuStates={menuStates}
+              key={index}
+              sections={sections}
+            />
+          ))}
+>>>>>>> 72021b26e6bec40bbca442a7d21c91e09548e9bc
         </div>
       </div>
     </section>

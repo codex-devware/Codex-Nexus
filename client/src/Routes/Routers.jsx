@@ -1,16 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
-import { MainLayout } from '@/components/layout/MainLayout';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "../Pages/Home/Home";
+import { Test } from "@/components/Home/Test";
+import Navbar from "../components/Navbar/Navbar";
 
 const Routers = () => {
   return (
     <>
       <Router>
-        <MainLayout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-          </Routes>
-        </MainLayout>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/test" element={<Test />} />
+        </Routes>
       </Router>
     </>
   );

@@ -3,7 +3,6 @@ import { BsDashSquare, BsChevronDown } from 'react-icons/bs';
 const SidebarData = ({ sections, open }) => {
   const [openSubMenu, setSubMenu] = useState(false);
   const { id, section, subSection, icon } = sections;
-  console.log(icon);
   return (
     <>
       <ul>

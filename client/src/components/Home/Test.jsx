@@ -21,13 +21,13 @@ export function Test() {
       <ResizablePanel defaultSize={50}>
         <ResizablePanelGroup direction='vertical'>
           <ResizablePanel defaultSize={10}>
-            <div className='flex h-full items-center justify-center p-6'>
+            <div className=''>
               <span className='font-semibold'>Top menu</span>
             </div>
           </ResizablePanel>
           <ResizableHandle />
           <ResizablePanel defaultSize={75}>
-            <div className='flex h-full items-center justify-center p-6'>
+            <div className=''>
               <span className='font-semibold'><TopBanner/></span>
             </div>
           </ResizablePanel>

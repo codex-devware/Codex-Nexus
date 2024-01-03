@@ -1,7 +1,7 @@
 const Topbar = () => {
   return (
     <>
-      <div className="navbar flex justify-between bg-base-100 align-middle">
+      <div className="navbar flex justify-between bg-base-100 align-middle border-b">
         <div className="flex">
           <a className="btn btn-ghost text-xl">E-commerce Dashboard</a>
         </div>

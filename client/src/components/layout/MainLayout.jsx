@@ -14,7 +14,7 @@ export function MainLayout({ children }) {
       <Topbar />
       <ResizablePanelGroup direction='horizontal' className='max-w-[30%]'>
         <ResizablePanel defaultSize={80}>
-          <div className='flex min-h-screen  items-center justify-center p-6'>
+          <div className='flex min-h-screen  items-center p-6'>
             <Sidebar />
           </div>
         </ResizablePanel>

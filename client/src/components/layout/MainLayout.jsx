@@ -1,39 +1,29 @@
-import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from '../Sidebar/Sidebar';
+import Topbar from '../Topbar/Topbar';
+
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "../ui/resizable";
+} from '../ui/resizable';
 
 export function MainLayout({ children }) {
   return (
-    <ResizablePanelGroup
-      direction="horizontal"
-      className="max-w-screen rounded-lg border"
-    >
-      <ResizablePanel defaultSize={20}>
-        <div className="flex h-screen items-center justify-center p-6">
-          <span className="font-semibold">
+    <>
+      <Topbar />
+      <ResizablePanelGroup direction='horizontal'>
+        <ResizablePanel defaultSize={25}>
+          <div className='flex min-h-screen items-center justify-center p-6'>
             <Sidebar />
-          </span>
-        </div>
-      </ResizablePanel>
-      <ResizableHandle />
-      <ResizablePanel defaultSize={50}>
-        <ResizablePanelGroup direction="vertical">
-          <ResizablePanel defaultSize={10}>
-            <div className="flex h-full items-center justify-center p-6">
-              <span className="font-semibold"></span>
-            </div>
-          </ResizablePanel>
-          <ResizableHandle />
-          <ResizablePanel defaultSize={75}>
-            <div className="flex h-full items-center justify-center p-6">
-              <span className="font-semibold">{children}</span>
-            </div>
-          </ResizablePanel>
-        </ResizablePanelGroup>
-      </ResizablePanel>
-    </ResizablePanelGroup>
+          </div>
+        </ResizablePanel>
+        <ResizableHandle />
+        <ResizablePanel defaultSize={75}>
+          <div className='flex items-center justify-center p-6'>
+            <span className='font-semibold'>{children}</span>
+          </div>
+        </ResizablePanel>
+      </ResizablePanelGroup>
+    </>
   );
 }

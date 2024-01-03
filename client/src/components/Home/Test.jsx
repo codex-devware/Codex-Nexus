@@ -3,6 +3,8 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from '../ui/resizable';
+import Sidebar from '../Sidebar/Sidebar';
+import TopBanner from './TopBanner';
 
 export function Test() {
   return (
@@ -10,9 +12,9 @@ export function Test() {
       direction='horizontal'
       className='max-w-screen rounded-lg border'
     >
-      <ResizablePanel defaultSize={20}>
-        <div className='flex h-screen items-center justify-center p-6'>
-          <span className='font-semibold'>One</span>
+      <ResizablePanel defaultSize={10}>
+        <div className='flex h-screen items-start justify-center p-6'>
+          <span className='font-semibold'><Sidebar/></span>
         </div>
       </ResizablePanel>
       <ResizableHandle />
@@ -20,13 +22,13 @@ export function Test() {
         <ResizablePanelGroup direction='vertical'>
           <ResizablePanel defaultSize={10}>
             <div className='flex h-full items-center justify-center p-6'>
-              <span className='font-semibold'>Two</span>
+              <span className='font-semibold'>Top menu</span>
             </div>
           </ResizablePanel>
           <ResizableHandle />
           <ResizablePanel defaultSize={75}>
             <div className='flex h-full items-center justify-center p-6'>
-              <span className='font-semibold'>Three</span>
+              <span className='font-semibold'><TopBanner/></span>
             </div>
           </ResizablePanel>
         </ResizablePanelGroup>

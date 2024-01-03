@@ -10,6 +10,7 @@ import {
 export function MainLayout({ children }) {
   return (
     <>
+    {/* resize */}
       <Topbar />
       <ResizablePanelGroup direction='horizontal'>
         <ResizablePanel defaultSize={25}>

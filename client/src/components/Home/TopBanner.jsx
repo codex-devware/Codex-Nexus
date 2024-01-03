@@ -1,3 +1,5 @@
+import Sidebar from "../SideBar/Sidebar";
+
 const TopBanner = () => {
   return (
     <section className="grid grid-cols-12">

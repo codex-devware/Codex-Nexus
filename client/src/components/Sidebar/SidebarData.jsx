@@ -1,57 +1,66 @@
-import { useState } from "react";
-import { BsDashSquare, BsChevronDown } from "react-icons/bs";
-import {
-  BsBag,
-  BsPerson,
-  BsGraphUp,
-  BsBox,
-  BsGraphDown,
-  BsTruck,
-  BsArchive,
-  BsPeople,
-  BsCreditCard,
-  BsShield,
-} from "react-icons/bs";
-const SidebarData = ({ sections, open }) => {
-  const [openSubMenu, setSubMenu] = useState(false);
-  const { id, section, subSection, icon } = sections;
-  console.log(icon);
+const SidebarData = ({ sections, toggleMenu, menuHide, menuStates }) => {
+  const { id, section, subSection } = sections;
   return (
-    <>
-      <ul>
-        <li className=" text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 rounded-md duration-200">
-          <span className=" text-2xl block float-left">
-            <BsBag />
-          </span>
+    <div className="collapse border-none -mb-6 ">
+      <div
+        onClick={subSection?.length > 0 ? () => toggleMenu(section) : null}
+        className="collapse-title text-sm flex justify-between items-center gap-20 font-semibold"
+      >
+        {section}{" "}
+        {subSection?.length > 0 && (
           <span
-            onClick={() => setSubMenu(!openSubMenu)}
-            className={`text-[14px] font-medium flex-1 flex items-center  gap-10 duration-150 ${
-              !open && "hidden"
+            className={`text-2xl transition-transform transform ${
+              menuStates === section ? "transform rotate-60" : ""
             }`}
           >
-            {section}
-
-            {sections?.submenu && (
-              <BsChevronDown
-                className={`${openSubMenu && "rotate-180 duration-300"}`}
-              />
+            {menuStates === section && menuHide[section] ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-4 h-4 text-[#777]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-4 h-4 text-[#777]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
             )}
           </span>
-        </li>
-        {sections?.submenu && openSubMenu && open && (
-          <ul>
-            {subSection.map((item, index) => (
-              <li
-                className="text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12 hover:bg-gray-700 rounded-md duration-500"
-                key={index}
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
         )}
-      </ul>
-    </>
+      </div>
+      <div
+        className={`transition-transform origin-top ease-in-out duration-300 ${
+          menuStates === section && menuHide[section]
+            ? "max-h-96 opacity-100 transform scale-y-100"
+            : "max-h-0 opacity-0 transform scale-y-0"
+        }`}
+      >
+        <ul className="ml-6 mb-6 text-sm">
+          {subSection?.map((datas, index) => (
+            <li key={index}>{datas}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 };
 

@@ -10,9 +10,8 @@ export function MainLayout({ children }) {
       <Topbar />
       <div className="flex">
         <Sidebar />
-
-        <div className="flex items-center justify-center p-6 w-full rounded-t-lg">
-          <span className="font-semibold">{children}</span>
+        <div className="flex w-full rounded-t-lg border">
+          <span className="font-semibold border w-full">{children}</span>
         </div>
       </div>
     </>

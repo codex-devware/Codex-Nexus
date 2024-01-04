@@ -1,4 +1,6 @@
 import React from 'react'
+import { MdOutlineWatchLater } from "react-icons/md";
+import { FaDotCircle } from "react-icons/fa";
 
 const orderhistory = () => {
   return (
@@ -6,6 +8,7 @@ const orderhistory = () => {
     <section className="bg-gray-50 p-3 sm:p-5">
         <div className="mx-auto max-w-screen-xl px-4 lg:px-12">
             <div className=" relative  overflow-hidden">
+                <h1 className='font-outfit text-[26px] font-bold mb-3'>Order History</h1>
                 <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 py-4">
                     <div className="w-full md:w-1/2">
                         <form className="flex items-center">
@@ -70,12 +73,14 @@ const orderhistory = () => {
                         <tr>
                             <td>                              
                                 <table className=' w-full rounded-full border bg-white text-black  font-semibold'>                             
-                                    <tr className='grid grid-cols-6'>
-                                        <th scope="col" className="px-4 py-3">Product name</th>
-                                        <th scope="col" className="px-4 py-3">Category</th>
-                                        <th scope="col" className="px-4 py-3">Brand</th>
-                                        <th scope="col" className="px-4 py-3">Description</th>
-                                        <th scope="col" className="px-4 py-3">Price</th>
+                                    <tr className='grid grid-cols-9'>
+                                        <th scope="col" className="px-4 py-3">Id</th>
+                                        <th scope="col" className="px-4 py-3 col-start-2 col-end-4">Name</th>
+                                        <th scope="col" className="px-4 py-3">Payment</th>
+                                        <th scope="col" className="px-4 py-3">Time</th>
+                                        <th scope="col" className="px-4 py-3">Type</th>
+                                        <th scope="col" className="px-4 py-3">Status</th>
+                                        <th scope="col" className="px-4 py-3">Total</th>
                                         <th scope="col" className="px-4 py-3">
                                             <span className="">Actions</span>
                                         </th>
@@ -86,11 +91,28 @@ const orderhistory = () => {
                         <tr>
                             <td className=''>                               
                                 <table className='rounded-full w-full bg-white my-3 border'>                              
-                                    <tr className='grid grid-cols-6 '>
-                                        <th scope="row" className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">Apple iMac 27</th>
-                                        <td className="px-4 py-3">PC</td>
-                                        <td className="px-4 py-3">Apple</td>
-                                        <td className="px-4 py-3">300</td>
+                                    <tr className='grid grid-cols-9 '>
+                                        <td className="px-4 py-3">#2632</td>
+                                        <td className="px-4 py-3 col-start-2 col-end-4">
+                                            <span className='flex flex-wrap items-center'>
+                                                <img className='w-[26px] mr-1 rounded-full' src="https://i.ibb.co/XjjZqKL/03.jpg" alt="photo" />
+                                                <span>Sourov dey</span>
+                                            </span>
+                                        </td>
+                                        <td className="px-4 py-3">Cash</td>
+                                        <td className="px-4 py-3">
+                                            <span className='flex flex-wrap items-center'>
+                                                <MdOutlineWatchLater/>
+                                                <span className='ml-1'>07 min</span>
+                                            </span>
+                                        </td>
+                                        <td className="px-4 py-3">Delivery</td>
+                                        <td className="px-4 py-3 text-[#F0AA18]">
+                                            <span className='flex flex-wrap items-center'>
+                                                <FaDotCircle/>
+                                                <span className='ml-1'>Delivered</span>
+                                            </span>
+                                        </td>
                                         <td className="px-4 py-3">$2999</td>
                                         <td className="px-4 py-3 flex items-center justify-start">
                                             <button id="apple-imac-27-dropdown-button" data-dropdown-toggle="apple-imac-27-dropdown" className="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none " type="button">

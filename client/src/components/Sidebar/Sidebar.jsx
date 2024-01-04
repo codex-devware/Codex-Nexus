@@ -1,36 +1,32 @@
 import { useState } from "react";
-import sideBarDataDB from "./SideBarDB";
+
 import SidebarData from "./SidebarData";
+import { ArrowBigLeft } from "lucide-react";
+import { BsArrowRight, BsDashSquare } from "react-icons/bs";
+import sideBarDataDB from "./sideBarDataDB";
 
 const Sidebar = () => {
-  const [menuStates, setMenuStates] = useState("");
-  const [menuHide, setMenuHide] = useState(true);
-  const toggleMenu = (menuName) => {
-    setMenuStates(menuName);
-
-    // Toggle the state for the clicked section
-    setMenuHide((prevMenuStates) => ({
-      ...prevMenuStates,
-      [menuName]: !prevMenuStates[menuName],
-    }));
-  };
+  const [open, setOpen] = useState(true);
 
   return (
     <section>
-      <div>
-        <h1 className="text-2xl font-bold text-center mt-6 underline text-blue-500">
-          Codex Nexus
-        </h1>
-        <div className="m-6 font-semibold text-md">
-          {sideBarDataDB?.map((sections, index) => (
-            <SidebarData
-              toggleMenu={toggleMenu}
-              menuHide={menuHide}
-              menuStates={menuStates}
-              key={index}
-              sections={sections}
-            />
-          ))}
+      <div className="flex">
+        <div
+          className={` bg-gray-800 h-screen p-5 pt-8 ${
+            open ? "w-72" : "w-20"
+          } duration-300 relative`}
+        >
+          <BsArrowRight
+            className={`bg-white text-dark-purple text-4xl rounded-full absolute -right-3 top-9 px-2  border border-dark-purple cursor-pointer ${
+              !open && "rotate-180"
+            }`}
+            onClick={() => setOpen(!open)}
+          />
+          <div className="pt-2">
+            {sideBarDataDB?.map((sections, index) => (
+              <SidebarData open={open} key={index} sections={sections} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

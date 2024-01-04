@@ -1,21 +1,30 @@
-import { BsBag, BsBoxSeam, BsCart3, BsCashCoin } from 'react-icons/bs';
+import { BsBag, BsCashCoin, BsCartPlus } from 'react-icons/bs';
+import { LuUserCog2 } from 'react-icons/lu';
+import { GrDocumentPerformance } from 'react-icons/gr';
+import { LiaShippingFastSolid } from 'react-icons/lia';
+import { MdOutlineInventory2 } from 'react-icons/md';
+import { RiRefund2Fill } from 'react-icons/ri';
+import { FaUsersCog } from 'react-icons/fa';
+import { MdOutlinePayments } from 'react-icons/md';
+import { FaUserLock } from 'react-icons/fa';
 
 export const Data = [
   {
     id: 1,
     icon: <BsBag />,
     section: 'Order Management',
+    path: '',
     subSection: [],
   },
   {
     id: 2,
-    icon: <BsBoxSeam />,
+    icon: <LuUserCog2 />,
     section: 'Customer Insights',
     subSection: [],
   },
   {
     id: 3,
-    icon: <BsCart3 />,
+    icon: <GrDocumentPerformance />,
     section: 'Product Performance',
     subSection: [
       { title: 'Product-wise sales trends', path: '' },
@@ -24,53 +33,61 @@ export const Data = [
   },
   {
     id: 4,
-    icon: <BsCashCoin />,
+    icon: <BsCartPlus />,
     section: 'Add Product',
     subSection: [],
+    ptah: '',
   },
   {
     id: 5,
-    icon: <BsBag />,
+    icon: <BsCashCoin />,
     section: 'Revenue Analytics',
     subSection: [],
+    ptah: '',
   },
   {
     id: 6,
-    icon: <BsBag />,
+    icon: <LiaShippingFastSolid />,
     section: 'Shipping and Tax',
     subSection: [],
+    ptah: '',
   },
 
   {
     id: 7,
-    icon: <BsBag />,
+    icon: <MdOutlineInventory2 />,
     section: 'Stock and Inventory Management',
     subSection: [],
+    ptah: '',
   },
   {
     id: 8,
-    icon: <BsBag />,
+    icon: <RiRefund2Fill />,
     section: 'Refund and Returns',
     subSection: [],
+    ptah: '',
   },
 
   {
     id: 9,
-    icon: <BsBag />,
+    icon: <FaUsersCog />,
     section: 'User Management',
     subSection: [],
+    ptah: '',
   },
   {
     id: 10,
-    icon: <BsBag />,
+    icon: <MdOutlinePayments />,
     section: 'Payment Gateway Analytics',
     subSection: [],
+    ptah: '',
   },
 
   {
     id: 11,
-    icon: <BsBag />,
+    icon: <FaUserLock />,
     section: 'Security',
     subSection: [],
+    ptah: '',
   },
 ];

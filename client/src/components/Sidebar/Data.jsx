@@ -20,12 +20,14 @@ export const Data = [
     id: 2,
     icon: <LuUserCog2 />,
     section: 'Customer Insights',
+    path:"",
     subSection: [],
   },
   {
     id: 3,
     icon: <GrDocumentPerformance />,
     section: 'Product Performance',
+    path:"",
     subSection: [
       { title: 'Product-wise sales trends', path: '' },
       { title: 'Inventory status', path: '' },

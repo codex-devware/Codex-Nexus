@@ -8,7 +8,7 @@ export function MainLayout({ children }) {
     <>
       {/* resize */}
       <Topbar />
-      <div className='flex'>
+      <div className="flex">
         <Sidebar />
         <div className='flex items-center justify-center p-6 w-full rounded-t-lg border'>
           <span className='font-semibold border'>{children}</span>

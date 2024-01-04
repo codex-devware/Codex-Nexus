@@ -23,7 +23,11 @@ const Topbar = () => {
                   </div>
                   <ul
                     tabIndex={0}
+<<<<<<< HEAD
                     className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-4'
+=======
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-4"
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                   >
                     <li>
                       <a>Item 1</a>
@@ -35,13 +39,22 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
+<<<<<<< HEAD
                 <div className='dropdown dropdown-hover'>
                   <div tabIndex={0} role='button'>
+=======
+                <div className="dropdown dropdown-hover">
+                  <div tabIndex={0} role="button">
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
+<<<<<<< HEAD
                     className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-10'
+=======
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-10"
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                   >
                     <li>
                       <a>Item 1</a>
@@ -53,13 +66,22 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
+<<<<<<< HEAD
                 <div className='dropdown dropdown-hover'>
                   <div tabIndex={0} role='button'>
+=======
+                <div className="dropdown dropdown-hover">
+                  <div tabIndex={0} role="button">
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
+<<<<<<< HEAD
                     className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-10 mt-4'
+=======
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-10 mt-4"
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                   >
                     <li>
                       <a>Item 1</a>
@@ -71,13 +93,22 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
+<<<<<<< HEAD
                 <div className='dropdown dropdown-hover'>
                   <div tabIndex={0} role='button'>
+=======
+                <div className="dropdown dropdown-hover">
+                  <div tabIndex={0} role="button">
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
+<<<<<<< HEAD
                     className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-20'
+=======
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-20"
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                   >
                     <li>
                       <a>Item 1</a>
@@ -89,13 +120,22 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
+<<<<<<< HEAD
                 <div className='dropdown dropdown-hover'>
                   <div tabIndex={0} role='button'>
+=======
+                <div className="dropdown dropdown-hover">
+                  <div tabIndex={0} role="button">
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
+<<<<<<< HEAD
                     className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-28 mt-4'
+=======
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-28 mt-4"
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                   >
                     <li>
                       <a>Item 1</a>
@@ -107,6 +147,7 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
+<<<<<<< HEAD
                 <div className='dropdown dropdown-hover'>
                   <div
                     tabIndex={0}
@@ -116,12 +157,27 @@ const Topbar = () => {
                     <div className='avatar'>
                       <div className='w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1'>
                         <img src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg' />
+=======
+                <div className="dropdown dropdown-hover">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="bg-transparent border-none shadow-none"
+                  >
+                    <div className="avatar">
+                      <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1">
+                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                       </div>
                     </div>
                   </div>
                   <ul
                     tabIndex={0}
+<<<<<<< HEAD
                     className='dropdown-content z-[1] -ml-40 menu p-2 shadow bg-base-100 rounded-box w-52 mt-1'
+=======
+                    className="dropdown-content z-[1] -ml-40 menu p-2 shadow bg-base-100 rounded-box w-52 mt-1"
+>>>>>>> bcb7b76d163f684a8b6c72fa1e73d36de819955a
                   >
                     <li>
                       <a>Item 1</a>

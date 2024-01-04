@@ -11,7 +11,7 @@ const Sidebar = () => {
     <section>
       <div className='flex'>
         <div
-          className={` bg-gray-800 h-screen p-5 pt-8 ${
+          className={`h-screen p-5 pt-8 ${
             open ? 'w-full' : 'w-20'
           } duration-300 relative`}
         >

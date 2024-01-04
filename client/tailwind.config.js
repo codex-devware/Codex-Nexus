@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     fontFamily: {
       sora: ["Sora", "sans-serif"],
-      inter: ["Inter", "sans-serif"],
+      outfit: ['Outfit', 'sans-serif'],
+      inter: ["Inter", "sans-serif"]
     },
     extend: {},
   },

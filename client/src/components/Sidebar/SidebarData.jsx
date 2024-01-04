@@ -16,21 +16,21 @@ const SidebarData = ({ sections, open }) => {
           >
             {section}
 
-            {sections?.submenu && (
+            {subSection.length > 0 && (
               <BsChevronDown
                 className={`${openSubMenu && 'rotate-180 duration-300'}`}
               />
             )}
           </span>
         </li>
-        {sections?.submenu && openSubMenu && open && (
+        {subSection.length > 0 && openSubMenu && open && (
           <ul>
             {subSection.map((item, index) => (
               <li
                 className='text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12 hover:bg-gray-700 rounded-md duration-500'
                 key={index}
               >
-                {item}
+                {item.title}
               </li>
             ))}
           </ul>

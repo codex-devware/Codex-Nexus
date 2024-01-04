@@ -1,29 +1,29 @@
 const Topbar = () => {
   return (
     <>
-      <div className="navbar flex justify-between bg-base-100 align-middle">
-        <div className="flex">
-          <a className="btn btn-ghost text-xl">E-commerce Dashboard</a>
+      <div className='navbar flex justify-between align-middle'>
+        <div className='flex'>
+          <a className='btn btn-ghost text-xl'>E-commerce Dashboard</a>
         </div>
 
-        <div className="flex justify-end">
-          <div className="">
-            <ul className="hidden lg:flex m-2 gap-6">
+        <div className='flex justify-end'>
+          <div className=''>
+            <ul className='hidden lg:flex m-2 gap-6'>
               <li>
                 <input
-                  type="text"
-                  placeholder="Search"
-                  className="input input-bordered w-24 md:w-auto"
+                  type='text'
+                  placeholder='Search'
+                  className='input input-bordered w-24 md:w-auto'
                 />
               </li>
               <li>
-                <div className="dropdown dropdown-hover">
-                  <div tabIndex={0} role="button">
+                <div className='dropdown dropdown-hover'>
+                  <div tabIndex={0} role='button'>
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-4"
+                    className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-4'
                   >
                     <li>
                       <a>Item 1</a>
@@ -35,13 +35,13 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
-                <div className="dropdown dropdown-hover">
-                  <div tabIndex={0} role="button">
+                <div className='dropdown dropdown-hover'>
+                  <div tabIndex={0} role='button'>
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-10"
+                    className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-10'
                   >
                     <li>
                       <a>Item 1</a>
@@ -53,13 +53,13 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
-                <div className="dropdown dropdown-hover">
-                  <div tabIndex={0} role="button">
+                <div className='dropdown dropdown-hover'>
+                  <div tabIndex={0} role='button'>
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-10 mt-4"
+                    className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-10 mt-4'
                   >
                     <li>
                       <a>Item 1</a>
@@ -71,13 +71,13 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
-                <div className="dropdown dropdown-hover">
-                  <div tabIndex={0} role="button">
+                <div className='dropdown dropdown-hover'>
+                  <div tabIndex={0} role='button'>
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-20"
+                    className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-20'
                   >
                     <li>
                       <a>Item 1</a>
@@ -89,13 +89,13 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
-                <div className="dropdown dropdown-hover">
-                  <div tabIndex={0} role="button">
+                <div className='dropdown dropdown-hover'>
+                  <div tabIndex={0} role='button'>
                     Hover
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-28 mt-4"
+                    className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 -ml-28 mt-4'
                   >
                     <li>
                       <a>Item 1</a>
@@ -107,21 +107,21 @@ const Topbar = () => {
                 </div>
               </li>
               <li>
-                <div className="dropdown dropdown-hover">
+                <div className='dropdown dropdown-hover'>
                   <div
                     tabIndex={0}
-                    role="button"
-                    className="bg-transparent border-none shadow-none"
+                    role='button'
+                    className='bg-transparent border-none shadow-none'
                   >
-                    <div className="avatar">
-                      <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <div className='avatar'>
+                      <div className='w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1'>
+                        <img src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg' />
                       </div>
                     </div>
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] -ml-40 menu p-2 shadow bg-base-100 rounded-box w-52 mt-1"
+                    className='dropdown-content z-[1] -ml-40 menu p-2 shadow bg-base-100 rounded-box w-52 mt-1'
                   >
                     <li>
                       <a>Item 1</a>

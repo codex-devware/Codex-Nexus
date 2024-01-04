@@ -6,8 +6,8 @@ const SidebarData = ({ sections, open }) => {
   return (
     <>
       <ul>
-        <li className=" text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 rounded-md duration-200">
-          <span className=" text-2xl block float-left">{icon}</span>
+        <li className=" text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md duration-200">
+          <span className=" text-2xl block float-left opacity-80">{icon}</span>
           <span
             onClick={() => setSubMenu(!openSubMenu)}
             className={`text-[14px] font-medium flex-1 flex items-center  gap-10 duration-150 ${
@@ -16,21 +16,21 @@ const SidebarData = ({ sections, open }) => {
           >
             {section}
 
-            {sections?.submenu && (
+            {subSection.length > 0 && (
               <BsChevronDown
                 className={`${openSubMenu && "rotate-180 duration-300"}`}
               />
             )}
           </span>
         </li>
-        {sections?.submenu && openSubMenu && open && (
+        {subSection.length > 0 && openSubMenu && open && (
           <ul>
             {subSection.map((item, index) => (
               <li
-                className="text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12 hover:bg-gray-700 rounded-md duration-500"
+                className="text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12  hover:bg-gray-700 rounded-md duration-500"
                 key={index}
               >
-                {item}
+                {item.title}
               </li>
             ))}
           </ul>

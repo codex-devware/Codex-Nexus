@@ -1,0 +1,14 @@
+.overHistoryScroll {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  
+  .overHistoryScroll::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb */
+  }
+  
+  .overHistoryScroll::-webkit-scrollbar-track {
+    background-color: transparent; /* Hide the track */
+  }

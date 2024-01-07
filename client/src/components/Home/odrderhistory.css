@@ -4,7 +4,6 @@
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
   }
   
-  
   .overHistoryScroll::-webkit-scrollbar-thumb {
     background-color: transparent; /* Hide the thumb */
   }

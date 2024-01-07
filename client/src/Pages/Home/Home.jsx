@@ -1,9 +1,9 @@
-import SalesSummary from "@/components/Home/SalesSammury/SalesSummary";
+import TopBanner from "../../components/Home/TopBanner";
 
 const Home = () => {
   return (
     <div>
-      <SalesSummary />
+      <TopBanner />
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import Orderhistory from "../Order Management/orderhistory";
+import SalesOverveiw from "../Sales Overveiw/SalesOverveiw";
 const TopBanner = () => {
   return (
       <div className="w-full">
-        <Orderhistory/>
+        <SalesOverveiw/>
       </div>
   );
 };

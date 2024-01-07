@@ -3,6 +3,9 @@ import Home from '../Pages/Home/Home';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { useState } from 'react';
 import OrderHistory from '@/components/Home/OrderHistory';
+import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
+import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
+import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -13,6 +16,18 @@ const Routers = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/order-history' element={<OrderHistory />} />
+            <Route
+              path='product-performance'
+              element={<ProductPerformance />}
+            />
+            <Route
+              path='/product-performance/product-inventory'
+              element={<InventoryStatus />}
+            />
+            <Route
+              path='/product-performance/sale-trends'
+              element={<SaleTrends />}
+            />
           </Routes>
         </MainLayout>
       </Router>

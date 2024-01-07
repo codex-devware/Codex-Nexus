@@ -1,7 +1,7 @@
 import { MdOutlineWatchLater } from 'react-icons/md';
 import { FaDotCircle } from 'react-icons/fa';
 
-const orderhistory = () => {
+const OrderHistory = () => {
   return (
     <>
       <section className='bg-gray-50 p-3 sm:p-5'>
@@ -404,4 +404,4 @@ const orderhistory = () => {
   );
 };
 
-export default orderhistory;
+export default OrderHistory;

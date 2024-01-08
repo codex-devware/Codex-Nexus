@@ -1,11 +1,7 @@
-import TopBanner from "../../components/Home/TopBanner";
+import TopBanner from '../../components/Home/TopBanner';
 
 const Home = () => {
-  return (
-    <div>
-      <TopBanner />
-    </div>
-  );
+  return <TopBanner />;
 };
 
 export default Home;

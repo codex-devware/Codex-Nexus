@@ -1,6 +1,7 @@
 import React from 'react'
 import OverveiwHeader from './OverveiwHeader'
 import SalesRevenueTracker from './SalesRevenueTracker'
+import OrderChartTracker from './OrderChartTracker'
 
 const SalesOverveiw = () => {
   return (
@@ -8,6 +9,7 @@ const SalesOverveiw = () => {
         <section className='mx-auto max-w-screen-xl px-4 lg:px-12'>
             <OverveiwHeader/>
             <SalesRevenueTracker/>
+            <OrderChartTracker/>
         </section>
         
     </>

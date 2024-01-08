@@ -7,6 +7,7 @@ import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
 import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
 import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
 import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
+import AddProduct from "@/Pages/AddProduct/AddProduct";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -25,6 +26,7 @@ const Routers = () => {
               path="/product-performance/product-inventory"
               element={<InventoryStatus />}
             />
+            <Route path="/add-products" element={<AddProduct />} />
             <Route
               path="/product-performance/sale-trends"
               element={<SaleTrends />}

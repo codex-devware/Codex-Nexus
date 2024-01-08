@@ -38,21 +38,21 @@ export const Data = [
     icon: <BsCartPlus />,
     section: "Add Product",
     subSection: [],
-    ptah: "",
+    path: "add-products",
   },
   {
     id: 5,
     icon: <BsCashCoin />,
     section: "Revenue Analytics",
     subSection: [],
-    ptah: "",
+    path: "",
   },
   {
     id: 6,
     icon: <LiaShippingFastSolid />,
     section: "Shipping and Tax",
     subSection: [],
-    ptah: "",
+    path: "",
   },
 
   {
@@ -60,14 +60,14 @@ export const Data = [
     icon: <MdOutlineInventory2 />,
     section: "Stock and Inventory Management",
     subSection: [],
-    ptah: "",
+    path: "",
   },
   {
     id: 8,
     icon: <RiRefund2Fill />,
     section: "Refund and Returns",
     subSection: [],
-    ptah: "",
+    path: "",
   },
 
   {
@@ -75,14 +75,14 @@ export const Data = [
     icon: <FaUsersCog />,
     section: "User Management",
     subSection: [],
-    ptah: "",
+    path: "",
   },
   {
     id: 10,
     icon: <MdOutlinePayments />,
     section: "Payment Gateway Analytics",
     subSection: [],
-    ptah: "",
+    path: "",
   },
 
   {
@@ -90,6 +90,6 @@ export const Data = [
     icon: <FaUserLock />,
     section: "Security",
     subSection: [],
-    ptah: "",
+    path: "",
   },
 ];

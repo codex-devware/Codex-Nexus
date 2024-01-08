@@ -3,11 +3,15 @@ import SidebarData from "./SidebarData";
 import { Data } from "./Data";
 import { useState } from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ menu }) => {
   const [open, setOpen] = useState(true);
 
   return (
-    <section className="">
+    <section
+      className={`transition-transform duration-300 ease-in-out transform ${
+        menu ? "translate-x-0" : "translate-x-full"
+      }`}
+    >
       <div className="flex">
         <div
           className={`h-screen p-5 pt-8 ${

@@ -1,12 +1,20 @@
 import { BiGridAlt } from "react-icons/bi";
 
-const Topbar = () => {
+const Topbar = ({ handleMenu, menu }) => {
   return (
     <>
       <div className="navbar flex justify-between align-middle">
         <div className="flex">
           <a className="btn btn-ghost text-xl">Codex Nexus</a>
-          <BiGridAlt className=" h-10 w-10 rounded-md text-white px-2 py-2 bg-cyan-950" />
+          {/* menu icon */}
+          <span className="rounded-md cursor-pointer text-white px-2 py-2 bg-cyan-950">
+            <BiGridAlt
+              className={`h-6 w-6 duration-300 ${
+                menu ? "rotate-45" : "rotate-0"
+              }`}
+              onClick={handleMenu}
+            />
+          </span>
         </div>
 
         <div className="flex justify-end">

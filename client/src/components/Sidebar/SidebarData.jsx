@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const SidebarData = ({ sections, open }) => {
+  //main state
   const [openSubMenu, setSubMenu] = useState(false);
   const { section, subSection, icon, path } = sections;
   return (

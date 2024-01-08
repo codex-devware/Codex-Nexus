@@ -17,7 +17,7 @@ export function MainLayout({ children }) {
 
       <div className="flex">
         <div
-          className={`md:w-full duration-500 transition ease-in-out ${
+          className={` duration-500 transition ease-in-out ${
             menu ? "block" : "hidden"
           }`}
         >

@@ -1,11 +1,11 @@
+import Form from "./Form";
+
 const AddProduct = () => {
   return (
-    <section className="">
+    <section className="bg-white h-full p-3 sm:p-5">
       <div className="mx-auto max-w-screen-xl px-4 lg:px-12">
-        <div className=" relative  overflow-hidden">
-          <div className="container bg-slate-50 h-96">
-            <h2>Product Form</h2>
-          </div>
+        <div className=" relative  overflow-hidden w-full bg-gray-100 ">
+          <Form />
         </div>
       </div>
     </section>

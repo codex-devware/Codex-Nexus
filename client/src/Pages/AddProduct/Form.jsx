@@ -7,6 +7,7 @@ import Step from "./Step";
 import Addons from "./Addons";
 
 import Thankyou from "./Thankyou";
+import ProductGallery from "./ProductGallery";
 
 const Form = () => {
   //------------------------------STATES------------------------------
@@ -14,14 +15,15 @@ const Form = () => {
   const [goBackVisible, setGoBackVisible] = useState("invisible");
   const [steps, setSteps] = useState([
     { id: 1, title: "Product info", active: true },
-
-    { id: 2, title: "Product Category", active: false },
+    { id: 2, title: "Product Gallery", active: false },
+    { id: 3, title: "Product Category", active: false },
   ]);
 
   const [yourInfo, setYourInfo] = useState({
     name: "",
-    email: "",
-    phone: "",
+    category: "",
+    price: "",
+    description: "",
   });
   const [isEmpty, setIsEmpty] = useState(false);
 
@@ -83,8 +85,9 @@ const Form = () => {
     if (stepNumber == 1) {
       if (
         yourInfo.name.length == 0 ||
-        yourInfo.email.length == 0 ||
-        yourInfo.phone.length == 0
+        yourInfo.category.length == 0 ||
+        yourInfo.price.length == 0 ||
+        yourInfo.description.length == 0
       ) {
         setIsEmpty(true);
         return;
@@ -183,6 +186,13 @@ const Form = () => {
                   />
                 )) ||
                   (stepNumber === 2 && (
+                    <ProductGallery
+                      onBoxCheck={checkBox}
+                      currentStep={stepNumber}
+                      addonOptions={addonOptions}
+                    />
+                  )) ||
+                  (stepNumber === 3 && (
                     <Addons
                       onBoxCheck={checkBox}
                       currentStep={stepNumber}
@@ -205,7 +215,7 @@ const Form = () => {
                 >
                   Go back
                 </div>
-                {stepNumber === 2 ? (
+                {stepNumber === 3 ? (
                   <div
                     onClick={() => setDisplayThankyou(true)}
                     className="font-medium bg-[#473dff] select-none text-white py-3 px-5 rounded-lg cursor-pointer transition duration-100 hover:opacity-90"
@@ -215,7 +225,7 @@ const Form = () => {
                 ) : (
                   <div
                     onClick={nextStep}
-                    className="font-medium bg-[#02295a] select-none text-white py-3 px-5 rounded-lg cursor-pointer transition duration-100 hover:opacity-90"
+                    className="font-medium bg-[#02295a] select-none text-white py-3 px-5 mt-5 rounded-lg cursor-pointer transition duration-100 hover:opacity-90"
                   >
                     Next Step
                   </div>

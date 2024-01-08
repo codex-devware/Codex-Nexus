@@ -50,6 +50,7 @@ const AddonComponent = ({
             data-price={price}
             className="w-4 h-4"
             type="checkbox"
+            required
             checked={check}
           />
           <div className="">

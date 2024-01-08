@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <section>
+    <section className="">
       <div className="flex">
         <div
           className={`h-screen p-5 pt-8 ${

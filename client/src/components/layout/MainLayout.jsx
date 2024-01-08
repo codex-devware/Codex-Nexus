@@ -10,11 +10,11 @@ export function MainLayout({ children }) {
     <>
       {/* resize */}
 
-      <Topbar />
+      <Topbar openToggle={open} setOpenToggle={setOpen} />
 
       <div className='grid grid-cols-12 justify-center'>
         <div
-          className={`hidden md:block ${
+          className={`fixed md:relative bg-gray-400 ${
             open ? 'lg:col-span-2 md:col-span-3' : 'md:col-span-1'
           }`}
         >
@@ -22,7 +22,9 @@ export function MainLayout({ children }) {
         </div>
         <div
           className={`${
-            open ? 'lg:col-span-10 md:col-span-9 col-span-12' : 'col-span-11'
+            open
+              ? 'lg:col-span-10 md:col-span-9 col-span-12'
+              : 'col-span-12 md:col-span-11'
           }`}
         >
           <div className='rounded-t-lg border'>{children}</div>

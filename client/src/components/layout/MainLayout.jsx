@@ -7,12 +7,14 @@ export function MainLayout({ children }) {
   return (
     <>
       {/* resize */}
+
       <Topbar />
+
       <div className="flex">
-        <Sidebar />
-        <div className="flex w-full rounded-t-lg border">
-          <span className="font-semibold border w-full">{children}</span>
+        <div className="hidden md:block">
+          <Sidebar />
         </div>
+        <div className="w-full rounded-t-lg border">{children}</div>
       </div>
     </>
   );

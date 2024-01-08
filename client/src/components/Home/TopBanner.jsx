@@ -1,4 +1,4 @@
-import Orderhistory from "./orderhistory";
+import Orderhistory from "./OrderHistory";
 const TopBanner = () => {
   return (
     <div className="w-full">

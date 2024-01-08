@@ -138,7 +138,7 @@ const Topbar = () => {
             </ul>
           </div>
           {/* small device */}
-          {/* <div className="dropdown">
+          <div className="dropdown overflow-hidden">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ const Topbar = () => {
                 <a>Item 2</a>
               </li>
             </ul>
-          </div> */}
+          </div>
         </div>
       </div>
     </>

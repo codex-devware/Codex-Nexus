@@ -16,7 +16,9 @@ const Routers = () => {
         <MainLayout resize={resize} setResize={setResize}>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/order-history' element={<OrderHistory />} />
+
+            <Route path='order-management' element={<OrderHistory />} />
+            <Route path='order-management/order-history' element={<OrderHistory />} />
             <Route
               path='product-performance'
               element={<ProductPerformance />}
@@ -38,3 +40,25 @@ const Routers = () => {
 };
 
 export default Routers;
+//routes and categories
+/**
+ * Dashboard
+ * 
+ * Order-management
+ * *Order-status
+ * *Order-history
+ * *Order-live-Tracking
+ * 
+ * add-product
+ * 
+ * product-performance
+ * => top sell 
+ * =>low sell
+ *
+ * user-management
+ * *users
+ * *user-active-log
+ * *login history
+ * 
+ * stock-inventory-management
+ */

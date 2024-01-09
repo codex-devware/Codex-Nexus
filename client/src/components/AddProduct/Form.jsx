@@ -5,7 +5,7 @@ import BackgroundSidebar from "../../assets/bg-sidebar-desktop.svg";
 import BackgroundSidebarMobile from "../../assets/bg-sidebar-mobile.svg";
 import Step from "./Step";
 import Addons from "./Addons";
-
+import sampleImg from "../../assets/sample.png";
 import Thankyou from "./Thankyou";
 import ProductGallery from "./ProductGallery";
 
@@ -145,8 +145,8 @@ const Form = () => {
       <div className=" md:bg-white rounded-xl md:p-3 xl:flex justify-center">
         <div className="relative">
           <img
-            className="hidden xl:block w-full"
-            src={BackgroundSidebar}
+            className="hidden xl:block w-full h-[78%] rounded-xl"
+            src={sampleImg}
             alt="sidebar"
           />
           <img
@@ -166,7 +166,7 @@ const Form = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col justify-center mx-auto relative  md:static mb-40 rounded-2xl  pb-16 bg-white md:px-0 md:py-5 md:mx-28 md:w-100 md:my-2">
+        <div className="flex flex-col justify-center mx-auto relative  md:static mb-40 rounded-2xl  pb-16 bg-white md:px-0 md:py-5 md:mx-12 md:w-100 md:my-2">
           {(displayThankyou && (
             <>
               <Thankyou />

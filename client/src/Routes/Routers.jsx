@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { useState } from 'react';
-import OrderHistory from '@/components/Home/OrderHistory';
 import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
 import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
 import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
 import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
 import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
-import AddProduct from '@/components/AddProduct/AddProduct';
+import AddProduct from '@/Pages/AddProduct/AddProduct';
 import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
+import OrderHistory from '@/Pages/OrderManagement/OrderHistory/OrderHistory';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -24,7 +24,7 @@ const Routers = () => {
               element={<OrderHistory />}
             />
             <Route
-              path='/order-management/order-history/order-history/01'
+              path='/order-management/order-details/01'
               element={<OrderDetails />}
             />
             <Route

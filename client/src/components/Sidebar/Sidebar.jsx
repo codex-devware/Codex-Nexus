@@ -6,7 +6,7 @@ const Sidebar = ({ setOpen, open }) => {
     <section>
       <div className='flex overflow-hidden'>
         <div
-          className={`h-screen pt-8 ${
+          className={`h-full pt-8 ${
             open ? 'w-full md:p-5' : ' w-0 p-0 md:p-5  md:w-20'
           } duration-300 relative`}
         >

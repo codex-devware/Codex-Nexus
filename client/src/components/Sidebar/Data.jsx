@@ -20,7 +20,7 @@ export const Data = [
     id: 2,
     icon: <LuUserCog2 />,
     section: 'Order Management',
-    path:"/order-management",
+    path: '/order-management',
     subSection: [
       { title: 'All Orders', path: '/order-management/all-orders' },
       { title: 'Order History', path: '/order-management/order-history' },
@@ -30,11 +30,8 @@ export const Data = [
     id: 3,
     icon: <GrDocumentPerformance />,
     section: 'Add Product',
-    path:"",
-    subSection: [
-      { title: 'Product-wise sales trends', path: '' },
-      { title: 'Inventory status', path: '' },
-    ],
+    path: '/add-product',
+    subSection: [],
   },
   {
     id: 4,

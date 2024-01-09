@@ -12,21 +12,24 @@ export const Data = [
   {
     id: 1,
     icon: <BsBag />,
-    section: "Order Management",
+    section: "Dashboard",
     path: "",
     subSection: [],
   },
   {
     id: 2,
     icon: <LuUserCog2 />,
-    section: "Customer Insights",
-    path: "",
-    subSection: [],
+    section: "Order Management",
+    path: "/order-management",
+    subSection: [
+      { title: "All Orders", path: "/order-management/all-orders" },
+      { title: "Order History", path: "/order-management/order-history" },
+    ],
   },
   {
     id: 3,
     icon: <GrDocumentPerformance />,
-    section: "Product Performance",
+    section: "Add Product",
     path: "",
     subSection: [
       { title: "Product-wise sales trends", path: "" },
@@ -38,7 +41,7 @@ export const Data = [
     icon: <BsCartPlus />,
     section: "Add Product",
     subSection: [],
-    path: "add-products",
+    path: "",
   },
   {
     id: 5,

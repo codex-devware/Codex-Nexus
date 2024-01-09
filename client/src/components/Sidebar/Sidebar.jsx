@@ -1,17 +1,13 @@
 import { BsArrowRight } from "react-icons/bs";
 import SidebarData from "./SidebarData";
 import { Data } from "./Data";
-import { useState } from "react";
-
-const Sidebar = ({ menu }) => {
-  const [open, setOpen] = useState(true);
-
+const Sidebar = ({ setOpen, open }) => {
   return (
     <section>
-      <div className="flex">
+      <div className="flex overflow-hidden">
         <div
-          className={`h-screen p-5 pt-8 ${
-            open ? "w-full" : "w-20"
+          className={`h-screen pt-8 ${
+            open ? "w-full md:p-5" : " w-0 p-0 md:p-5  md:w-20"
           } duration-300 relative`}
         >
           <BsArrowRight

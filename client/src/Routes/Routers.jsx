@@ -7,7 +7,9 @@ import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
 import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
 import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
 import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
-import AddProduct from "@/Pages/AddProduct/AddProduct";
+import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
+import AddProduct from "@/components/AddProduct/AddProduct";
+import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -17,7 +19,14 @@ const Routers = () => {
         <MainLayout resize={resize} setResize={setResize}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/order-history" element={<OrderHistory />} />
+            <Route
+              path="/order-management/order-history"
+              element={<OrderHistory />}
+            />
+            <Route
+              path="/order-management/order-history/order-history/01"
+              element={<OrderDetails />}
+            />
             <Route
               path="product-performance"
               element={<ProductPerformance />}
@@ -31,7 +40,9 @@ const Routers = () => {
               path="/product-performance/sale-trends"
               element={<SaleTrends />}
             />
-            <Route path="/seals-overview" element={<SalesOverveiw />} />
+            <Route path="/sales-overview" element={<SalesOverveiw />} />
+            <Route path="/order-chart" element={<OrderChartTracker />} />
+            <Route path="/add-product" element={<AddProduct />} />
           </Routes>
         </MainLayout>
       </Router>
@@ -40,3 +51,25 @@ const Routers = () => {
 };
 
 export default Routers;
+//routes and categories
+/**
+ * Dashboard
+ *
+ * Order-management
+ * *Order-status
+ * *Order-history
+ * *Order-live-Tracking
+ *
+ * add-product
+ *
+ * product-performance
+ * => top sell
+ * =>low sell
+ *
+ * user-management
+ * *users
+ * *user-active-log
+ * *login history
+ *
+ * stock-inventory-management
+ */

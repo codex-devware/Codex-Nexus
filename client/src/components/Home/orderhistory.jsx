@@ -5,8 +5,8 @@ const OrderHistory = () => {
   return (
     <>
       <section className="bg-gray-50 p-3 sm:p-5">
-        <div className="mx-auto max-w-screen-xl px-4 lg:px-12">
-          <div className=" relative  overflow-hidden">
+        <div className="mx-auto px-4 lg:px-12">
+          <div className=" relative overflow-hidden">
             <h1 className="font-outfit text-[26px] font-bold mb-3">
               Order History
             </h1>
@@ -14,7 +14,7 @@ const OrderHistory = () => {
               <div className="w-full md:w-1/2">
                 <form className="flex items-center">
                   <label htmlFor="simple-search" className="sr-only">
-                    Search
+                    Searchbg-gray-50 p-3 sm:p-5
                   </label>
                   <div className="relative w-full">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">

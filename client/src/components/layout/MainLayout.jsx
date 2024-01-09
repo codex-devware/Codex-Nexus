@@ -2,28 +2,31 @@ import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Topbar from "../Topbar/Topbar";
 
-import {} from "../ui/resizable";
-
 export function MainLayout({ children }) {
-  const [menu, setMenu] = useState(false);
-  const handleMenu = () => {
-    setMenu(!menu);
-  };
+  const [open, setOpen] = useState(true);
   return (
     <>
       {/* resize */}
 
-      <Topbar menu={menu} handleMenu={handleMenu} />
+      <Topbar openToggle={open} setOpenToggle={setOpen} />
 
-      <div className="flex">
+      <div className="grid grid-cols-12 justify-center">
         <div
-          className={` duration-500 transition ease-in-out ${
-            menu ? "block" : "hidden"
+          className={`fixed md:relative bg-gray-400 ${
+            open ? "lg:col-span-2 md:col-span-3" : "md:col-span-1"
           }`}
         >
-          <Sidebar menu={menu} handleMenu={handleMenu} />
+          <Sidebar setOpen={setOpen} open={open} />
         </div>
-        <div className="w-full rounded-t-lg border">{children}</div>
+        <div
+          className={`${
+            open
+              ? "lg:col-span-10 md:col-span-9 col-span-12"
+              : "col-span-12 md:col-span-11"
+          }`}
+        >
+          <div className="rounded-t-lg border lg:px-12">{children}</div>
+        </div>
       </div>
     </>
   );

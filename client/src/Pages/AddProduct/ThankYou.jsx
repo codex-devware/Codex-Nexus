@@ -8,9 +8,7 @@ const Thankyou = () => {
       </div>
       <div className="font-bold text-[#02295a] text-3xl">Thank you!</div>
       <p className="text-[#9699ab] text-[14px] w-96">
-        Thanks for confirming your subscription! We hope you have fun using our
-        platform. If you ever need support. Please feel free to email us at
-        zainkazi27@gmail.com
+        Thanks for confirming your Product! Now you can chill yayy
       </p>
     </div>
   );

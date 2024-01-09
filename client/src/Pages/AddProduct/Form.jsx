@@ -150,7 +150,7 @@ const Form = () => {
             alt="sidebar"
           />
           <img
-            className="block md:hidden w-full"
+            className="block lg:hidden md:block w-full"
             src={BackgroundSidebarMobile}
             alt="topbar"
           />
@@ -168,13 +168,10 @@ const Form = () => {
         </div>
         <div className="flex flex-col justify-between absolute top-40 w-[450px] md:static mb-40 rounded-2xl mx-8 px-16 pt-10 pb-16 bg-white md:px-0 md:py-5 md:mx-28 md:w-100 md:my-2">
           {(displayThankyou && (
-            //<div className="flex flex-col justify-between absolute top-40 w-[450px] md:static mb-40 rounded-2xl mx-8 px-16 pt-10 pb-16 bg-white md:px-0 md:py-5 md:mx-28 md:w-100 md:my-2">
             <>
               <Thankyou />
             </>
-            //</div>
           )) || (
-            // <div className="flex flex-col justify-between absolute top-40 w-[450px] md:static mb-40 rounded-2xl mx-8 px-16 pt-10 pb-16 bg-white md:px-0 md:py-5 md:mx-28 md:w-100 md:my-2">
             <>
               <div>
                 {(stepNumber === 1 && (
@@ -200,15 +197,7 @@ const Form = () => {
                     />
                   ))}
               </div>
-              <div className="flex justify-between fixed px-16 bottom-0 left-0 w-full bg-white p-5  md:p-0 md:static items-center w-[700px]]">
-                {/* {stepNumber != 1 && (
-              <div
-                onClick={prevStep}
-                className={`font-medium text-[#9699ab] cursor-pointer transition duration-100 hover:text-[#02295a] ${goBackVisible}`}
-              >
-                Go back
-              </div>
-            )} */}
+              <div className="flex justify-between fixed px-16 bottom-0 left-0 w-full bg-white p-5  md:p-0 md:static items-center ">
                 <div
                   onClick={prevStep}
                   className={`font-medium text-[#9699ab] select-none cursor-pointer transition duration-100 hover:text-[#02295a] ${goBackVisible}`}
@@ -232,7 +221,6 @@ const Form = () => {
                 )}
               </div>
             </>
-            // </div>
           )}
         </div>
       </div>

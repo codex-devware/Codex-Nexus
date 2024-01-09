@@ -42,15 +42,15 @@ const OrderHistory = () => {
   return (
     <>
       <section className='bg-gray-50 p-3 sm:p-5 w-auto'>
-        <div className='mx-auto max-w-screen-xl '>
+        <div>
           <div className=' relative  overflow-hidden'>
             <h1 className='font-outfit text-[26px] font-bold mb-3'>
               Order History
             </h1>
             <ManagementTopVar />
             <div className=''>
-              <div className=''>
-                <table className='text-[14px] text-left text-gray-500 font-outfit w-full'>
+              <div className='overflow-x-auto'>
+                <table className='text-[14px] text-left text-gray-500 font-outfit w-[1000px] xl:w-full overflow-x-auto'>
                   <TableHeader />
                   {OrdersData.map((items) => (
                     <TableBody key={items.id} items={items} />

@@ -4,7 +4,12 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
       <div className='navbar flex justify-between align-middle'>
         <div className='flex'>
           <a className='btn btn-ghost text-xl'>E-commerce Dashboard</a>
-          <button onClick={() => setOpenToggle(!openToggle)}>+</button>
+          <button
+            className='md:hidden'
+            onClick={() => setOpenToggle(!openToggle)}
+          >
+            +
+          </button>
         </div>
 
         <div className='flex justify-end'>

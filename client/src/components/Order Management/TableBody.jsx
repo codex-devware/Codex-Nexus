@@ -3,6 +3,7 @@ import { FaDotCircle } from 'react-icons/fa';
 
 const TableBody = ({ items }) => {
   const { orderCode, profile, name, paymentMethod,time,type,status,amount } = items;
+  console.log(orderCode)
   return (
     <>
     <tr>

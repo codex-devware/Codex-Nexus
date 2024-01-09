@@ -42,7 +42,7 @@ const OrderHistory = () => {
   return (
     <>
       <section className='bg-gray-50 p-3 sm:p-5 w-auto'>
-        <div className='mx-auto max-w-screen-xl px-4 lg:px-12'>
+        <div className='mx-auto max-w-screen-xl'>
           <div className=' relative  overflow-hidden'>
             <h1 className='font-outfit text-[26px] font-bold mb-3'>
               Order History

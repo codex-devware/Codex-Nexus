@@ -11,6 +11,7 @@ import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
 import AddProduct from '@/components/AddProduct/AddProduct';
 import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
 import Users from '@/components/User Management/Users';
+import ActivityLog from '@/components/User Management/ActivityLog';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -44,6 +45,7 @@ const Routers = () => {
             <Route path='/order-chart' element={<OrderChartTracker />} />
             <Route path='/add-product' element={<AddProduct />} />
             <Route path='/users' element={<Users />} />
+            <Route path='/user-activity' element={<ActivityLog />} />
           </Routes>
         </MainLayout>
       </Router>

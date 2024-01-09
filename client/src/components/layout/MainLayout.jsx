@@ -2,8 +2,6 @@ import { useState } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
 
-import {} from '../ui/resizable';
-
 export function MainLayout({ children }) {
   const [open, setOpen] = useState(true);
   return (
@@ -27,7 +25,7 @@ export function MainLayout({ children }) {
               : 'col-span-12 md:col-span-11'
           }`}
         >
-          <div className='rounded-t-lg border'>{children}</div>
+          <div className='rounded-t-lg border lg:px-12'>{children}</div>
         </div>
       </div>
     </>

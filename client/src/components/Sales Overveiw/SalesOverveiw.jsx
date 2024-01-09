@@ -4,7 +4,7 @@ import SalesRevenueTracker from './SalesRevenueTracker';
 const SalesOverveiw = () => {
   return (
     <>
-      <section className='mx-auto max-w-screen-xl px-4 lg:px-12'>
+      <section className='mx-auto max-w-screen-xl'>
         <OverveiwHeader />
         <SalesRevenueTracker />
       </section>

@@ -1,6 +1,8 @@
+import React from 'react'
 
 export default function AddProduct() {
   return (
-    <section></section>
+    <div>AddProduct</div>
   )
 }
+

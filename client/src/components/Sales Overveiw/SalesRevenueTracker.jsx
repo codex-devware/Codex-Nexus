@@ -6,7 +6,7 @@ import TotalVisitor from './TotalVisitor'
 const SalesRevenueTracker = () => {
   return (
     <>
-        <section className='flex flex-wrap justify-around items-center mt-8'>
+        <section className='flex flex-wrap md:justify-between gap-2 items-center mt-8 mb-6'>
             <TotalSales/>
             <TotalRevenue/>
             <TotalVisitor/>

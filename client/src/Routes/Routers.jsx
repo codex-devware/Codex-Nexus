@@ -10,6 +10,7 @@ import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
 import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
 import AddProduct from '@/components/AddProduct/AddProduct';
 import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
+import Users from '@/components/User Management/Users';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -42,6 +43,7 @@ const Routers = () => {
             <Route path='/sales-overview' element={<SalesOverveiw />} />
             <Route path='/order-chart' element={<OrderChartTracker />} />
             <Route path='/add-product' element={<AddProduct />} />
+            <Route path='/users' element={<Users />} />
           </Routes>
         </MainLayout>
       </Router>

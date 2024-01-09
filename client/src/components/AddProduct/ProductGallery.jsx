@@ -9,8 +9,8 @@ const ProductGallery = () => {
       />
       <div>
         <div className=" z-10 top-0 ">
-          <div className="extraOutline p-4 bg-white w-max bg-whtie m-auto rounded-lg">
-            <div className="file_upload p-5 w-80 relative border-4 border-dotted border-gray-300 rounded-lg">
+          <div className="extraOutline p-4 bg-white w-max m-auto rounded-lg">
+            <div className="file_upload p-5 w-52 sm:w-72 relative border-4 border-dotted border-gray-300 rounded-lg">
               <svg
                 className="text-indigo-500 w-24 mx-auto mb-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,12 +33,12 @@ const ProductGallery = () => {
                     required
                     multiple
                   />
-                  <div className="text bg-indigo-600 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-indigo-500">
+                  <div className="text-[14px] bg-indigo-600 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-1 hover:bg-indigo-500">
                     Select
                   </div>
                 </label>
 
-                <div className="title text-indigo-500 uppercase">
+                <div className="title md:text-[14px] text-[13px] text-indigo-500 uppercase">
                   or drop files here
                 </div>
               </div>

@@ -41,7 +41,7 @@ export const Data = [
     icon: <BsCartPlus />,
     section: "Add Product",
     subSection: [],
-    path: "",
+    path: "add-product",
   },
   {
     id: 5,

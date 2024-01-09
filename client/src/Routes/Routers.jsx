@@ -8,8 +8,9 @@ import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/Inventor
 import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
 import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
 import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
-import AddProduct from "@/components/AddProduct/AddProduct";
+
 import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
+import AddProduct from "@/Pages/AddProduct/AddProduct";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -35,7 +36,7 @@ const Routers = () => {
               path="/product-performance/product-inventory"
               element={<InventoryStatus />}
             />
-            <Route path="/add-products" element={<AddProduct />} />
+
             <Route
               path="/product-performance/sale-trends"
               element={<SaleTrends />}

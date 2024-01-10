@@ -21,6 +21,8 @@ export const Data = [
     subSection: [
       { title: "All Orders", path: "/order-management/all-orders" },
       { title: "Order History", path: "/order-management/order-history" },
+      { title: "Order Status", path: "/order-management/order-status" },
+      { title: "Payment Info", path: "/order-management/payment-info" },
     ],
   },
   {

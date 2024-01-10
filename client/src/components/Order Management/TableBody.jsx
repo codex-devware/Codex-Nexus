@@ -2,12 +2,21 @@ import { MdOutlineWatchLater } from 'react-icons/md';
 import { FaDotCircle } from 'react-icons/fa';
 
 const TableBody = ({ items }) => {
-  const { orderCode, profile, name, paymentMethod,time,type,status,amount } = items;
+  const {
+    orderCode,
+    profile,
+    name,
+    paymentMethod,
+    time,
+    type,
+    status,
+    amount,
+  } = items;
   return (
     <>
-    <tr>
-        <td className=''>
-          <table className=' mb-3 w-full text-[#4a4a4a] overflow-hidden'>
+      <tr className='w-[1000px]'>
+        <td className='w-[1000px]'>
+          <table className=' mb-3 w-full text-[#4a4a4a] '>
             <tr className='grid grid-cols-9 border-2 rounded-lg bg-white items-center'>
               <td className='px-4 py-3 font-semibold'>#{orderCode}</td>
               <td className='px-4 py-3 col-start-2 col-end-4'>
@@ -69,10 +78,7 @@ const TableBody = ({ items }) => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href='#'
-                        className='block py-2 px-4 hover:bg-gray-100'
-                      >
+                      <a href='#' className='block py-2 px-4 hover:bg-gray-100'>
                         Edit
                       </a>
                     </li>
@@ -90,9 +96,9 @@ const TableBody = ({ items }) => {
             </tr>
           </table>
         </td>
-    </tr>
+      </tr>
     </>
-  )
-}
+  );
+};
 
-export default TableBody
+export default TableBody;

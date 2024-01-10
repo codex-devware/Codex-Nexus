@@ -10,7 +10,7 @@ const StockInventoryList = () => {
       <RecentOrderHeader title={"Stock Inventory List"} />
       <StockInventoryTable />
       {/* supplier management  */}
-      <RecentOrderHeader title={"Supplier management"} />
+      <RecentOrderHeader title={"Supplier Information"} />
       <SuppliersManagement />
       {/* return management  */}
       <RecentOrderHeader title={"Return management"} />

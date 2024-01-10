@@ -5,7 +5,7 @@ const StockInventoryTable = () => {
       id: 1,
       skuId: "unique123",
       productName: "Computer",
-      supplierImg: supplierImg,
+      supplierImg,
       supplierName: "Md Kawsar",
       supplyDate: "Jan 23, 2024",
       mail: "md.kawsar.developer@gmail.com",
@@ -78,6 +78,9 @@ const StockInventoryTable = () => {
                   <span className="font-medium">{item.supplierName}</span>
                 </td>
 
+                <td className="whitespace-nowrap px-6 py-4 font-medium">
+                  {item.supplyDate}
+                </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
                   {item.mail}
                 </td>

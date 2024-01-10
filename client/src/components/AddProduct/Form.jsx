@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import YourInfo from "./YourInfo";
-
-import BackgroundSidebar from "../../assets/bg-sidebar-desktop.svg";
-import BackgroundSidebarMobile from "../../assets/bg-sidebar-mobile.svg";
-import Step from "./Step";
+import mobileAddProductBanner from "../../assets/add-product-mobile.svg";
+import BgBigScreenBanner from "../../assets/sample.png";
 import Addons from "./Addons";
-import sampleImg from "../../assets/sample.png";
-import Thankyou from "./Thankyou";
 import ProductGallery from "./ProductGallery";
+import Step from "./Step";
+import Thankyou from "./Thankyou";
+import YourInfo from "./YourInfo";
 
 const Form = () => {
   //------------------------------STATES------------------------------
@@ -146,16 +144,16 @@ const Form = () => {
         <div className="relative">
           <img
             className="hidden xl:block w-full h-[78%] rounded-xl"
-            src={sampleImg}
+            src={BgBigScreenBanner}
             alt="sidebar"
           />
           <img
             className="block lg:block xl:hidden w-full rounded-lg"
-            src={BackgroundSidebarMobile}
+            src={mobileAddProductBanner}
             alt="topbar"
           />
 
-          <div className="flex justify-around items-center mt-8 absolute inset-0 space-x-10 md:space-x-0 xl:block md:mt-0 md:pl-6 md:pt-8 md:space-y-7">
+          <div className="flex justify-around items-center mt-8 absolute inset-0  xl:block md:mt-0 md:pl-6 md:pt-8 xl:space-y-7">
             {steps.map((step) => (
               <Step
                 key={step.id}

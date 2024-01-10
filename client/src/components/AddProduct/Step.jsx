@@ -18,7 +18,9 @@ const Step = ({ number, title, active }) => {
         <div className="font-regular hidden xl:block text-[#d6d9e6] text-[14px]">
           Step {number}
         </div>
-        <div className="font-bold text-[14px] lg:block hidden">{title}</div>
+        <div className="font-bold text-[14px] xl:block lg:block md:block hidden">
+          {title}
+        </div>
       </div>
     </div>
   );

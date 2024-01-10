@@ -1,15 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
+import AddProduct from '@/Pages/AddProduct/AddProduct';
+import OrderHistory from '@/Pages/OrderManagement/OrderHistory/OrderHistory';
+import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
+import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
+import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
+import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
+import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
+import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
+import ActivityLog from '@/components/User Management/ActivityLog';
+import Users from '@/components/User Management/Users';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { useState } from 'react';
-import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
-import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
-import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
-import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
-import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
-import AddProduct from '@/Pages/AddProduct/AddProduct';
-import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
-import OrderHistory from '@/Pages/OrderManagement/OrderHistory/OrderHistory';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from '../Pages/Home/Home';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -42,6 +44,8 @@ const Routers = () => {
             <Route path='/sales-overview' element={<SalesOverveiw />} />
             <Route path='/order-chart' element={<OrderChartTracker />} />
             <Route path='/add-product' element={<AddProduct />} />
+            <Route path='/users' element={<Users />} />
+            <Route path='/users/user-active-log' element={<ActivityLog />} />
           </Routes>
         </MainLayout>
       </Router>

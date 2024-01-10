@@ -1,33 +1,35 @@
-import { BsBag, BsCartPlus, BsCashCoin } from 'react-icons/bs';
-import { FaUserLock, FaUsersCog } from 'react-icons/fa';
-import { LiaShippingFastSolid } from 'react-icons/lia';
-import { LuUserCog2 } from 'react-icons/lu';
-import { MdOutlineInventory2, MdOutlinePayments } from 'react-icons/md';
-import { RiRefund2Fill } from 'react-icons/ri';
+import { BsBag, BsCartPlus, BsCashCoin } from "react-icons/bs";
+import { FaUserLock, FaUsersCog } from "react-icons/fa";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { LuUserCog2 } from "react-icons/lu";
+import { MdOutlineInventory2, MdOutlinePayments } from "react-icons/md";
+import { RiRefund2Fill } from "react-icons/ri";
 
 export const Data = [
   {
     id: 1,
     icon: <BsBag />,
-    section: 'Dashboard',
-    path: '',
+    section: "Dashboard",
+    path: "",
     subSection: [],
   },
   {
     id: 2,
     icon: <LuUserCog2 />,
-    section: 'Order Management',
-    path: '/order-management',
+    section: "Order Management",
+    path: "/order-management",
     subSection: [
-      { title: 'All Orders', path: '/order-management/all-orders' },
-      { title: 'Order History', path: '/order-management/order-history' },
+      { title: "All Orders", path: "/order-management/all-orders" },
+      { title: "Order History", path: "/order-management/order-history" },
+      { title: "Order Status", path: "/order-management/order-status" },
+      { title: "Payment Info", path: "/order-management/payment-info" },
     ],
   },
   {
     id: 3,
     icon: <BsCartPlus />,
-    section: 'Add Product',
-    path: '/add-product',
+    section: "Add Product",
+    path: "/add-product",
     subSection: [],
   },
   // {
@@ -40,61 +42,61 @@ export const Data = [
   {
     id: 5,
     icon: <BsCashCoin />,
-    section: 'Revenue Analytics',
+    section: "Revenue Analytics",
     subSection: [],
-    path: '',
+    path: "",
   },
   {
     id: 6,
     icon: <LiaShippingFastSolid />,
-    section: 'Shipping and Tax',
+    section: "Shipping and Tax",
     subSection: [],
-    path: '',
+    path: "",
   },
 
   {
     id: 7,
     icon: <MdOutlineInventory2 />,
-    section: 'Stock and Inventory Management',
+    section: "Stock and Inventory Management",
     subSection: [],
-    path: '',
+    path: "",
   },
   {
     id: 8,
     icon: <RiRefund2Fill />,
-    section: 'Refund and Returns',
+    section: "Refund and Returns",
     subSection: [],
-    path: '',
+    path: "",
   },
 
   {
     id: 9,
     icon: <FaUsersCog />,
-    section: 'User Management',
+    section: "User Management",
     subSection: [
       {
-        title: 'Users',
-        path: '/users',
+        title: "Users",
+        path: "/users",
       },
       {
-        title: 'User Active Log',
-        path: '/users/user-active-log',
+        title: "User Active Log",
+        path: "/users/user-active-log",
       },
     ],
   },
   {
     id: 10,
     icon: <MdOutlinePayments />,
-    section: 'Payment Gateway Analytics',
+    section: "Payment Gateway Analytics",
     subSection: [],
-    path: '',
+    path: "",
   },
 
   {
     id: 11,
     icon: <FaUserLock />,
-    section: 'Security',
+    section: "Security",
     subSection: [],
-    path: '',
+    path: "",
   },
 ];

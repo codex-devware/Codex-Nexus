@@ -41,7 +41,7 @@ const YourInfo = ({ yourInfo, onChangeYourInfo, isEmpty }) => {
         desc="Please provide your product name, price, category, description"
       />
       <form>
-        <div className="flex flex-col space-y-6 text-[14px]">
+        <div className="flex flex-col  space-y-6 text-[14px]">
           {formFields.map((formField) => (
             <FormField
               onChangeYourInfo={onChangeYourInfo}

@@ -7,7 +7,7 @@ const RecentOrder = () => {
     <>
       <div className="font-outfit w-full">
         <div className="shadow-lg rounded-lg">
-          <RecentOrderHeader />
+          <RecentOrderHeader title={"Recent Order"} />
           <RecentOrderTable />
           <div className="px-6">
             <ManagementFooter />

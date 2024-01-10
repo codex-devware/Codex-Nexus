@@ -1,15 +1,16 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { useState } from 'react';
-import OrderHistory from '@/components/Home/OrderHistory';
-import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
-import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
-import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
-import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
-import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
-import AddProduct from '@/components/AddProduct/AddProduct';
-import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "../Pages/Home/Home";
+import { MainLayout } from "@/components/layout/MainLayout";
+import { useState } from "react";
+import OrderHistory from "@/components/Home/OrderHistory";
+import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
+import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
+import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
+import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
+import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
+import AddProduct from "@/components/AddProduct/AddProduct";
+import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
+import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -18,30 +19,38 @@ const Routers = () => {
       <Router>
         <MainLayout resize={resize} setResize={setResize}>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route
-              path='/order-management/order-history'
+              path="/order-management/order-history"
               element={<OrderHistory />}
             />
             <Route
-              path='/order-management/order-history/order-history/01'
+              path="/order-management/order-history/order-history/01"
               element={<OrderDetails />}
             />
             <Route
-              path='product-performance'
+              path="product-performance"
               element={<ProductPerformance />}
             />
             <Route
-              path='/product-performance/product-inventory'
+              path="/product-performance/product-inventory"
               element={<InventoryStatus />}
             />
             <Route
-              path='/product-performance/sale-trends'
+              path="/product-performance/sale-trends"
               element={<SaleTrends />}
             />
-            <Route path='/sales-overview' element={<SalesOverveiw />} />
-            <Route path='/order-chart' element={<OrderChartTracker />} />
-            <Route path='/add-product' element={<AddProduct />} />
+            <Route path="/sales-overview" element={<SalesOverveiw />} />
+            <Route path="/order-chart" element={<OrderChartTracker />} />
+            <Route path="/add-product" element={<AddProduct />} />
+            <Route
+              path="/stock-inventory-management"
+              element={<StockInventoryList />}
+            />
+            <Route
+              path="/stock-inventory-management/supplier-management"
+              element={<StockInventoryList />}
+            />
           </Routes>
         </MainLayout>
       </Router>

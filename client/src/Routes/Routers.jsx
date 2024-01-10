@@ -45,7 +45,10 @@ const Routers = () => {
             <Route path='/order-chart' element={<OrderChartTracker />} />
             <Route path='/add-product' element={<AddProduct />} />
             <Route path='/users' element={<Users />} />
-            <Route path='/users/user-active-log' element={<ActivityLog />} />
+            <Route
+              path='/users/user-active-log'
+              element={<ActivityLog />}
+            />{' '}
           </Routes>
         </MainLayout>
       </Router>

@@ -1,12 +1,9 @@
-import { BsBag, BsCashCoin, BsCartPlus } from "react-icons/bs";
-import { LuUserCog2 } from "react-icons/lu";
-import { GrDocumentPerformance } from "react-icons/gr";
+import { BsBag, BsCartPlus, BsCashCoin } from "react-icons/bs";
+import { FaUserLock, FaUsersCog } from "react-icons/fa";
 import { LiaShippingFastSolid } from "react-icons/lia";
-import { MdOutlineInventory2 } from "react-icons/md";
+import { LuUserCog2 } from "react-icons/lu";
+import { MdOutlineInventory2, MdOutlinePayments } from "react-icons/md";
 import { RiRefund2Fill } from "react-icons/ri";
-import { FaUsersCog } from "react-icons/fa";
-import { MdOutlinePayments } from "react-icons/md";
-import { FaUserLock } from "react-icons/fa";
 
 export const Data = [
   {
@@ -28,21 +25,18 @@ export const Data = [
   },
   {
     id: 3,
-    icon: <GrDocumentPerformance />,
-    section: "Add Product",
-    path: "",
-    subSection: [
-      { title: "Product-wise sales trends", path: "" },
-      { title: "Inventory status", path: "" },
-    ],
-  },
-  {
-    id: 4,
     icon: <BsCartPlus />,
     section: "Add Product",
+    path: "/add-product",
     subSection: [],
-    path: "add-product",
   },
+  // {
+  //   id: 4,
+  //   icon:<GrDocumentPerformance /> ,
+  //   section: 'Add Product',
+  //   subSection: [],
+  //   path: '',
+  // },
   {
     id: 5,
     icon: <BsCashCoin />,
@@ -77,8 +71,16 @@ export const Data = [
     id: 9,
     icon: <FaUsersCog />,
     section: "User Management",
-    subSection: [],
-    path: "",
+    subSection: [
+      {
+        title: "Users",
+        path: "/users",
+      },
+      {
+        title: "User Active Log",
+        path: "/users/user-active-log",
+      },
+    ],
   },
   {
     id: 10,

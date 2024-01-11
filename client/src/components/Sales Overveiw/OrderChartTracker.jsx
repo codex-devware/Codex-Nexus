@@ -1,17 +1,16 @@
-import React from 'react'
-import RecentOrder from './RecentOrder'
+import RecentOrder from "./RecentOrder";
 
 const OrderChartTracker = () => {
   return (
     <>
-    <section className='flex flex-wrap'>
+      <section className="flex flex-wrap">
         <div className="lg:w-[70%] w-full">
-            <RecentOrder/>
+          <RecentOrder />
         </div>
         <div className="lg:w-[30%] w-full"></div>
-    </section>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default OrderChartTracker
+export default OrderChartTracker;

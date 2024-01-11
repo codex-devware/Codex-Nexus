@@ -4,7 +4,7 @@ const OrderManageTopHeader = () => {
   return (
     <section className="mt-8">
       <div className="flex flex-wrap lg:justify-between sm:justify-center justify-center sm:gap-3 gap-3">
-        <div className="font-outfit">
+        <div className="font-outfit sm:text-left text-center md:text-left lg:text-left">
           <h1 className="text-3xl font-semibold">Hey Dude! ,</h1>
           <p className="text-[#6B7280]">
             <span>Welcome back</span>, {"Let's"} check your order status today!

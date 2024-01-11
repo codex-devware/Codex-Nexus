@@ -13,6 +13,8 @@ import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
+import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
+import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -46,13 +48,18 @@ const Routers = () => {
             <Route path="/sales-overview" element={<SalesOverveiw />} />
             <Route path="/order-chart" element={<OrderChartTracker />} />
             <Route path="/add-product" element={<AddProduct />} />
+            {/* stock inventory management routes */}
             <Route
               path="/stock-inventory-management"
               element={<StockInventoryList />}
             />
             <Route
               path="/stock-inventory-management/supplier-management"
-              element={<StockInventoryList />}
+              element={<SuppliersManagement />}
+            />
+            <Route
+              path="/stock-inventory-management/return-order-management"
+              element={<ReturnOrderManagement />}
             />
             <Route path="/users" element={<Users />} />
             <Route path="/users/user-active-log" element={<ActivityLog />} />

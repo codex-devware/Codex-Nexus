@@ -1,5 +1,7 @@
 import supplierImg from "../../assets/mdKawsar.png";
-const StockInventoryTable = () => {
+import RecentOrderHeader from "../Sales Overveiw/RecentOrderHeader";
+import TopSuppliersChart from "./TopSuppliersChart";
+const SuppliersManagement = () => {
   const data = [
     {
       id: 1,
@@ -34,6 +36,7 @@ const StockInventoryTable = () => {
   ];
   return (
     <>
+      <RecentOrderHeader title={"Suppiers Management"} />
       <div className="overflow-x-auto">
         <table className="table-auto min-w-full text-left text-sm font-light">
           <thead className="bg-[#F4F7F9] font-medium">
@@ -92,8 +95,11 @@ const StockInventoryTable = () => {
           </tbody>
         </table>
       </div>
+      <div className="my-20">
+        <TopSuppliersChart />
+      </div>
     </>
   );
 };
 
-export default StockInventoryTable;
+export default SuppliersManagement;

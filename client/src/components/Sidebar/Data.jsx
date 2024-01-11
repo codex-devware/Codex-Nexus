@@ -79,7 +79,7 @@ export const Data = [
       },
       {
         title: "Return management",
-        path: "/stock-inventory-management/return-management",
+        path: "/stock-inventory-management/return-order-management",
       },
     ],
   },

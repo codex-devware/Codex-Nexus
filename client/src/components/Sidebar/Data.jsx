@@ -24,6 +24,8 @@ export const Data = [
     subSection: [
       { title: "All Orders", path: "/order-management/all-orders" },
       { title: "Order History", path: "/order-management/order-history" },
+      { title: "Order Status", path: "/order-management/order-status" },
+      { title: "Payment Info", path: "/order-management/payment-info" },
     ],
   },
   {
@@ -43,6 +45,13 @@ export const Data = [
     subSection: [],
     path: "",
   },
+  // {
+  //   id: 4,
+  //   icon:<GrDocumentPerformance /> ,
+  //   section: 'Add Product',
+  //   subSection: [],
+  //   path: '',
+  // },
   {
     id: 5,
     icon: <BsCashCoin />,
@@ -86,8 +95,16 @@ export const Data = [
     id: 9,
     icon: <FaUsersCog />,
     section: "User Management",
-    subSection: [],
-    path: "",
+    subSection: [
+      {
+        title: "Users",
+        path: "/users",
+      },
+      {
+        title: "User Active Log",
+        path: "/users/user-active-log",
+      },
+    ],
   },
   {
     id: 10,

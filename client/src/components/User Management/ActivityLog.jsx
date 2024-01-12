@@ -1,12 +1,11 @@
-import React from 'react'
-import ActivityHeader from './ActivityHeader'
+import ActivityHeader from "./ActivityHeader";
 
 const ActivityLog = () => {
   return (
     <>
-        <ActivityHeader/>
+      <ActivityHeader />
     </>
-  )
-}
+  );
+};
 
-export default ActivityLog
+export default ActivityLog;

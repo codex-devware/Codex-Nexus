@@ -1,5 +1,6 @@
 import AddProduct from "@/Pages/AddProduct/AddProduct";
 import OrderHistory from "@/Pages/OrderManagement/OrderHistory/OrderHistory";
+import OrderManagement from "@/Pages/OrderManagement/OrderManagement";
 import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
 import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
 import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
@@ -12,6 +13,9 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "../Pages/Home/Home";
+import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
+import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
+import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -21,12 +25,13 @@ const Routers = () => {
         <MainLayout resize={resize} setResize={setResize}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/order-management" element={<OrderManagement />} />
             <Route
               path="/order-management/order-history"
               element={<OrderHistory />}
             />
             <Route
-              path="/order-management/order-details/01"
+              path="/order-management/order-history/order-history/01"
               element={<OrderDetails />}
             />
             <Route
@@ -45,6 +50,19 @@ const Routers = () => {
             <Route path="/sales-overview" element={<SalesOverveiw />} />
             <Route path="/order-chart" element={<OrderChartTracker />} />
             <Route path="/add-product" element={<AddProduct />} />
+            {/* stock inventory management routes */}
+            <Route
+              path="/stock-inventory-management"
+              element={<StockInventoryList />}
+            />
+            <Route
+              path="/stock-inventory-management/supplier-management"
+              element={<SuppliersManagement />}
+            />
+            <Route
+              path="/stock-inventory-management/return-order-management"
+              element={<ReturnOrderManagement />}
+            />
             <Route path="/users" element={<Users />} />
             <Route path="/users/user-active-log" element={<ActivityLog />} />
           </Routes>

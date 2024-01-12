@@ -1,3 +1,4 @@
+import mdKawsar from "../../assets/mdKawsar.png";
 const Topbar = ({ setOpenToggle, openToggle }) => {
   return (
     <>
@@ -121,7 +122,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
                   >
                     <div className="avatar">
                       <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <img src={mdKawsar} />
                       </div>
                     </div>
                   </div>

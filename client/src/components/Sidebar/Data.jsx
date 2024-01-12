@@ -1,9 +1,12 @@
-import { BsBag, BsCartPlus, BsCashCoin } from "react-icons/bs";
-import { FaUserLock, FaUsersCog } from "react-icons/fa";
-import { LiaShippingFastSolid } from "react-icons/lia";
+import { BsBag, BsCashCoin, BsCartPlus } from "react-icons/bs";
 import { LuUserCog2 } from "react-icons/lu";
-import { MdOutlineInventory2, MdOutlinePayments } from "react-icons/md";
+import { GrDocumentPerformance } from "react-icons/gr";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { MdOutlineInventory2 } from "react-icons/md";
 import { RiRefund2Fill } from "react-icons/ri";
+import { FaUsersCog } from "react-icons/fa";
+import { MdOutlinePayments } from "react-icons/md";
+import { FaUserLock } from "react-icons/fa";
 
 export const Data = [
   {
@@ -27,10 +30,20 @@ export const Data = [
   },
   {
     id: 3,
+    icon: <GrDocumentPerformance />,
+    section: "Add Product",
+    path: "",
+    subSection: [
+      { title: "Product-wise sales trends", path: "" },
+      { title: "Inventory status", path: "" },
+    ],
+  },
+  {
+    id: 4,
     icon: <BsCartPlus />,
     section: "Add Product",
-    path: "/add-product",
     subSection: [],
+    path: "",
   },
   // {
   //   id: 4,
@@ -57,9 +70,18 @@ export const Data = [
   {
     id: 7,
     icon: <MdOutlineInventory2 />,
-    section: "Stock and Inventory Management",
-    subSection: [],
-    path: "",
+    section: "Stock & Inventory ",
+    path: "/stock-inventory-management",
+    subSection: [
+      {
+        title: "Supplier management",
+        path: "/stock-inventory-management/supplier-management",
+      },
+      {
+        title: "Return management",
+        path: "/stock-inventory-management/return-order-management",
+      },
+    ],
   },
   {
     id: 8,

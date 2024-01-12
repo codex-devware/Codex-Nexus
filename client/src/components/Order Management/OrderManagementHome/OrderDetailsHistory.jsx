@@ -11,9 +11,11 @@ const OrderDetailsHistory = () => {
           <OrderDetailsHistoryTable />
         </div>
       </div>
-      {/* <div className="lg:w-[50%] w-full">
+
+      <div className="lg:w-[50%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full">
         <CustomerStatics />
-      </div> */}
+      </div>
+
       <div className="lg:w-[50%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full">
         <CustomerStatics />
       </div>

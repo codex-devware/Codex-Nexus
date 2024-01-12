@@ -1,4 +1,5 @@
 import AddProduct from "@/Pages/AddProduct/AddProduct";
+import AllOrderMain from "@/Pages/OrderManagement/AllOrder/AllOrderMain";
 import OrderHistory from "@/Pages/OrderManagement/OrderHistory/OrderHistory";
 import OrderManagement from "@/Pages/OrderManagement/OrderManagement";
 import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
@@ -7,15 +8,15 @@ import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
 import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
 import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
 import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
+import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
+import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
+import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
 import ActivityLog from "@/components/User Management/ActivityLog";
 import Users from "@/components/User Management/Users";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "../Pages/Home/Home";
-import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
-import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
-import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -26,6 +27,10 @@ const Routers = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/order-management" element={<OrderManagement />} />
+            <Route
+              path="/order-management/all-orders"
+              element={<AllOrderMain />}
+            />
             <Route
               path="/order-management/order-history"
               element={<OrderHistory />}

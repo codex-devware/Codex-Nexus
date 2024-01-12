@@ -8,7 +8,7 @@ const SidebarData = ({ sections, open }) => {
   console.log(subSection);
   return (
     <>
-      <ul>
+      <ul className="">
         <Link to={path}>
           <li className=" text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md duration-200">
             <span className=" text-2xl block float-left opacity-80">
@@ -16,7 +16,7 @@ const SidebarData = ({ sections, open }) => {
             </span>
             <span
               onClick={() => setSubMenu(!openSubMenu)}
-              className={`text-[14px] font-medium flex-1 flex items-center  gap-10 duration-150 ${
+              className={`text-[14px] font-medium flex-1 flex items-center  gap-4 duration-150 ${
                 !open && "hidden"
               }`}
             >

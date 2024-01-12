@@ -1,5 +1,6 @@
 import AddProduct from "@/Pages/AddProduct/AddProduct";
 import OrderHistory from "@/Pages/OrderManagement/OrderHistory/OrderHistory";
+import OrderManagement from "@/Pages/OrderManagement/OrderManagement";
 import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
 import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
 import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
@@ -24,6 +25,7 @@ const Routers = () => {
         <MainLayout resize={resize} setResize={setResize}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/order-management" element={<OrderManagement />} />
             <Route
               path="/order-management/order-history"
               element={<OrderHistory />}

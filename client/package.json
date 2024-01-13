@@ -10,13 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
     "apexcharts": "^3.45.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "dayjs": "^1.11.10",
+    "framer-motion": "^10.18.0",
     "lucide-react": "^0.303.0",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
+    "react-calendar": "^4.8.0",
     "react-click-away-listener": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

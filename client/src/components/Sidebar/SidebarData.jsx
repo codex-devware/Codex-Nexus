@@ -5,7 +5,7 @@ const SidebarData = ({ sections, open }) => {
   //main state
   const [openSubMenu, setSubMenu] = useState(false);
   const { section, subSection, icon, path } = sections;
-  console.log(subSection);
+
   return (
     <>
       <ul>

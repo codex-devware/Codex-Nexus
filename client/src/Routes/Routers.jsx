@@ -16,6 +16,7 @@ import Home from "../Pages/Home/Home";
 import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
 import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
 import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
+import PaymentInfo from "@/components/Order Management/PaymentInfo/PaymentInfo";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -29,6 +30,10 @@ const Routers = () => {
             <Route
               path="/order-management/order-history"
               element={<OrderHistory />}
+            />
+            <Route
+              path="/order-management/payment-info"
+              element={<PaymentInfo />}
             />
             <Route
               path="/order-management/order-history/order-history/01"

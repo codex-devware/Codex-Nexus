@@ -8,17 +8,31 @@ const ActivityBody = () => {
     const saleData = [
     {
         title: 'New Sale',
-        color: '#ff5959',
+        color: '#616161',
         icon: <MdOutlineShoppingBag fontSize={20} />,
         time: '5 Min Ago',
         message: 'Exciting news! Customer John Doe just made a purchase. Order #12345 has been successfully placed',
     },
     {
         title: 'New Account Activity',
-        color: '#616161',
+        color: '#ff5959',
         icon: <MdManageAccounts fontSize={20} />,
         time: '10 Min Ago',
         message: 'New account activity detected. User Jane Smith has registered successfully.',
+    },
+    {
+        title: 'New Account Activity',
+        color: '#36ff16',
+        icon: <MdManageAccounts fontSize={20} />,
+        time: '10 Min Ago',
+        message: 'New account activity detected. User Jane Smith has registered successfully.',
+    },
+    {
+        title: 'New Sale',
+        color: '#7277ff',
+        icon: <MdOutlineShoppingBag fontSize={20} />,
+        time: '5 Min Ago',
+        message: 'Exciting news! Customer John Doe just made a purchase. Order #12345 has been successfully placed',
     },
 ];
   return (

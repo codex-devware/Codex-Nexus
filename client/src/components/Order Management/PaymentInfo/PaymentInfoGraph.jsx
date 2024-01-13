@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
 
 const PaymentInfoGraph = () => {
-  console.log("Hello");
+  // console.log("Hello");
   // eslint-disable-next-line no-unused-vars
   const [chartOptions, setChartOptions] = useState({
     series: [

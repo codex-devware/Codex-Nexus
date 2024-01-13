@@ -5,7 +5,6 @@ const ActivityBody = () => {
   const saleData = [
     {
       title: 'New Sale',
-      color: '#616161',
       icon: <MdOutlineShoppingBag fontSize={20} />,
       time: '5 Min Ago',
       message:
@@ -13,7 +12,6 @@ const ActivityBody = () => {
     },
     {
       title: 'New Account Activity',
-      color: '#ff5959',
       icon: <MdManageAccounts fontSize={20} />,
       time: '10 Min Ago',
       message:
@@ -21,15 +19,13 @@ const ActivityBody = () => {
     },
     {
       title: 'New Account Activity',
-      color: '#36ff16',
       icon: <MdManageAccounts fontSize={20} />,
       time: '10 Min Ago',
       message:
         'New account activity detected. User Jane Smith has registered successfully.',
     },
     {
-      title: 'New Sale',
-      color: '#7277ff',
+      title: 'New Purchase',
       icon: <MdOutlineShoppingBag fontSize={20} />,
       time: '5 Min Ago',
       message:
@@ -52,7 +48,18 @@ const ActivityBody = () => {
                 className='flex items-center justify-between bg-[#f0f0f0] p-3 rounded-xl'
               >
                 <div className='flex items-center gap-3'>
-                  <div className={`bg-[${item.color}] p-3 rounded-full`}>
+                  <div
+                    className={`${
+                      item.title.toLocaleLowerCase() === 'new sale'
+                        ? 'bg-[#616161]'
+                        : item.title.toLocaleLowerCase() ===
+                          'new account activity'
+                        ? 'bg-[#ff5959]'
+                        : item.title.toLocaleLowerCase() === 'new purchase'
+                        ? 'bg-[#7277ff]'
+                        : 'bg-[#36ff16]'
+                    } p-3 rounded-full`}
+                  >
                     <span className='text-white '>{item.icon}</span>
                   </div>
                   <div className=''>
@@ -69,7 +76,18 @@ const ActivityBody = () => {
                   </div>
                 </div>
                 <div className=''>
-                  <span className={`text-[${item.color}]`}>
+                  <span
+                    className={`${
+                      item.title.toLocaleLowerCase() === 'new sale'
+                        ? 'text-[#616161]'
+                        : item.title.toLocaleLowerCase() ===
+                          'new account activity'
+                        ? 'text-[#ff5959]'
+                        : item.title.toLocaleLowerCase() === 'new purchase'
+                        ? 'text-[#7277ff]'
+                        : 'text-[#36ff16]'
+                    }`}
+                  >
                     <FaCircleDot />
                   </span>
                 </div>

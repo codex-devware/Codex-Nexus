@@ -1,4 +1,4 @@
-const ManagementTopVar = () => {
+const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 py-4">
@@ -29,6 +29,8 @@ const ManagementTopVar = () => {
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#3b82f6] outline-[#3b82f6] focus:border-[#3b82f6] block w-full pl-10 p-2 "
                 placeholder="Search"
                 required=""
+                value={searchTerm}
+                onChange={(e) => onSearchChange(e.target.value)}
               />
             </div>
           </form>

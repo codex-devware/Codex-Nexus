@@ -13,7 +13,7 @@ const AllOrder = () => {
           </div>
         </div>
 
-        <div className="lg:w-[33%] mx-auto rounded-md md:px-0 md:py-0 px-2 py-2  xl:ml-2 shadow border-dashed border-[1px] h-full w-full">
+        <div className="lg:w-[33%] mx-auto rounded-md md:px-0 md:py-0 px-2 py-2 xl:ml-2 shadow border-dashed w-full">
           <AllOrderCalender />
         </div>
       </section>

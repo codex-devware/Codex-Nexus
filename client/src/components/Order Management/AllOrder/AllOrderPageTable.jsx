@@ -121,8 +121,8 @@ const AllOrderPageTable = () => {
                     fill='none'
                     viewBox='0 0 24 24'
                     strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='size-6'
+                    stroke="currentColor"
+                    className="size-9 px-2 py-2 rounded bg-red-100 text-red-600"
                   >
                     <path
                       strokeLinecap='round'
@@ -136,8 +136,8 @@ const AllOrderPageTable = () => {
                     fill='none'
                     viewBox='0 0 24 24'
                     strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-6 h-6'
+                    stroke="currentColor"
+                    className="size-9 px-2 py-2 rounded bg-blue-100 text-blue-600"
                   >
                     <path
                       strokeLinecap='round'

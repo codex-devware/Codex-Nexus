@@ -1,22 +1,23 @@
-import AddProduct from '@/Pages/AddProduct/AddProduct';
-import AllOrderMain from '@/Pages/OrderManagement/AllOrder/AllOrderMain';
-import OrderHistory from '@/Pages/OrderManagement/OrderHistory/OrderHistory';
-import OrderManagement from '@/Pages/OrderManagement/OrderManagement';
-import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
-import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
-import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
-import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
-import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
-import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
-import ReturnOrderManagement from '@/components/StockInventoryManagement/ReturnManagement';
-import StockInventoryList from '@/components/StockInventoryManagement/StockInventoryList';
-import SuppliersManagement from '@/components/StockInventoryManagement/SuppliersManagement';
-import ActivityLog from '@/components/User Management/ActivityLog';
-import Users from '@/components/User Management/Users';
-import { MainLayout } from '@/components/layout/MainLayout';
-import { useState } from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
+import AddProduct from "@/Pages/AddProduct/AddProduct";
+import AllOrderMain from "@/Pages/OrderManagement/AllOrder/AllOrderMain";
+import OrderHistory from "@/Pages/OrderManagement/OrderHistory/OrderHistory";
+import OrderManagement from "@/Pages/OrderManagement/OrderManagement";
+import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
+import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
+import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
+import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
+import OrderStatus from "@/components/Order Management/OrderStatus/OrderStatus";
+import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
+import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
+import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
+import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
+import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
+import ActivityLog from "@/components/User Management/ActivityLog";
+import Users from "@/components/User Management/Users";
+import { MainLayout } from "@/components/layout/MainLayout";
+import { useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "../Pages/Home/Home";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -36,7 +37,11 @@ const Routers = () => {
               element={<OrderHistory />}
             />
             <Route
-              path='/order-management/order-history/order-history/01'
+              path="/order-management/order-status"
+              element={<OrderStatus />}
+            />
+            <Route
+              path="/order-management/order-history/order-history/01"
               element={<OrderDetails />}
             />
             <Route

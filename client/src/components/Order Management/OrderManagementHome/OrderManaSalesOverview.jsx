@@ -54,12 +54,12 @@ const OrderManaSalesOverview = () => {
               {
                 from: 0,
                 to: 214, // Set the range and color as per your requirement
-                color: "#e74c3c", // Change the color as per your requirement
+                color: "#95a5a6", // Change the color as per your requirement
               },
               {
                 from: 215,
                 to: 554, // Set the range and color as per your requirement
-                color: "#8e44ad", // Change the color as per your requirement
+                color: "#34495e", // Change the color as per your requirement
               },
             ],
           },

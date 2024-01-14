@@ -56,7 +56,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
             Add product
           </button>
           <div className="flex items-center space-x-3 w-full md:w-auto">
-            <button
+            {/* <button
               id="actionsDropdownButton"
               data-dropdown-toggle="actionsDropdown"
               className="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-[#1d4ed8] focus:z-10 focus:ring-4 focus:ring-gray-200"
@@ -76,8 +76,8 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
                 />
               </svg>
               Actions
-            </button>
-            <div
+            </button> */}
+            {/* <div
               id="actionsDropdown"
               className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow "
             >
@@ -99,7 +99,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
                   Delete all
                 </a>
               </div>
-            </div>
+            </div> */}
             <button
               id="filterDropdownButton"
               data-dropdown-toggle="filterDropdown"

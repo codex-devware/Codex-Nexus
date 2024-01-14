@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const { nextui } = require("@nextui-org/react");
+const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = {
   darkMode: ["class"],
@@ -9,6 +10,8 @@ module.exports = {
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {

@@ -1,10 +1,10 @@
-import OverveiwHeader from "./OverveiwHeader";
-import SalesRevenueTracker from "./SalesRevenueTracker";
+import OverveiwHeader from './OverveiwHeader';
+import SalesRevenueTracker from './SalesRevenueTracker';
 
 const SalesOverveiw = () => {
   return (
     <>
-      <section className="mx-auto max-w-screen-xl">
+      <section className=''>
         <OverveiwHeader />
         <SalesRevenueTracker />
       </section>

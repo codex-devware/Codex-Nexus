@@ -2,13 +2,13 @@ import mdKawsar from '../../assets/mdKawsar.png';
 const Topbar = ({ setOpenToggle, openToggle }) => {
   return (
     <>
-      <div className='navbar flex justify-between align-middle'>
+      <div className='navbar flex justify-between align-middle h-20 bg-white'>
         <div className='flex'>
           <a className='btn bg-transparent border-none shadow-none hover:bg-transparent text-xl'>
             E-commerce Dashboard
           </a>
           <button
-            className='md:hidden'
+            className='lg:hidden'
             onClick={() => setOpenToggle(!openToggle)}
           >
             +

@@ -6,6 +6,7 @@ import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/Inventor
 import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
 import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
 import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
+import OrderStatus from '@/components/Order Management/OrderStatus/OrderStatus';
 import PaymentData from '@/components/Order Management/PaymentInfo/PaymentData';
 import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
 import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
@@ -39,9 +40,14 @@ const Routers = () => {
               element={<OrderHistory />}
             />
             <Route
+              path='/order-management/order-status'
+              element={<OrderStatus />}
+            />
+            <Route
               path='/order-management/payment-info'
               element={<PaymentData />}
             />
+
             <Route
               path='/order-management/order-history/order-history/01'
               element={<OrderDetails />}

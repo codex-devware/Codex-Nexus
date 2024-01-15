@@ -54,7 +54,7 @@ export const Data = [
     icon: <BsCashCoin />,
     section: "Revenue Analytics",
     subSection: [],
-    path: "",
+    path: "revenue-analytics",
   },
   {
     id: 6,

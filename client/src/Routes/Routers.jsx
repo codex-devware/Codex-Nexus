@@ -5,6 +5,7 @@ import OrderManagement from "@/Pages/OrderManagement/OrderManagement";
 import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
 import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
 import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
+import RevenueAnalyticsMain from "@/Pages/RevenueAnalytics/RevenueAnalyticsMain";
 import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
 import OrderStatus from "@/components/Order Management/OrderStatus/OrderStatus";
 import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
@@ -60,6 +61,10 @@ const Routers = () => {
               element={<SaleTrends />}
             />
             <Route path="/sales-overview" element={<SalesOverveiw />} />
+            <Route
+              path="/revenue-analytics"
+              element={<RevenueAnalyticsMain />}
+            />
             <Route path="/order-chart" element={<OrderChartTracker />} />
             <Route path="/add-product" element={<AddProduct />} />
             {/* stock inventory management routes */}

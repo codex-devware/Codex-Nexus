@@ -1,28 +1,33 @@
-import { BsBag, BsCartPlus, BsCashCoin } from "react-icons/bs";
-import { FaUserLock, FaUsersCog } from "react-icons/fa";
-import { LiaShippingFastSolid } from "react-icons/lia";
-import { LuUserCog2 } from "react-icons/lu";
-import { MdOutlineInventory2, MdOutlinePayments } from "react-icons/md";
-import { RiRefund2Fill } from "react-icons/ri";
-
+import {
+  ICRefund,
+  IcAdd,
+  IcDashboard,
+  IcPayment,
+  IcRevenueAnalysis,
+  IcSecurity,
+  IcStock,
+  IcUserManagement,
+} from '@/assets/icon';
+import { LiaShippingFastSolid } from 'react-icons/lia';
+import { LuUserCog2 } from 'react-icons/lu';
 export const Data = [
   {
     id: 1,
-    icon: <BsBag />,
-    section: "Dashboard",
-    path: "",
+    icon: <IcDashboard />,
+    section: 'Dashboard',
+    path: '',
     subSection: [],
   },
   {
     id: 2,
     icon: <LuUserCog2 />,
-    section: "Order Management",
-    path: "/order-management",
+    section: 'Order Management',
+    path: '/order-management',
     subSection: [
-      { title: "All Orders", path: "/order-management/all-orders" },
-      { title: "Order History", path: "/order-management/order-history" },
-      { title: "Order Status", path: "/order-management/order-status" },
-      { title: "Payment Info", path: "/order-management/payment-info" },
+      { title: 'All Orders', path: '/order-management/all-orders' },
+      { title: 'Order History', path: '/order-management/order-history' },
+      { title: 'Order Status', path: '/order-management/order-status' },
+      { title: 'Payment Info', path: '/order-management/payment-info' },
     ],
   },
   // {
@@ -37,10 +42,10 @@ export const Data = [
   // },
   {
     id: 4,
-    icon: <BsCartPlus />,
-    section: "Add Product",
+    icon: <IcAdd />,
+    section: 'Add Product',
     subSection: [],
-    path: "/add-product",
+    path: '/add-product',
   },
   // {
   //   id: 4,
@@ -51,74 +56,74 @@ export const Data = [
   // },
   {
     id: 5,
-    icon: <BsCashCoin />,
-    section: "Revenue Analytics",
+    icon: <IcRevenueAnalysis />,
+    section: 'Revenue Analytics',
     subSection: [],
-    path: "",
+    path: '',
   },
   {
     id: 6,
     icon: <LiaShippingFastSolid />,
-    section: "Shipping and Tax",
+    section: 'Shipping and Tax',
     subSection: [],
-    path: "",
+    path: '',
   },
 
   {
     id: 7,
-    icon: <MdOutlineInventory2 />,
-    section: "Stock & Inventory ",
-    path: "/stock-inventory-management",
+    icon: <IcStock />,
+    section: 'Stock & Inventory ',
+    path: '/stock-inventory-management',
     subSection: [
       {
-        title: "Supplier management",
-        path: "/stock-inventory-management/supplier-management",
+        title: 'Supplier management',
+        path: '/stock-inventory-management/supplier-management',
       },
       {
-        title: "Return management",
-        path: "/stock-inventory-management/return-order-management",
+        title: 'Return management',
+        path: '/stock-inventory-management/return-order-management',
       },
     ],
   },
   {
     id: 8,
-    icon: <RiRefund2Fill />,
-    section: "Refund and Returns",
+    icon: <ICRefund />,
+    section: 'Refund and Returns',
     subSection: [],
-    path: "",
+    path: '',
   },
 
   {
     id: 9,
-    icon: <FaUsersCog />,
-    section: "User Management",
+    icon: <IcUserManagement />,
+    section: 'User Management',
     subSection: [
       {
-        title: "Users",
-        path: "/users",
+        title: 'Users',
+        path: '/users',
       },
       {
-        title: "User Active Log",
-        path: "/users/user-active-log",
+        title: 'User Active Log',
+        path: '/users/user-active-log',
       },
     ],
   },
   {
     id: 10,
-    icon: <MdOutlinePayments />,
-    section: "Payment Gateway Analytics",
+    icon: <IcPayment />,
+    section: 'Payment Gateway Analytics',
     subSection: [],
-    path: "",
+    path: '',
   },
 
   {
     id: 11,
-    icon: <FaUserLock />,
-    section: "Security",
+    icon: <IcSecurity />,
+    section: 'Security',
     subSection: [
-      { title: "Register", path: "/security/register" },
-      { title: "Login", path: "/security/login" },
+      { title: 'Register', path: '/security/register' },
+      { title: 'Login', path: '/security/login' },
     ],
-    path: "",
+    path: '',
   },
 ];

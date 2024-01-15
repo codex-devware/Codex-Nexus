@@ -3,7 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
 
 export function MainLayout({ children }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <>
       {/* resize */}
@@ -26,11 +26,13 @@ export function MainLayout({ children }) {
           }`}
         >
           <div className='h-20'>
-            <div className='fixed right-0 z-40 '>
+            <div
+              className={`fixed right-0 z-40 max-lg:left-0 w-full lg:w-5/6 `}
+            >
               <Topbar openToggle={open} setOpenToggle={setOpen} />
             </div>
           </div>
-          <div className='rounded-t-lg border xl:px-12 bg-gray-50'>
+          <div className='rounded-t-lg border xl:px-12 bg-gray-50  max-lg:px-4'>
             {children}
           </div>
         </div>

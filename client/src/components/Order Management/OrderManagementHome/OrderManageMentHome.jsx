@@ -1,11 +1,11 @@
-import OrderDetailsHistory from "./OrderDetailsHistory";
-import OrderManageStat from "./OrderManageStat";
-import OrderManageTopHeader from "./OrderManageTopHeader";
+import OrderDetailsHistory from './OrderDetailsHistory';
+import OrderManageStat from './OrderManageStat';
+import OrderManageTopHeader from './OrderManageTopHeader';
 
 const OrderManageMentHome = () => {
   return (
     <>
-      <section className="mx-auto max-w-screen-xl">
+      <section>
         <OrderManageTopHeader />
         <OrderManageStat />
         <OrderDetailsHistory />

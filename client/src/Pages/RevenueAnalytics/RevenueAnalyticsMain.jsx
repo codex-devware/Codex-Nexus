@@ -1,9 +1,9 @@
-import RevenueAnalyticsTopHeader from "@/components/RevenueAnalytics/RevenueAnalyticsTopHeader";
+import RevenueAnalytics from "@/components/RevenueAnalytics/RevenueAnalytics";
 
 const RevenueAnalyticsMain = () => {
   return (
     <>
-      <RevenueAnalyticsTopHeader />
+      <RevenueAnalytics />
     </>
   );
 };

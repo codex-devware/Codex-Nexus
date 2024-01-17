@@ -130,9 +130,9 @@ const RevenueAnalyticsTable = () => {
                 <td className="whitespace-nowrap pl-6 pr-4 text-gray-700 py-4 font-medium">
                   {item.id}
                 </td>
-                <td className="whitespace-nowrap pr-6 py-4 flex items-center gap-3">
+                <td className="whitespace-nowrap pr-6 py-4 flex items-center gap-2">
                   <img
-                    className="rounded-lg w-8 h-8   "
+                    className="rounded-lg w-10 h-10 shadow-md border-2 px-2 py-2   "
                     src={item.imgSrc}
                     alt=""
                   />

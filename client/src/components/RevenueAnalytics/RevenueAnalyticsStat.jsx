@@ -12,7 +12,6 @@ const RevenueAnalyticsStat = () => {
       progress: "+59",
       profit: true,
       value1: 89,
-
       valName1: "Groceries",
       valName2: "Clothing",
       valName3: "Gadgets",
@@ -31,7 +30,7 @@ const RevenueAnalyticsStat = () => {
       profit: false,
       update: "decrease today",
       staus: 440,
-      color: "bg-orange-500",
+      color: "bg-red-600",
     },
     {
       icon: <FaUsersRays opacity={0.7} fontSize={26} />,
@@ -39,12 +38,11 @@ const RevenueAnalyticsStat = () => {
       statCount: 9550,
       progress: " +24",
       value1: 72,
-
       valName1: "OverAll",
       profit: true,
       update: "decrease today",
       staus: 440,
-      color: "bg-blue-400",
+      color: "bg-orange-400",
     },
   ];
   return (

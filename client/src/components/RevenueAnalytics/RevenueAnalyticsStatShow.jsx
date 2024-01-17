@@ -7,14 +7,9 @@ const RevenueAnalyticsStatShow = ({ data }) => {
     statName,
     statCount,
     progress,
-    valName2,
-    valName3,
     valName1,
     value1,
-    value2,
-    value3,
     profit,
-    update,
     color,
   } = data;
 

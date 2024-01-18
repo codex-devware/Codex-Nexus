@@ -1,4 +1,4 @@
-import RecentOrder from "./RecentOrder";
+import TotalSalesGraph from "../Home/TotalSalesGraph";
 import SalesOverviewGraph from "./SalesOverviewGraph";
 
 const OrderChartTracker = () => {
@@ -6,7 +6,7 @@ const OrderChartTracker = () => {
     <>
       <section className="flex flex-wrap gap-4">
         <div className="lg:w-[68%] w-full">
-          <RecentOrder />
+          <TotalSalesGraph />
         </div>
         <div className="lg:w-[30%] w-full">
           <SalesOverviewGraph />

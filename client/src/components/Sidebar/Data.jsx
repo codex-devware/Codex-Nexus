@@ -1,14 +1,19 @@
-import { BsBag, BsCartPlus, BsCashCoin } from 'react-icons/bs';
-import { FaUserLock, FaUsersCog } from 'react-icons/fa';
+import {
+  ICRefund,
+  IcAdd,
+  IcDashboard,
+  IcPayment,
+  IcRevenueAnalysis,
+  IcSecurity,
+  IcStock,
+  IcUserManagement,
+} from '@/assets/icon';
 import { LiaShippingFastSolid } from 'react-icons/lia';
 import { LuUserCog2 } from 'react-icons/lu';
-import { MdOutlineInventory2, MdOutlinePayments } from 'react-icons/md';
-import { RiRefund2Fill } from 'react-icons/ri';
-
 export const Data = [
   {
     id: 1,
-    icon: <BsBag />,
+    icon: <IcDashboard />,
     section: 'Dashboard',
     path: '',
     subSection: [],
@@ -37,7 +42,7 @@ export const Data = [
   // },
   {
     id: 4,
-    icon: <BsCartPlus />,
+    icon: <IcAdd />,
     section: 'Add Product',
     subSection: [],
     path: '/add-product',
@@ -51,10 +56,10 @@ export const Data = [
   // },
   {
     id: 5,
-    icon: <BsCashCoin />,
+    icon: <IcRevenueAnalysis />,
     section: 'Revenue Analytics',
     subSection: [],
-    path: '',
+    path: "revenue-analytics",
   },
   {
     id: 6,
@@ -66,7 +71,7 @@ export const Data = [
 
   {
     id: 7,
-    icon: <MdOutlineInventory2 />,
+    icon: <IcStock />,
     section: 'Stock & Inventory ',
     path: '/stock-inventory-management',
     subSection: [
@@ -82,7 +87,7 @@ export const Data = [
   },
   {
     id: 8,
-    icon: <RiRefund2Fill />,
+    icon: <ICRefund />,
     section: 'Refund and Returns',
     subSection: [],
     path: '',
@@ -90,7 +95,7 @@ export const Data = [
 
   {
     id: 9,
-    icon: <FaUsersCog />,
+    icon: <IcUserManagement />,
     section: 'User Management',
     subSection: [
       {
@@ -105,7 +110,7 @@ export const Data = [
   },
   {
     id: 10,
-    icon: <MdOutlinePayments />,
+    icon: <IcPayment />,
     section: 'Payment Gateway Analytics',
     subSection: [],
     path: '',
@@ -113,9 +118,12 @@ export const Data = [
 
   {
     id: 11,
-    icon: <FaUserLock />,
+    icon: <IcSecurity />,
     section: 'Security',
-    subSection: [],
+    subSection: [
+      { title: 'Register', path: '/security/register' },
+      { title: 'Login', path: '/security/login' },
+    ],
     path: '',
   },
 ];

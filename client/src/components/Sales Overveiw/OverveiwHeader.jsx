@@ -4,7 +4,7 @@ const OverveiwHeader = () => {
   return (
     <>
       <section className='mt-8'>
-        <div className='flex flex-wrap lg:justify-between sm:justify-center justify-center sm:gap-3 gap-3'>
+        <div className='flex flex-wrap justify-between'>
           <div className='font-outfit'>
             <h1 className='text-3xl font-semibold'>Welcome Back,</h1>
             <p className='text-[#6B7280]'>

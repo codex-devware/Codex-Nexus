@@ -31,8 +31,6 @@ export default function SaleTrends() {
     });
   };
 
-  console.log(chartData.series);
-
   return (
     <div>
       <Chart

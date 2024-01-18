@@ -1,5 +1,5 @@
-import TotalSalesGraph from "@/components/Home/TotalSalesGraph";
 import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
+import RecentOrder from "@/components/Sales Overveiw/RecentOrder";
 import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <SalesOverveiw />
       <OrderChartTracker />
-      <TotalSalesGraph />
+      <RecentOrder />
     </>
   );
 };

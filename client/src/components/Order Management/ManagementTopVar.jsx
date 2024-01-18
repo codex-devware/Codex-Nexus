@@ -1,4 +1,4 @@
-const ManagementTopVar = () => {
+const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 py-4">
@@ -29,6 +29,8 @@ const ManagementTopVar = () => {
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#3b82f6] outline-[#3b82f6] focus:border-[#3b82f6] block w-full pl-10 p-2 "
                 placeholder="Search"
                 required=""
+                value={searchTerm}
+                onChange={(e) => onSearchChange(e.target.value)}
               />
             </div>
           </form>
@@ -54,7 +56,7 @@ const ManagementTopVar = () => {
             Add product
           </button>
           <div className="flex items-center space-x-3 w-full md:w-auto">
-            <button
+            {/* <button
               id="actionsDropdownButton"
               data-dropdown-toggle="actionsDropdown"
               className="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-[#1d4ed8] focus:z-10 focus:ring-4 focus:ring-gray-200"
@@ -74,8 +76,8 @@ const ManagementTopVar = () => {
                 />
               </svg>
               Actions
-            </button>
-            <div
+            </button> */}
+            {/* <div
               id="actionsDropdown"
               className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow "
             >
@@ -97,7 +99,7 @@ const ManagementTopVar = () => {
                   Delete all
                 </a>
               </div>
-            </div>
+            </div> */}
             <button
               id="filterDropdownButton"
               data-dropdown-toggle="filterDropdown"

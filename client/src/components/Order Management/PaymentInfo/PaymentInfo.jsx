@@ -1,9 +1,9 @@
 const PaymentInfo = ({ info }) => {
-  const { title, balance, icon } = info || "";
+  const { title, balance, icon } = info || {};
 
   return (
     <>
-      <section className="flex flex-wrap w-72 mx-auto flex-col gap-6 font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+      <section className="flex flex-wrap w-[268px] flex-col font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
         <div className="grid grid-cols-5 flex-col gap-4 ">
           <div className="rounded-lg col-span-2 flex justify-center items-center ">
             <span className="bg-white p-3 rounded-full">{icon}</span>

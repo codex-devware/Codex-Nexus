@@ -1,3 +1,5 @@
+import InvestmentGraph from "./InvestmentGraph";
+import PaymentCard from "./PaymentCard";
 import PaymentInfo from "./PaymentInfo";
 import PaymentInfoGraph from "./PaymentInfoGraph";
 
@@ -71,15 +73,21 @@ const PaymentData = () => {
   ];
   return (
     <>
-      <section className="grid grid-cols-2">
-        <div className="grid grid-cols-2 gap-6 my-10">
-          {balanceData?.map((info) => (
-            <PaymentInfo key={info.id} info={info} />
-          ))}
+      <section className="grid lg:grid-cols-2">
+        <div className="">
+          <div className="grid grid-cols-2 gap-y-6 my-10 justify-items-center">
+            {balanceData?.map((info) => (
+              <PaymentInfo key={info.id} info={info} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <PaymentInfoGraph />
         </div>
       </section>
-      <section>
-        <PaymentInfoGraph />
+      <section className="grid lg:grid-cols-2">
+        <InvestmentGraph />
+        <PaymentCard />
       </section>
     </>
   );

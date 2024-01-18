@@ -59,7 +59,7 @@ export const Data = [
     icon: <IcRevenueAnalysis />,
     section: 'Revenue Analytics',
     subSection: [],
-    path: '',
+    path: "revenue-analytics",
   },
   {
     id: 6,

@@ -21,6 +21,7 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
+import RevenueAnalyticsMain from '@/Pages/RevenueAnalytics/RevenueAnalyticsMain';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -65,9 +66,13 @@ const Routers = () => {
               path='/product-performance/sale-trends'
               element={<SaleTrends />}
             />
-            <Route path='/sales-overview' element={<SalesOverveiw />} />
-            <Route path='/order-chart' element={<OrderChartTracker />} />
-            <Route path='/add-product' element={<AddProduct />} />
+            <Route path="/sales-overview" element={<SalesOverveiw />} />
+            <Route
+              path="/revenue-analytics"
+              element={<RevenueAnalyticsMain />}
+            />
+            <Route path="/order-chart" element={<OrderChartTracker />} />
+            <Route path="/add-product" element={<AddProduct />} />
             {/* stock inventory management routes */}
             <Route
               path='/stock-inventory-management'

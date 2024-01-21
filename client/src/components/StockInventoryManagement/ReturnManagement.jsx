@@ -44,7 +44,7 @@ const ReturnOrderManagement = () => {
   return (
     <>
       <RecentOrderHeader title={"Return Order Management"} />
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto ">
         <table className="table-auto min-w-full text-left text-sm font-light">
           <thead className="bg-[#F4F7F9] font-medium">
             <tr>

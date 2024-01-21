@@ -4,7 +4,7 @@ import SidebarData from "./SidebarData";
 const Sidebar = ({ setOpen, open }) => {
   return (
     <section className="min-h-screen h-full ">
-      <div className="flex h-full">
+      <div className="flex h-full ">
         <div
           className={`sidebarScroll h-full pt-8 bg-gray-400 overflow-x-hidden ${
             open ? "w-full md:p-5" : " w-0 p-0 lg:p-5  lg:w-20"

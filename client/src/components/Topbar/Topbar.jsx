@@ -2,7 +2,11 @@ import mdKawsar from "../../assets/mdKawsar.png";
 const Topbar = ({ setOpenToggle, openToggle }) => {
   return (
     <>
-      <div className="navbar flex lg:pr-36 justify-between align-middle h-20 bg-blue-500">
+      <div
+        className={`navbar flex ${
+          openToggle ? "lg:pr-40" : "lg:pr-20"
+        } justify-between align-middle h-20 bg-blue-500`}
+      >
         <div className="flex">
           <a className="btn bg-transparent border-none shadow-none hover:bg-transparent text-xl">
             E-commerce Dashboard

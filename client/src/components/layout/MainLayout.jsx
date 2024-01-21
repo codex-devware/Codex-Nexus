@@ -23,8 +23,8 @@ export function MainLayout({ children }) {
         <div
           className={`${
             open
-              ? "lg:col-start-3 lg:col-end-13 col-start-1"
-              : "lg:col-start-2 col-end-13 col-start-1"
+              ? "lg:col-start-3 lg:-ml-14 lg:col-end-13 col-start-1"
+              : "lg:col-start-1 lg:ml-20 col-end-13 col-start-1"
           }`}
         >
           <div className="h-20">

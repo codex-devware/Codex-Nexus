@@ -11,6 +11,9 @@ const Thankyou = () => {
         Thanks for confirming your Product! now you can chill yayaa. and goto
         sleep now
       </p>
+      <button className=" px-3 font-sora py-2 text-sm bg-violet-700 text-white rounded-md">
+        Add Another Product
+      </button>
     </div>
   );
 };

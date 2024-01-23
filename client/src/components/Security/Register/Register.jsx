@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import registerAnimation from "../../../lotties/register.json";
 const Register = () => {
   return (
-    <div className=" mx-auto">
+    <section className=" mx-auto">
       <div className="flex justify-center items-center px-6">
         <div className="w-full lg:w-full flex justify-between">
           <div className="w-full h-auto lg:block hidden lg:w-full bg-cover rounded-l-lg">
@@ -71,7 +71,7 @@ const Register = () => {
                     className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                     id="password"
                     type="password"
-                    placeholder="******************"
+                    placeholder="Write your pass"
                   />
                   {/* <p className="text-xs italic text-red-500">
                     Please choose a password.
@@ -88,7 +88,7 @@ const Register = () => {
                     className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                     id="c_password"
                     type="password"
-                    placeholder="******************"
+                    placeholder="write your pass"
                   />
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Register = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -45,7 +45,7 @@ const Login = () => {
               </div>
               <div className="mb-6 text-center">
                 <button
-                  className="w-full px-4 py-2 font-bold text-white bg-indigo-700 rounded-full hover:bg-indigo-800 duration-150 focus:outline-none focus:shadow-outline"
+                  className="w-full px-4 py-2 font-bold text-white bg-violet-600 rounded-full hover:bg-violet-700 duration-150 focus:outline-none focus:shadow-outline"
                   type="button"
                 >
                   Login

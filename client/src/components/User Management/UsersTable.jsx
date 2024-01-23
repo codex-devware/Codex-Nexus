@@ -11,6 +11,7 @@ const UsersTable = () => {
       email: "developer.sourovdey@gmail.com",
       role: "Admin",
       lastActive: "12 min ago",
+
       status: "Active",
     },
     {
@@ -33,7 +34,7 @@ const UsersTable = () => {
       email: "md.kawsar.developer@gmail.com",
       role: "Subscriber",
       lastActive: "22 min ago",
-      status: "Active",
+      status: "Deactive",
     },
     {
       id: 4,
@@ -55,7 +56,7 @@ const UsersTable = () => {
       email: "pappudeydeveloper@gmail.com",
       role: "Admin",
       lastActive: "52 min ago",
-      status: "Active",
+      status: "Deactive",
     },
     {
       id: 6,
@@ -66,7 +67,7 @@ const UsersTable = () => {
       email: "developer.nasifa@gmail.com",
       role: "Contributor",
       lastActive: "03 min ago",
-      status: "Active",
+      status: "Deactive",
     },
   ];
   return (
@@ -120,9 +121,15 @@ const UsersTable = () => {
                   {item.lastActive}
                 </td>
                 <td className="whitespace-nowrap px-6 py-4">
-                  <button className="bg-[#F7E4DA] rounded-lg py-2 px-5 font-semibold text-[#D77748]">
-                    {item.status}
-                  </button>
+                  {item.status === "Active" ? (
+                    <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-normal text-[#159b36]">
+                      {item.status}
+                    </button>
+                  ) : (
+                    <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-2 w-20 font-normal text-[#db5a5a]">
+                      {item.status}
+                    </button>
+                  )}
                 </td>
                 <td className="whitespace-nowrap px-6 py-4">
                   <UserAction />

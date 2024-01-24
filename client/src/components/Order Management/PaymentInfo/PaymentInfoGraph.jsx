@@ -46,7 +46,7 @@ const PaymentInfoGraph = () => {
         options={options}
         series={options.series}
         type="area"
-        height={380}
+        height={300}
       />
     </div>
   );

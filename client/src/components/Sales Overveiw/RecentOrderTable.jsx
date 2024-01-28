@@ -33,7 +33,7 @@ const RecentOrderTable = () => {
         <table className="table-auto min-w-full text-left text-sm font-light">
           <thead className="bg-[#F4F7F9] font-medium">
             <tr>
-              <th scope="col" className="pl-6 pr-4 py-2.5">
+              <th scope="col" className="pl-6 pr-4 py-2.5 ">
                 <input type="checkbox" />
               </th>
               <th scope="col" className="pr-3 py-2.5">

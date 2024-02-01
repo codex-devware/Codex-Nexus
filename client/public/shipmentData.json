@@ -1,0 +1,104 @@
+{
+  "shipmentData": [
+    {
+      "idNumber": "CDP-123456",
+      "status": "pending",
+      "customer": "john doe",
+      "contact": "123-456-7890",
+      "pickup": "new york",
+      "delivery": "los angeles",
+      "trunk": "abc123",
+      "weight": 10
+    },
+    {
+      "idNumber": "CDP-789012",
+      "status": "in transit",
+      "customer": "jane smith",
+      "contact": "987-654-3210",
+      "pickup": "chicago",
+      "delivery": "houston",
+      "trunk": "def456",
+      "weight": 15
+    },
+    {
+      "idNumber": "CDP-345678",
+      "status": "delivered",
+      "customer": "mike johnson",
+      "contact": "555-555-5555",
+      "pickup": "miami",
+      "delivery": "atlanta",
+      "trunk": "ghi789",
+      "weight": 20
+    },
+    {
+      "idNumber": "CDP-901234",
+      "status": "pending",
+      "customer": "emily brown",
+      "contact": "111-222-3333",
+      "pickup": "seattle",
+      "delivery": "san francisco",
+      "trunk": "jkl012",
+      "weight": 12
+    },
+    {
+      "idNumber": "CDP-567890",
+      "status": "in transit",
+      "customer": "david wilson",
+      "contact": "444-444-4444",
+      "pickup": "denver",
+      "delivery": "dallas",
+      "trunk": "mno345",
+      "weight": 18
+    },
+    {
+      "idNumber": "CDP-123789",
+      "status": "delivered",
+      "customer": "sarah taylor",
+      "contact": "777-777-7777",
+      "pickup": "boston",
+      "delivery": "philadelphia",
+      "trunk": "pqr678",
+      "weight": 25
+    },
+    {
+      "idNumber": "CDP-890123",
+      "status": "pending",
+      "customer": "chris martinez",
+      "contact": "999-999-9999",
+      "pickup": "phoenix",
+      "delivery": "las vegas",
+      "trunk": "stu901",
+      "weight": 16
+    },
+    {
+      "idNumber": "CDP-456789",
+      "status": "in transit",
+      "customer": "anna hernandez",
+      "contact": "666-666-6666",
+      "pickup": "portland",
+      "delivery": "salt lake city",
+      "trunk": "vwx234",
+      "weight": 22
+    },
+    {
+      "idNumber": "CDP-234567",
+      "status": "delivered",
+      "customer": "michael davis",
+      "contact": "333-333-3333",
+      "pickup": "detroit",
+      "delivery": "chicago",
+      "trunk": "yza567",
+      "weight": 19
+    },
+    {
+      "idNumber": "CDP-678901",
+      "status": "pending",
+      "customer": "lisa clark",
+      "contact": "888-888-8888",
+      "pickup": "san diego",
+      "delivery": "los angeles",
+      "trunk": "bcd890",
+      "weight": 14
+    }
+  ]
+}

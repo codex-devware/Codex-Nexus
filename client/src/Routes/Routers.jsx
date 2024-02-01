@@ -22,6 +22,7 @@ import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import RevenueAnalyticsMain from "@/Pages/RevenueAnalytics/RevenueAnalyticsMain";
+import ShippingAndTax from "@/Pages/ShippingAndTax/ShippingAndTax";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -83,6 +84,7 @@ const Routers = () => {
               path="/stock-inventory-management/return-order-management"
               element={<ReturnOrderManagement />}
             />
+            <Route path="/shipping-and-tax" element={<ShippingAndTax />} />
             <Route path="/users" element={<Users />} />
             <Route path="/users/user-active-log" element={<ActivityLog />} />
             <Route path="/security/register" element={<Register />} />

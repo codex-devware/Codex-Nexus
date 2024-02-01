@@ -64,7 +64,7 @@ export const Data = [
     icon: <LiaShippingFastSolid />,
     section: "Shipping and Tax",
     subSection: [],
-    path: "",
+    path: "shipping-and-tax",
   },
 
   {

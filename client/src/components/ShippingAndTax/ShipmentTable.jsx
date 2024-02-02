@@ -31,7 +31,7 @@ const ShipmentTable = ({ data }) => {
 
           <div>
             <div className="flex justify-between pb-4">
-              <h3 className="text-xl font-semibold">Ag-502</h3>
+              <h3 className="text-xl font-semibold">{item.skuId}</h3>
               {/* <span>Delivery</span> */}
             </div>
             <Progress

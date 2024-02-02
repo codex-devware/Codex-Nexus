@@ -40,7 +40,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-orange-400",
+          indicator: " bg-red-400",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}

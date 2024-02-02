@@ -6,7 +6,8 @@ import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/Inventor
 import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
 import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
 import RevenueAnalyticsMain from '@/Pages/RevenueAnalytics/RevenueAnalyticsMain';
-import ShipmentTax from '@/Pages/Shipment&Tax/ShipmentTax';
+import Shipment from '@/Pages/ShippingAndTax/Shipment';
+import ShippingAndTax from '@/Pages/ShippingAndTax/ShippingAndTax';
 import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
 import OrderStatus from '@/components/Order Management/OrderStatus/OrderStatus';
 import PaymentData from '@/components/Order Management/PaymentInfo/PaymentData';
@@ -69,9 +70,6 @@ const Routers = () => {
               path='/revenue-analytics'
               element={<RevenueAnalyticsMain />}
             />
-            {/* shipment & tax */}
-            <Route path='/shipment-tax' element={<ShipmentTax />} />
-
             <Route path='/order-chart' element={<OrderChartTracker />} />
             <Route path='/add-product' element={<AddProduct />} />
             {/* stock inventory management routes */}
@@ -87,6 +85,8 @@ const Routers = () => {
               path='/stock-inventory-management/return-order-management'
               element={<ReturnOrderManagement />}
             />
+            <Route path='/shipping-and-tax' element={<ShippingAndTax />} />
+            <Route path='/shipping-and-tax/shipment' element={<Shipment />} />
             <Route path='/users' element={<Users />} />
             <Route path='/users/user-active-log' element={<ActivityLog />} />
             <Route path='/security/register' element={<Register />} />

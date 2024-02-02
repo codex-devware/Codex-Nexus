@@ -46,8 +46,8 @@ export const Data = [
     id: 6,
     icon: <LiaShippingFastSolid />,
     section: 'Shipping and Tax',
-    subSection: [],
-    path: '/shipment-tax',
+    subSection: [{ title: 'Shipment', path: '/shipping-and-tax/shipment' }],
+    path: '/shipping-and-tax',
   },
 
   {

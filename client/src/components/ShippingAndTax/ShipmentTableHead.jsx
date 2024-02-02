@@ -1,6 +1,6 @@
 //import UserAction from "./UserAction";
 
-const ShipmentTable = ({children}) => {
+const ShipmentTableHead = ({children}) => {
   const tableHeader = [
     'ID Number',
     'Status',
@@ -34,4 +34,4 @@ const ShipmentTable = ({children}) => {
   );
 };
 
-export default ShipmentTable;
+export default ShipmentTableHead;

@@ -12,10 +12,9 @@ export default function Shipment() {
     setFilter(event.target.value);
   };
 
-  const filteredData = data.filter((el) => {
-    if (!filter) return true;
-    return el.status === filter;
-  });
+  const filteredData = data.filter((el) =>
+    !filter ? true : el.status === filter
+  );
   return (
     <>
       <TableComponentsHeader title={'Shipments'}>

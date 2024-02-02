@@ -7,22 +7,24 @@ const RecentOrderTable = () => {
       itemName: "Decorative Plants",
       date: "20 Sep - 03.00AM",
       amount: "$637.30",
+      status: "Success",
     },
     {
       id: 2,
-      imgSrc:
-        "https://admin.pixelstrap.net/mofi/assets/images/dashboard-3/1.png",
-      itemName: "Decorative Plants",
+      imgSrc: "https://fabrilife.com/products/63bc2fb22e02f-square.jpg",
+      itemName: "Vip Shirt",
       date: "20 Sep - 03.00AM",
       amount: "$637.30",
+      status: "Failed",
     },
     {
       id: 3,
       imgSrc:
-        "https://admin.pixelstrap.net/mofi/assets/images/dashboard-3/1.png",
-      itemName: "Decorative Plants",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqTXcsVzqYbPIZZwAehtw3J_1ESw898WR7AJ2tnyIIA&s",
+      itemName: "Awesome Light",
       date: "20 Sep - 03.00AM",
       amount: "$637.30",
+      status: "Success",
     },
   ];
   return (
@@ -55,7 +57,11 @@ const RecentOrderTable = () => {
                   <input type="checkbox" />
                 </td>
                 <td className="whitespace-nowrap pr-6 py-4 flex items-center gap-3">
-                  <img className="rounded-lg" src={item.imgSrc} alt="" />
+                  <img
+                    className="rounded-lg w-8 h-8"
+                    src={item.imgSrc}
+                    alt=""
+                  />
                   <span className="font-medium">{item.itemName}</span>
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
@@ -64,10 +70,16 @@ const RecentOrderTable = () => {
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
                   {item.amount}
                 </td>
-                <td className="whitespace-nowrap px-6 py-4">
-                  <button className="bg-[#F7E4DA] rounded-lg py-2 px-5 font-semibold text-[#D77748]">
-                    Succeed
-                  </button>
+                <td className="whitespace-nowrap px-4 py-4">
+                  {item.status === "Success" ? (
+                    <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-semibold text-[#159b36]">
+                      {item.status}
+                    </button>
+                  ) : (
+                    <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-4 w-20 font-semibold text-[#db5a5a]">
+                      {item.status}
+                    </button>
+                  )}
                 </td>
               </tr>
             ))}

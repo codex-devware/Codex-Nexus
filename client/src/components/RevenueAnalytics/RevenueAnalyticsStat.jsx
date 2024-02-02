@@ -42,12 +42,12 @@ const RevenueAnalyticsStat = () => {
       profit: true,
       update: "decrease today",
       staus: 440,
-      color: "bg-orange-400",
+      color: "bg-orange-600",
     },
   ];
   return (
     <>
-      <section className="grid xl:grid-cols-3  lg:grid-cols-2 md:grid-cols-2 grid-cols-1 sm:px-2 gap-2 mt-8 mb-6">
+      <section className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 sm:px-2 gap-2 mt-8 mb-6">
         {AllOrderStatData?.map((data, index) => (
           <RevenueAnalyticsStatShow key={index} data={data} />
         ))}

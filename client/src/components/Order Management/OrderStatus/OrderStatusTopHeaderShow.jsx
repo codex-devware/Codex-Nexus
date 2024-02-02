@@ -53,7 +53,7 @@ const OrderStatusTopHeaderShow = ({ data }) => {
             base: "max-w-md",
             track: "drop-shadow-md border border-default",
             indicator:
-              "bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-400",
+              "bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-400",
             label: "tracking-wider font-medium text-default-600",
             value: "text-foreground/60",
           }}
@@ -67,7 +67,7 @@ const OrderStatusTopHeaderShow = ({ data }) => {
           classNames={{
             base: "max-w-md",
             track: "drop-shadow-md border border-default",
-            indicator: "bg-gradient-to-r from-indigo-300 to-purple-400",
+            indicator: "bg-gradient-to-r from-indigo-100 to-purple-600",
             label: "tracking-wider font-medium text-default-600",
             value: "text-foreground/60",
           }}

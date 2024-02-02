@@ -6,80 +6,63 @@ import {
   IcSecurity,
   IcStock,
   IcUserManagement,
-} from "@/assets/icon";
-import { LiaShippingFastSolid } from "react-icons/lia";
-import { LuUserCog2 } from "react-icons/lu";
+} from '@/assets/icon';
+import { LiaShippingFastSolid } from 'react-icons/lia';
+import { LuUserCog2 } from 'react-icons/lu';
 export const Data = [
   {
     id: 1,
     icon: <IcDashboard />,
-    section: "Dashboard",
-    path: "",
+    section: 'Dashboard',
+    path: '',
     subSection: [],
   },
   {
     id: 2,
     icon: <LuUserCog2 />,
-    section: "Order Management",
-    path: "/order-management",
+    section: 'Order Management',
+    path: '/order-management',
     subSection: [
-      { title: "All Orders", path: "/order-management/all-orders" },
-      { title: "Order History", path: "/order-management/order-history" },
-      { title: "Order Status", path: "/order-management/order-status" },
+      { title: 'All Orders', path: '/order-management/all-orders' },
+      { title: 'Order History', path: '/order-management/order-history' },
+      { title: 'Order Status', path: '/order-management/order-status' },
     ],
   },
-  // {
-  //   id: 3,
-  //   icon: <GrDocumentPerformance />,
-  //   section: 'Add Product',
-
-  //   subSection: [
-  //     { title: 'Product-wise sales trends', path: '' },
-  //     { title: 'Inventory status', path: '' },
-  //   ],
-  // },
   {
     id: 4,
     icon: <IcAdd />,
-    section: "Add Product",
+    section: 'Add Product',
     subSection: [],
-    path: "/add-product",
+    path: '/add-product',
   },
-  // {
-  //   id: 4,
-  //   icon:<GrDocumentPerformance /> ,
-  //   section: 'Add Product',
-  //   subSection: [],
-  //   path: '',
-  // },
   {
     id: 5,
     icon: <IcRevenueAnalysis />,
-    section: "Revenue Analytics",
+    section: 'Revenue Analytics',
     subSection: [],
-    path: "revenue-analytics",
+    path: 'revenue-analytics',
   },
   {
     id: 6,
     icon: <LiaShippingFastSolid />,
-    section: "Shipping and Tax",
-    subSection: [],
-    path: "shipping-and-tax",
+    section: 'Shipping and Tax',
+    subSection: [{ title: 'Shipment', path: '/shipping-and-tax/shipment' }],
+    path: '/shipping-and-tax',
   },
 
   {
     id: 7,
     icon: <IcStock />,
-    section: "Stock & Inventory ",
-    path: "/stock-inventory-management",
+    section: 'Stock & Inventory ',
+    path: '/stock-inventory-management',
     subSection: [
       {
-        title: "Supplier management",
-        path: "/stock-inventory-management/supplier-management",
+        title: 'Supplier management',
+        path: '/stock-inventory-management/supplier-management',
       },
       {
-        title: "Return management",
-        path: "/stock-inventory-management/return-order-management",
+        title: 'Return management',
+        path: '/stock-inventory-management/return-order-management',
       },
     ],
   },
@@ -94,34 +77,34 @@ export const Data = [
   {
     id: 8,
     icon: <IcUserManagement />,
-    section: "User Management",
+    section: 'User Management',
     subSection: [
       {
-        title: "Users",
-        path: "/users",
+        title: 'Users',
+        path: '/users',
       },
       {
-        title: "User Active Log",
-        path: "/users/user-active-log",
+        title: 'User Active Log',
+        path: '/users/user-active-log',
       },
     ],
   },
   {
     id: 9,
     icon: <IcPayment />,
-    section: "Payment Gateway Analytics",
+    section: 'Payment Gateway Analytics',
     subSection: [],
-    path: "/payment-Gateway-Analytics",
+    path: '/payment-Gateway-Analytics',
   },
 
   {
     id: 10,
     icon: <IcSecurity />,
-    section: "Security",
+    section: 'Security',
     subSection: [
-      { title: "Register", path: "/security/register" },
-      { title: "Login", path: "/security/login" },
+      { title: 'Register', path: '/security/register' },
+      { title: 'Login', path: '/security/login' },
     ],
-    path: "",
+    path: '',
   },
 ];

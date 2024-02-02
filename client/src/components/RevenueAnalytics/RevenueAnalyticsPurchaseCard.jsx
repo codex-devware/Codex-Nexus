@@ -20,12 +20,13 @@ const RevenueAnalyticsPurchaseCard = () => {
       <Progress
         size="md"
         radius="sm"
+        color="default"
         classNames={{
-          base: "max-w-md",
+          base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-green-400",
+          indicator: "#e67e22",
+
           label: "tracking-wider font-medium ",
-          value: "text-foreground/60",
         }}
         label={"Rover Waist Pack"}
         value={"+65"}
@@ -35,8 +36,9 @@ const RevenueAnalyticsPurchaseCard = () => {
       <Progress
         size="md"
         radius="sm"
+        color="success"
         classNames={{
-          base: "max-w-md",
+          base: "full",
           track: "drop-shadow-md border border-default",
           indicator: " bg-red-400",
           label: "tracking-wider font-medium ",
@@ -51,9 +53,9 @@ const RevenueAnalyticsPurchaseCard = () => {
         size="md"
         radius="sm"
         classNames={{
-          base: "max-w-md",
+          base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-cyan-700",
+          indicator: " bg-violet-500",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}
@@ -65,10 +67,11 @@ const RevenueAnalyticsPurchaseCard = () => {
       <Progress
         size="md"
         radius="sm"
+        color="default-200"
         classNames={{
-          base: "max-w-md",
+          base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-teal-700",
+          indicator: "",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}
@@ -81,9 +84,9 @@ const RevenueAnalyticsPurchaseCard = () => {
         size="md"
         radius="sm"
         classNames={{
-          base: "max-w-md",
+          base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-violet-400",
+          indicator: " bg-violet-600",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}

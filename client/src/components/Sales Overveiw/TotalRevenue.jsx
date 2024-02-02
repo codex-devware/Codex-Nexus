@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import { LiaMoneyBillWaveAltSolid } from "react-icons/lia";
 import { LuArrowDownLeftFromCircle } from "react-icons/lu";
 
@@ -16,7 +17,9 @@ const TotalRevenue = () => {
           <div className="">
             <p className="text-[16px]">Total Revenue</p>
             <h1 className="flex flex-wrap items-end gap-1">
-              <h2 className=" font-medium text-2xl">$88,330</h2>
+              <h2 className=" font-medium text-2xl">
+                <CountUp end={78964}></CountUp>$
+              </h2>
             </h1>
           </div>
         </div>

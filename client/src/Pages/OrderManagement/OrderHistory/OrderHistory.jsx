@@ -85,7 +85,7 @@ const OrderHistory = () => {
 
   return (
     <>
-      <section className="bg-gray-50 p-3 sm:p-5 w-auto">
+      <section data-aos="fade-up" className="bg-gray-50 p-3 sm:p-5 w-auto">
         <div>
           <div className=" relative  overflow-hidden">
             <h1 className="font-outfit text-[26px] font-bold mb-3">

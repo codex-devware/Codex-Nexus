@@ -15,14 +15,14 @@ const AllOrderTop = () => {
       icon: <GoStopwatch fontSize={28} />,
       statName: "Pending Orders",
       statCount: 640,
-      progress: 14,
+      progress: 64,
       color: "text-orange-600",
     },
     {
       icon: <TbShoppingCartCheck fontSize={28} />,
       statName: "Delivered Orders",
       statCount: 744,
-      progress: 34,
+      progress: 47,
       color: "text-green-600",
     },
   ];

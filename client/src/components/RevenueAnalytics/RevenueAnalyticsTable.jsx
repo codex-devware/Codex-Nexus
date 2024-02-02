@@ -91,7 +91,10 @@ const RevenueAnalyticsTable = () => {
           </select>
         </div>
       </div>
-      <div className="overflow-x-auto border rounded-md mb-4 mx-4">
+      <div
+        data-aos="fade-up"
+        className="overflow-x-auto border rounded-md mb-4 mx-4"
+      >
         <table className="table-auto min-w-full text-left text-sm font-light">
           <thead className="bg-[#ebebeb6c] text-gray-700 border font-semibold text-sm">
             <tr>

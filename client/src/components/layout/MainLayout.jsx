@@ -11,7 +11,7 @@ export function MainLayout({ children }) {
       <div className="grid grid-cols-12 justify-center">
         <div
           className={`fixed z-50 lg:relative ${
-            open ? "lg:col-start-1 col-end-3" : "lg:col-start-1 col-end-1"
+            open ? "lg:col-start-1 col-end-3" : "col-start-1 col-end-1"
           }`}
         >
           <div className="relative">
@@ -23,8 +23,8 @@ export function MainLayout({ children }) {
         <div
           className={`${
             open
-              ? "lg:col-start-3 lg:col-end-13 col-start-1 "
-              : "lg:col-start-1 lg:ml-20 col-end-13 col-start-1"
+              ? "lg:col-start-4 xl:col-start-3 lg:col-end-13 col-start-1 "
+              : " lg:ml-20 col-end-13 col-start-1"
           }`}
         >
           <div className="h-20">

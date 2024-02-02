@@ -7,7 +7,9 @@ const Sidebar = ({ setOpen, open }) => {
       <div className="flex h-full ">
         <div
           className={`sidebarScroll h-full pt-8 bg-gray-400 overflow-x-hidden ${
-            open ? "w-full md:pl-3" : " w-0 p-0 lg:p-5  lg:w-20"
+            open
+              ? "w-full md:pl-3 lg:pr-3 lg:pl-6 xl:pr-0"
+              : "w-0 p-0 lg:p-5 lg:w-20"
           } duration-300 relative`}
         >
           <BsArrowRight

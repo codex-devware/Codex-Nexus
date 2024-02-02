@@ -3,7 +3,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
   return (
     <>
       <div
-        className={`navbar flex ${
+        className={`navbar flex  ${
           openToggle ? "lg:pr-56 " : "lg:pr-20"
         } justify-between align-middle h-20 bg-blue-500`}
       >
@@ -20,7 +20,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
         </div>
 
         <div className="flex justify-end">
-          <div className="">
+          <div>
             <ul className="hidden lg:flex m-2 gap-6 items-center">
               <li>
                 <input

@@ -15,7 +15,7 @@ export function MainLayout({ children }) {
           }`}
         >
           <div className="relative">
-            <div className="fixed top-0 bottom-0 left-0 lg:w-[180px] xl:w-[200px] 2xl:w-[250px]">
+            <div className="fixed top-0 bottom-0 left-0">
               <Sidebar setOpen={setOpen} open={open} />
             </div>
           </div>

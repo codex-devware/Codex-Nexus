@@ -60,7 +60,7 @@ const ActivityBody = () => {
       </div>
       {/*ol tag is a main dotted border which main things for down coloring animate when selected the next radius border button */}
       <ol
-        className={`border-l-2 border-dotted ${
+        className={`border-l-2 border-dotted mb-10 ${
           selectedBorderIndex === indexs ? "border-blue-500" : "border-gray-400"
         } rounded`}
       >

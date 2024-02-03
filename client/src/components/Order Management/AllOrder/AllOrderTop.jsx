@@ -28,7 +28,7 @@ const AllOrderTop = () => {
   ];
   return (
     <>
-      <section className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-2 mt-8 mb-6">
+      <section className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mxaut gap-2 mt-8 mb-6">
         {AllOrderStatData?.map((data, index) => (
           <AllOrderTopShow key={index} data={data} />
         ))}

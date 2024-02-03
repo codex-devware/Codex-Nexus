@@ -1,5 +1,7 @@
+import { useState } from "react";
+
 const AllOrderPageTable = () => {
-  const data = [
+  const [data, setData] = useState([
     {
       id: 1,
       imgSrc:
@@ -8,6 +10,7 @@ const AllOrderPageTable = () => {
       code: "#352",
       amount: "$415",
       status: "Delivered",
+      isDeleted: false,
     },
     {
       id: 2,
@@ -19,6 +22,7 @@ const AllOrderPageTable = () => {
       amount: "$156.44",
       status: "Pending",
       code: "#643",
+      isDeleted: false,
     },
     {
       id: 3,
@@ -30,6 +34,7 @@ const AllOrderPageTable = () => {
       status: "Delivered",
 
       code: "#655",
+      isDeleted: false,
     },
     {
       id: 4,
@@ -40,6 +45,7 @@ const AllOrderPageTable = () => {
       amount: "$956",
       status: "Pending",
       code: "#242",
+      isDeleted: false,
     },
     {
       id: 5,
@@ -49,8 +55,15 @@ const AllOrderPageTable = () => {
       code: "#541",
       amount: "$451",
       status: "Delivered",
+      isDeleted: false,
     },
-  ];
+  ]);
+
+  const handleDeleted = (id) => {
+    const updatedData = data.filter((item) => item.id !== id);
+    setData(updatedData);
+  };
+
   return (
     <>
       <div data-aos="fade-up" className="overflow-x-auto border rounded-md">
@@ -117,6 +130,7 @@ const AllOrderPageTable = () => {
                 <td className="whitespace-nowrap px-6 py-4">{item.amount}</td>
                 <td className="whitespace-nowrap flex gap-3 px-6 py-4 ">
                   <svg
+                    onClick={() => handleDeleted(item.id)}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"

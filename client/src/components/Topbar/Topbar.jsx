@@ -182,16 +182,20 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
                       {/* <h4 className='text-xs bg-transparent border-none shadow-none hover:bg-transparent -mt-4'></h4> */}
                     </li>
                     <li>
-                      <a>Balance: 000$</a>
+                      <a>Profile</a>
                     </li>
                     <li>
-                      <a>Log out</a>
+                      <a>Balance: 000$</a>
                     </li>
+
                     <li>
                       <a>Task Manager</a>
                     </li>
                     <li>
                       <a>Settings</a>
+                    </li>
+                    <li>
+                      <a>Log out</a>
                     </li>
                   </ul>
                 </div>

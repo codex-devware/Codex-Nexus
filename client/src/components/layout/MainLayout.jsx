@@ -10,7 +10,7 @@ export function MainLayout({ children }) {
 
       <div className="grid grid-cols-12 justify-center">
         <div
-          className={`fixed z-50 lg:relative ${
+          className={`fixed z-50 lg:relative bg-gray-400 ${
             open ? "lg:col-start-1 col-end-3" : "col-start-1 col-end-1"
           }`}
         >
@@ -23,7 +23,7 @@ export function MainLayout({ children }) {
         <div
           className={`${
             open
-              ? "lg:col-start-4 xl:col-start-3 lg:col-end-13 col-start-1 "
+              ? "lg:col-start-4 xl:col-start-3 lg:col-end-13 col-start-1 col-end-13 "
               : " lg:ml-20 col-end-13 col-start-1"
           }`}
         >
@@ -32,7 +32,7 @@ export function MainLayout({ children }) {
               <Topbar openToggle={open} setOpenToggle={setOpen} />
             </div>
           </div>
-          <div className="rounded-t-lg border xl:px-12 bg-gray-50  max-lg:px-4">
+          <div className="rounded-t-lg border xl:px-12 bg-gray-50  max-lg:px-4 px-4">
             {children}
           </div>
         </div>

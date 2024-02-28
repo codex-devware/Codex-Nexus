@@ -6,11 +6,11 @@ const Register = () => {
     <section className=" mx-auto">
       <div className="flex justify-center items-center px-6">
         <div className="w-full lg:w-full flex justify-between">
-          <div className="w-full h-auto lg:block hidden lg:w-full bg-cover rounded-l-lg">
+          <div className="w-40 lg:block hidden lg:w-full h-auto rounded-l-lg">
             <Lottie animationData={registerAnimation} loop={true} />
           </div>
 
-          <div className="w-full lg:w-10/12  p-5 rounded-lg lg:rounded-l-none">
+          <div className="w-full lg:w-10/12 rounded-lg lg:rounded-l-none">
             <h3 className="pt-4 text-2xl text-center font-sora font-semibold">
               Create an Account!
             </h3>
@@ -92,7 +92,7 @@ const Register = () => {
                   />
                 </div>
               </div>
-              <div className="mb-6 text-center">
+              <div className="mb-4 text-center">
                 <button
                   className="w-full px-4 py-2 font-bold text-white bg-violet-600 rounded-full hover:bg-violet-700 focus:outline-none focus:shadow-outline duration-150"
                   type="button"
@@ -100,7 +100,7 @@ const Register = () => {
                   Register Account
                 </button>
               </div>
-              <hr className="mb-6 border-t" />
+              <hr className=" border-t" />
               <div className="text-center">
                 <button
                   className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"

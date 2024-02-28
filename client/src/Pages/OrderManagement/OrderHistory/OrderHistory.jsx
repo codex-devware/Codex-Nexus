@@ -6,6 +6,8 @@ import { useState } from "react";
 
 const OrderHistory = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
   const OrdersData = [
     {
       id: 1,
@@ -76,12 +78,168 @@ const OrderHistory = () => {
       status: "Canceled",
       amount: 8562,
     },
+    {
+      id: 7,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 8,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Amex Dem",
+      paymentMethod: "FNF",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 9,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 10,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Amex Dem",
+      paymentMethod: "FNF",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 11,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Amex Dem",
+      paymentMethod: "FNF",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 12,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Amex Walt",
+      paymentMethod: "FNF",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 13,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Amex Dem",
+      paymentMethod: "FNF",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 14,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 15,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 16,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 17,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
+    {
+      id: 18,
+      orderCode: "2630",
+      profile:
+        "https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg",
+      name: "Aman Khan",
+      paymentMethod: "Cash",
+      time: "10",
+      type: "Cancel",
+      status: "Canceled",
+      amount: 8562,
+    },
   ];
-  const filteredOrders = OrdersData.filter((item) =>
+  // Filtered and paginated data
+  const filteredAndPaginatedData = OrdersData.filter((item) =>
     Object.values(item).some((value) =>
       String(value).toLowerCase().includes(searchTerm.toLowerCase())
     )
   );
+
+  // Logic to calculate the index range for the current page
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredAndPaginatedData.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
+
+  // Logic to change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -99,13 +257,20 @@ const OrderHistory = () => {
               <div className="overflow-x-auto">
                 <table className="text-[14px] text-left text-gray-500 font-outfit w-[1000px] xl:w-full overflow-x-auto">
                   <TableHeader />
-                  {filteredOrders.map((items) => (
+                  {currentItems.map((items) => (
                     <TableBody key={items.id} items={items} />
                   ))}
                 </table>
               </div>
             </div>
-            <ManagementFooter />
+            <ManagementFooter
+              OrdersData={OrdersData}
+              indexOfFirstItem={indexOfFirstItem}
+              indexOfLastItem={indexOfLastItem}
+              currentPage={currentPage}
+              itemsPerPage={itemsPerPage}
+              paginate={paginate}
+            />
           </div>
         </div>
       </section>

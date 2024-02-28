@@ -43,15 +43,6 @@ const ActivityBody = () => {
     setIndex(index);
   };
 
-  const handleNextBorderClick = () => {
-    if (
-      selectedBorderIndex !== null &&
-      selectedBorderIndex < saleData.length - 1
-    ) {
-      setSelectedBorderIndex(selectedBorderIndex + 1);
-    }
-  };
-
   return (
     <>
       <div className="flex font-sora items-center gap-4 my-5 mt-4">
@@ -80,15 +71,17 @@ const ActivityBody = () => {
               <div className="flex items-center justify-between bg-[#f0f0f0] p-3 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className={`bg-gray-300 p-3 rounded-full`}>
-                    <span className="text-blue-700 font-bold ext-whitet ">
+                    <span className="text-blue-500 font-bold ext-whitet ">
                       {item.icon}
                     </span>
                   </div>
                   <div className="">
                     <div className="flex font-sora items-center gap-3">
-                      <span className="text-sm font-bold">{item.title}</span>
+                      <span className="text-sm font-semibold">
+                        {item.title}
+                      </span>
                     </div>
-                    <span className="font-outfit text-sm font-medium text-gray-700">
+                    <span className="font-outfit text-sm  text-gray-700">
                       {item.message}
                     </span>
                   </div>

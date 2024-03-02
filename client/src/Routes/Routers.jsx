@@ -8,6 +8,7 @@ import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
 import RevenueAnalyticsMain from '@/Pages/RevenueAnalytics/RevenueAnalyticsMain';
 import Shipment from '@/Pages/ShippingAndTax/Shipment';
 import ShippingAndTax from '@/Pages/ShippingAndTax/ShippingAndTax';
+import MailBox from '@/components/Email/MailBox';
 import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
 import OrderStatus from '@/components/Order Management/OrderStatus/OrderStatus';
 import PaymentData from '@/components/Order Management/PaymentInfo/PaymentData';
@@ -91,6 +92,8 @@ const Routers = () => {
             <Route path='/users/user-active-log' element={<ActivityLog />} />
             <Route path='/security/register' element={<Register />} />
             <Route path='/security/login' element={<Login />} />
+            <Route path='/email' element={<MailBox />} />
+            
           </Routes>
         </MainLayout>
       </Router>
@@ -99,7 +102,10 @@ const Routers = () => {
 };
 
 export default Routers;
+
+
 //routes and categories
+
 /**
  * Dashboard
  *

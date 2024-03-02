@@ -1,11 +1,12 @@
 import {
   IcAdd,
   IcDashboard,
+  IcEmail,
   IcPayment,
   IcRevenueAnalysis,
   IcSecurity,
   IcStock,
-  IcUserManagement,
+  IcUserManagement
 } from '@/assets/icon';
 import { LiaShippingFastSolid } from 'react-icons/lia';
 import { LuUserCog2 } from 'react-icons/lu';
@@ -34,6 +35,12 @@ export const Data = [
     section: 'Add Product',
     subSection: [],
     path: '/add-product',
+  },{
+    id:11,
+    icon : <IcEmail/>,
+    section : "Email",
+    subSection : [{title : "Inbox" , path : "/inbox"} , {title : "Email Details" , path : "/email-details"} , {title : "Compare" , path : "/compare"}],
+    path : "/email"
   },
   {
     id: 5,

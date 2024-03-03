@@ -1,10 +1,10 @@
-import Form from '@/components/AddProduct/Form';
+import Form from "@/components/AddProduct/Form";
 
 const AddProduct = () => {
   return (
-    <section className='bg-white h-full p-3 sm:p-5 '>
-      <div className=' px-4 lg:px-12'>
-        <div className='relative overflow-hidden w-full'>
+    <section data-aos="fade-up" className="bg-white h-full p-3 sm:p-5 ">
+      <div className=" px-4 lg:px-12">
+        <div className="relative overflow-hidden w-full">
           <Form />
         </div>
       </div>

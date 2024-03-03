@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import { LuArrowDownLeftFromCircle } from "react-icons/lu";
 import { MdSignalWifiStatusbar1Bar } from "react-icons/md";
 
@@ -16,7 +17,9 @@ const OrderStatusCard = () => {
           <div className="">
             <p className="text-[16px]">Order Status</p>
             <h1 className="flex flex-wrap items-end gap-1">
-              <h2 className=" font-medium text-2xl">$59,580</h2>
+              <h2 className=" font-medium text-2xl">
+                <CountUp end={59580} />
+              </h2>
             </h1>
           </div>
         </div>

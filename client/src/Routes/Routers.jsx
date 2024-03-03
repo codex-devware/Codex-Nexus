@@ -22,12 +22,16 @@ import SuppliersManagement from '@/components/StockInventoryManagement/Suppliers
 import ActivityLog from '@/components/User Management/ActivityLog';
 import Users from '@/components/User Management/Users';
 import { MainLayout } from '@/components/layout/MainLayout';
-import { useState } from 'react';
+import Aos from 'aos';
+import { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <Router>
@@ -93,7 +97,6 @@ const Routers = () => {
             <Route path='/security/register' element={<Register />} />
             <Route path='/security/login' element={<Login />} />
             <Route path='/email' element={<MailBox />} />
-            
           </Routes>
         </MainLayout>
       </Router>
@@ -102,7 +105,6 @@ const Routers = () => {
 };
 
 export default Routers;
-
 
 //routes and categories
 

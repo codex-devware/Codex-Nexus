@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import { FiShoppingCart } from "react-icons/fi";
 import { LuArrowDownLeftFromCircle } from "react-icons/lu";
 
@@ -16,7 +17,9 @@ const TotalSales = () => {
           <div className="">
             <p className="text-[16px]">All Order</p>
             <h1 className="flex flex-wrap items-end gap-1">
-              <h2 className=" font-medium text-2xl">$48,430</h2>
+              <h2 className=" font-medium text-2xl">
+                <CountUp end={48430}></CountUp>$
+              </h2>
             </h1>
           </div>
         </div>

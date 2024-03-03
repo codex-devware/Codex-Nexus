@@ -46,23 +46,89 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
                       <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
                     </svg>
                   </div>
-                  <ul
+                  <div
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4 -ml-4"
+                    className="dropdown-content z-[1] menu  shadow bg-base-100 rounded w-72 mt-4 -ml-4"
                   >
-                    <li>
-                      <a>NEW DAILY OFFER ADDED RECENTLY PAID</a>
-                    </li>
-                    <li>
-                      <a>PRODUCT EVALUATION</a>
-                    </li>
-                    <li>
-                      <a>RETURN OF A PRODUCT</a>
-                    </li>
-                    <li>
-                      <a> RECENTLY PAID</a>
-                    </li>
-                  </ul>
+                    <div className=" flex justify-between">
+                      <h2 className=" text-sm font-outfit">Notifications</h2>
+                      <h2 className=" text-sm font-outfit underline cursor-pointer text-blue-600">
+                        Mark all as read
+                      </h2>
+                    </div>
+
+                    <div className=" mt-2">
+                      <h1 className=" text-sm font-semibold font-sora text-gray-600 mb-2">
+                        New
+                      </h1>
+                      <div className=" flex gap-4 bg-gray-100 rounded-md items-center">
+                        <img
+                          className=" w-10 h-10 ml-2"
+                          src="https://avatars.githubusercontent.com/u/88099075?v=4"
+                          alt="Avater"
+                        />
+                        <div>
+                          <h2 className=" font-outfit text-medium font-bold text-gray-700">
+                            Jubair{" "}
+                            <span className=" text-gray-800 font-inter text-sm font-normal">
+                              replies to your comment: {"How are you 🌝!!"}
+                            </span>
+                          </h2>
+                          <span className=" mt-4 font-thin text-xs">
+                            🌐 just now
+                          </span>
+                        </div>
+                      </div>
+                      <div className=" flex gap-4 bg-gray-100 rounded-md mt-2 items-center">
+                        <img
+                          className=" w-14 h-9 ml-2 rounded-full"
+                          src="https://images.unsplash.com/photo-1622782262026-6a327a45014f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Avater"
+                        />
+                        <div>
+                          <h2 className=" font-outfit text-medium font-bold text-gray-700">
+                            David{" "}
+                            <span className=" text-gray-800 font-inter text-sm font-normal">
+                              reacted to the{" "}
+                              <span className=" text-gray-700 font-semibold">
+                                {" Malan's"}
+                              </span>{" "}
+                              post: {"Nice 🌝!!"}
+                            </span>
+                          </h2>
+                          <span className=" mt-4 font-thin text-xs">
+                            💌 10hr ago
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h1 className=" text-sm font-semibold font-sora text-gray-600 mb-2 mt-4">
+                      Earlier
+                    </h1>
+                    <div className=" flex gap-4 bg-gray-100 rounded-md items-center">
+                      <img
+                        className=" w-10 h-10 ml-2 rounded-full"
+                        src="https://media.istockphoto.com/id/1388644810/photo/happy-caucasian-young-man-using-smart-phone-cellphone-for-calls-social-media-mobile.jpg?s=612x612&w=0&k=20&c=yDQ9bsnRb-diOKvUQDJ6pklSmiHE3-QmSP-L8FuL2vc="
+                        alt="Avater"
+                      />
+                      <div>
+                        <h2 className=" font-outfit text-medium font-bold text-gray-700">
+                          Alex{" "}
+                          <span className=" text-gray-800 font-inter text-sm font-normal">
+                            has been visited your profile: {"Say hi🥘!!"}
+                          </span>
+                        </h2>
+                        <span className=" mt-4 font-thin text-xs">
+                          🌎 2d ago
+                        </span>
+                      </div>
+                    </div>
+
+                    <h1 className=" text-sm font-semibold font-sora text-blue-500 underline cursor-pointer text-center border-t-2 px-4 py-2 mt-4">
+                      View All
+                    </h1>
+                  </div>
                 </div>
               </li>
               {/* cart items  */}

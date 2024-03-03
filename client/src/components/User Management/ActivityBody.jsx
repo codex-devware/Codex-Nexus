@@ -1,101 +1,99 @@
-import { FaCircleDot } from 'react-icons/fa6';
-import { MdManageAccounts, MdOutlineShoppingBag } from 'react-icons/md';
+import { useState } from "react";
+import { FaClipboardList } from "react-icons/fa";
+import { IoMdMailUnread } from "react-icons/io";
+import { MdManageAccounts, MdOutlineShoppingBag } from "react-icons/md";
 
 const ActivityBody = () => {
   const saleData = [
     {
-      title: 'New Sale',
-      icon: <MdOutlineShoppingBag fontSize={20} />,
-      time: '5 Min Ago',
+      title: "David Malan Send Mail",
+      icon: <IoMdMailUnread fontSize={22} />,
+      time: "5 Min Ago",
       message:
-        'Exciting news! Customer John Doe just made a purchase. Order #12345 has been successfully placed',
+        "Exciting news! Customer John Doe just made a purchase. Order #12345 has been successfully placed",
     },
     {
-      title: 'New Account Activity',
+      title: "Alex archived a new board",
+      icon: <FaClipboardList fontSize={20} />,
+      time: "10 Min Ago",
+      message:
+        "New account activity detected. User Jane Smith has registered successfully.",
+    },
+    {
+      title: "New Account Activity",
       icon: <MdManageAccounts fontSize={20} />,
-      time: '10 Min Ago',
+      time: "10 Min Ago",
       message:
-        'New account activity detected. User Jane Smith has registered successfully.',
+        "New account activity detected. User Jane Smith has registered successfully.",
     },
     {
-      title: 'New Account Activity',
-      icon: <MdManageAccounts fontSize={20} />,
-      time: '10 Min Ago',
-      message:
-        'New account activity detected. User Jane Smith has registered successfully.',
-    },
-    {
-      title: 'New Purchase',
+      title: "New Purchase",
       icon: <MdOutlineShoppingBag fontSize={20} />,
-      time: '5 Min Ago',
+      time: "5 Min Ago",
       message:
-        'Exciting news! Customer John Doe just made a purchase. Order #12345 has been successfully placed',
+        "Exciting news! Customer John Doe just made a purchase. Order #12345 has been successfully placed",
     },
   ];
+
+  const [selectedBorderIndex, setSelectedBorderIndex] = useState(null);
+  const [indexs, setIndex] = useState(null);
+
+  const handleBorderClick = (index) => {
+    setSelectedBorderIndex(index);
+    setIndex(index);
+  };
+
   return (
     <>
-      <section className='font-outfit'>
-        <div className='flex items-center gap-4 my-5 justify-center'>
-          <span className='h-[2px] rounded-xl w-40 bg-gradient-to-r from-white via-gray-300 to-[#7c7c7c]'></span>
-          <span>Today</span>
-          <span className='h-[2px] rounded-xl w-40 bg-gradient-to-r from-[#7c7c7c] via-gray-300 to-white'></span>
-        </div>
-        <div className='w-full'>
-          <div className='flex flex-col gap-2'>
-            {saleData.map((item, index) => (
+      <div className="flex font-sora items-center gap-4 my-5 mt-4">
+        <span>Recent Activity</span>
+        <span className="h-[2px] rounded-xl w-20 bg-gradient-to-r from-[#750675] via-gray-500 to-white"></span>
+      </div>
+      {/*ol tag is a main dotted border which main things for down coloring animate when selected the next radius border button */}
+      <ol
+        className={`border-l-2 border-dotted mb-10 ${
+          selectedBorderIndex === indexs ? "border-blue-500" : "border-gray-400"
+        } rounded`}
+      >
+        {saleData?.map((item, index) => (
+          <li key={index}>
+            <div className={``}>
+              {/* Apply active class if index matches selectedBorderIndex */}
               <div
-                key={index}
-                className='flex items-center justify-between bg-[#f0f0f0] p-3 rounded-xl'
-              >
-                <div className='flex items-center gap-3'>
-                  <div
-                    className={`${
-                      item.title.toLocaleLowerCase() === 'new sale'
-                        ? 'bg-[#616161]'
-                        : item.title.toLocaleLowerCase() ===
-                          'new account activity'
-                        ? 'bg-[#ff5959]'
-                        : item.title.toLocaleLowerCase() === 'new purchase'
-                        ? 'bg-[#7277ff]'
-                        : 'bg-[#36ff16]'
-                    } p-3 rounded-full`}
-                  >
-                    <span className='text-white '>{item.icon}</span>
+                className={`-ml-[6px] mr-3 h-[9px] w-[9px] rounded-full cursor-pointer   ${
+                  selectedBorderIndex === index ? "bg-blue-500" : "bg-slate-300"
+                }`}
+                onClick={() => handleBorderClick(index)}
+              ></div>
+              {/* Apply active class if previous index matches selectedBorderIndex */}
+            </div>
+            <div className=" ml-4">
+              <div className="flex items-center justify-between bg-[#f0f0f0] p-3 rounded-xl">
+                <div className="flex items-center gap-3">
+                  <div className={`bg-gray-300 p-3 rounded-full`}>
+                    <span className="text-blue-500 font-bold ext-whitet ">
+                      {item.icon}
+                    </span>
                   </div>
-                  <div className=''>
-                    <div className='flex items-center gap-3'>
-                      <span className='text-base font-semibold'>
+                  <div className="">
+                    <div className="flex font-sora items-center gap-3">
+                      <span className="text-sm font-semibold">
                         {item.title}
                       </span>
-                      <span className='flex items-center gap-1'>
-                        <span className='p-1 rounded-full bg-[#444444]'></span>
-                        <span className='text-xs'>{item.time}</span>
-                      </span>
                     </div>
-                    <span>{item.message}</span>
+                    <span className="font-outfit text-sm  text-gray-700">
+                      {item.message}
+                    </span>
                   </div>
                 </div>
-                <div className=''>
-                  <span
-                    className={`${
-                      item.title.toLocaleLowerCase() === 'new sale'
-                        ? 'text-[#616161]'
-                        : item.title.toLocaleLowerCase() ===
-                          'new account activity'
-                        ? 'text-[#ff5959]'
-                        : item.title.toLocaleLowerCase() === 'new purchase'
-                        ? 'text-[#7277ff]'
-                        : 'text-[#36ff16]'
-                    }`}
-                  >
-                    <FaCircleDot />
-                  </span>
+                <div className="">
+                  <h5 className="text-sm font-outfit">{item.time}</h5>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
+          </li>
+        ))}
+      </ol>
     </>
   );
 };

@@ -1,3 +1,5 @@
+import { useState } from "react";
+import ManagementFooter from "../Order Management/ManagementFooter";
 import UserAction from "./UserAction";
 
 const UsersTable = () => {
@@ -69,7 +71,28 @@ const UsersTable = () => {
       lastActive: "03 min ago",
       status: "Deactive",
     },
+    {
+      id: 7,
+      imgSrc: "https://avatars.githubusercontent.com/u/88099075?v=4",
+      Name: "Mohammad Jubair",
+      userName: "jubair-jx",
+      date: "09/01/2024",
+      email: "jubair.official97@gmail.com",
+      role: "Author",
+      lastActive: "32 min ago",
+      status: "Active",
+    },
   ];
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 3;
+
+  // Logic to calculate indexes of items to be displayed
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Function to change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
       <div className="overflow-x-auto font-outfit">
@@ -98,7 +121,7 @@ const UsersTable = () => {
             </tr>
           </thead>
           <tbody>
-            {data.map((item) => (
+            {currentItems?.map((item) => (
               <tr key={item.id} className="border-b border-dashed">
                 <td className="whitespace-nowrap px-6 py-4 flex items-center gap-3">
                   <img className="rounded-lg w-10" src={item.imgSrc} alt="" />
@@ -138,7 +161,51 @@ const UsersTable = () => {
             ))}
           </tbody>
         </table>
+        {data.map((item) => (
+          <tr key={item.id} className="border-b border-dashed">
+            <td className="whitespace-nowrap px-6 py-4 flex items-center gap-3">
+              <img className="rounded-lg w-10" src={item.imgSrc} alt="" />
+              <div className="flex flex-col">
+                <span className="font-medium">{item.Name}</span>
+                <span className="">{item.userName}</span>
+              </div>
+            </td>
+            <td className="whitespace-nowrap  py-4 font-medium">
+              <span>{item.date}</span>
+            </td>
+
+            <td className="whitespace-nowrap px-6 py-4 font-medium">
+              {item.email}
+            </td>
+            <td className="whitespace-nowrap px-7 py-4 font-medium">
+              {item.role}
+            </td>
+            <td className="whitespace-nowrap px-7 py-4">{item.lastActive}</td>
+            <td className="whitespace-nowrap px-6 py-4">
+              {item.status === "Active" ? (
+                <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-normal text-[#159b36]">
+                  {item.status}
+                </button>
+              ) : (
+                <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-2 w-20 font-normal text-[#db5a5a]">
+                  {item.status}
+                </button>
+              )}
+            </td>
+            <td className="whitespace-nowrap px-6 py-4">
+              <UserAction />
+            </td>
+          </tr>
+        ))}
       </div>
+      <ManagementFooter
+        indexOfFirstItem={indexOfFirstItem}
+        OrdersData={data}
+        indexOfLastItem={indexOfLastItem}
+        currentPage={currentPage}
+        paginate={paginate}
+        itemsPerPage={itemsPerPage}
+      />
     </>
   );
 };

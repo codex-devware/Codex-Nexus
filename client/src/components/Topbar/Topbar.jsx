@@ -48,7 +48,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu  shadow bg-base-100 rounded w-72 mt-4 -ml-4"
+                    className="dropdown-content z-[1] menu  shadow bg-base-100 rounded w-72 mt-4 -ml-28 "
                   >
                     <div className=" flex justify-between">
                       <h2 className=" text-sm font-outfit">Notifications</h2>

@@ -27,7 +27,7 @@ const MailBox = () => {
                 <button className={`bg-[#0464ff] text-white ${headerActionBtn}`}><IcAddE/> Add New</button>
                 {/* here we add this menu icon and button for side bar menu show  */}
                 {!menuState && <div className="lg:hidden w-[20px] h-[20px] md:ml-[170px] mb-4" onClick={() => setManuState(true)}> <IcMenu/></div> }
-            </div>
+            </div> 
             
         </div>
         {/* here start our mail box  */}

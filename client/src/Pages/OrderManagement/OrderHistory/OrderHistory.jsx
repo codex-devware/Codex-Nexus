@@ -224,7 +224,7 @@ const OrderHistory = () => {
     },
   ];
   // Filtered and paginated data
-  const filteredAndPaginatedData = OrdersData.filter((item) =>
+  const filteredAndPaginatedData = OrdersData?.filter((item) =>
     Object.values(item).some((value) =>
       String(value).toLowerCase().includes(searchTerm.toLowerCase())
     )
@@ -257,7 +257,7 @@ const OrderHistory = () => {
               <div className="overflow-x-auto">
                 <table className="text-[14px] text-left text-gray-500 font-outfit w-[1000px] xl:w-full overflow-x-auto">
                   <TableHeader />
-                  {currentItems.map((items) => (
+                  {currentItems?.map((items) => (
                     <TableBody key={items.id} items={items} />
                   ))}
                 </table>

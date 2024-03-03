@@ -17,13 +17,13 @@ const ManagementFooter = ({
           Showing
           <span className="font-semibold text-gray-900 ml-2 mr-2">
             {indexOfFirstItem + 1}-
-            {indexOfLastItem > OrdersData.length
-              ? OrdersData.length
+            {indexOfLastItem > OrdersData?.length
+              ? OrdersData?.length
               : indexOfLastItem}
           </span>
           of
           <span className="font-semibold text-gray-900 ml-2">
-            {OrdersData.length}
+            {OrdersData?.length}
           </span>
         </span>
 
@@ -43,7 +43,7 @@ const ManagementFooter = ({
 
           {/* Pagination numbers */}
           {Array.from({
-            length: Math.ceil(OrdersData.length / itemsPerPage),
+            length: Math.ceil(OrdersData?.length / itemsPerPage),
           }).map((_, index) => (
             <li key={index}>
               <button
@@ -64,7 +64,7 @@ const ManagementFooter = ({
             <button
               onClick={() => paginate(currentPage + 1)}
               disabled={
-                currentPage === Math.ceil(OrdersData.length / itemsPerPage)
+                currentPage === Math.ceil(OrdersData?.length / itemsPerPage)
               }
               className="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >

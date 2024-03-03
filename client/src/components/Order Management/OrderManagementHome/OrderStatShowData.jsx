@@ -13,7 +13,7 @@ const OrderStatShowData = ({ data }) => {
   } = data;
   return (
     <>
-      <section className="flex flex-wrap w-56 mx-auto flex-col gap-6 font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+      <section className="flex flex-wrap w-[90%] mx-auto flex-col gap-6 font-outfit border p-5 rounded-xl  duration-300 ease-in-out cursor-pointer">
         <div className="flex flex-wrap flex-col gap-4">
           <div className="">
             <div className=" rounded-lg">

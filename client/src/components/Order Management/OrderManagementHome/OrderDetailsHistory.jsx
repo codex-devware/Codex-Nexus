@@ -1,29 +1,31 @@
-import CustomerStatics from "./CustomerStatics";
-import OrderDetailsHistoryTable from "./OrderDetailsHistoryTable";
+import { useState } from 'react';
+import CustomerStatics from './CustomerStatics';
+import OrderDetailsHistoryTable from './OrderDetailsHistoryTable';
 
-import OrderDetailsHistoryTop from "./OrderDetailsHistoryTop";
-import OrderManaSalesOverview from "./OrderManaSalesOverview";
+import OrderDetailsHistoryTop from './OrderDetailsHistoryTop';
+import OrderManaSalesOverview from './OrderManaSalesOverview';
 
 const OrderDetailsHistory = () => {
+  const [filter, setFilter] = useState('all');
   return (
-    <section className="flex flex-wrap gap-2 px-4">
-      <div data-aos="fade-up" className="lg:w-[100%] w-full">
-        <div className="font-outfit w-full">
-          <OrderDetailsHistoryTop />
-          <OrderDetailsHistoryTable />
+    <section className='flex flex-wrap gap-2 px-4'>
+      <div data-aos='fade-up' className='lg:w-[100%] w-full'>
+        <div className='font-outfit w-full'>
+          <OrderDetailsHistoryTop setFilter={setFilter}/>
+          <OrderDetailsHistoryTable filter={filter}/>
         </div>
       </div>
 
       <div
-        data-aos="fade-up"
-        className="lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full"
+        data-aos='fade-up'
+        className='lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full'
       >
         <CustomerStatics />
       </div>
 
       <div
-        data-aos="fade-down"
-        className="lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full"
+        data-aos='fade-down'
+        className='lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full'
       >
         <OrderManaSalesOverview />
       </div>

@@ -15,8 +15,8 @@ const ShipmentTableHead = ({ children }) => {
   return (
     <>
       <div className='overflow-x-auto font-outfit rounded-xl border-dashed'>
-        <table className='table-auto w-full min-w-[1024px] text-left text-sm font-light'>
-          <thead className='bg-[#F4F7F9] font-medium grid grid-cols-9 w-full min-w-[1024px]'>
+        <table className='table-auto table-container text-left text-sm font-light'>
+          <thead className='bg-[#F4F7F9] font-medium grid grid-cols-9 table-container'>
             {tableHeader.map((el) => (
               <th scope='col' key={el} className='py-2.5'>
                 {el}
@@ -24,8 +24,8 @@ const ShipmentTableHead = ({ children }) => {
             ))}
           </thead>
         </table>
-        <table className='w-full min-w-[1024px]'>
-          <tbody className='w-full min-w-[1024px]'>{children}</tbody>
+        <table className='table-container'>
+          <tbody className='table-container'>{children}</tbody>
         </table>
       </div>
     </>

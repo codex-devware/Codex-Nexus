@@ -18,7 +18,7 @@ const Sidebar = ({ setOpen, open }) => {
             }`}
             onClick={() => setOpen(!open)}
           />
-          <div className="pt-2">
+          <div className="pt-2] h-[100vh]">
             {Data?.map((sections, index) => (
               <SidebarData open={open} key={index} sections={sections} />
             ))}

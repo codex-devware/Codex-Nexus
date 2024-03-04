@@ -37,57 +37,57 @@ const Routers = () => {
       <Router>
         <MainLayout resize={resize} setResize={setResize}>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/order-management' element={<OrderManagement />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/order-management" element={<OrderManagement />} />
             <Route
-              path='/order-management/all-orders'
+              path="/order-management/all-orders"
               element={<AllOrderMain />}
             />
             <Route
-              path='/order-management/order-history'
+              path="/order-management/order-history"
               element={<OrderHistory />}
             />
             <Route
-              path='/order-management/order-status'
+              path="/order-management/order-status"
               element={<OrderStatus />}
             />
-            <Route path='payment-Gateway-Analytics' element={<PaymentData />} />
+            <Route path="payment-Gateway-Analytics" element={<PaymentData />} />
 
             <Route
-              path='/order-management/order-history/order-history/01'
+              path="/order-management/order-history/order-history/01"
               element={<OrderDetails />}
             />
             <Route
-              path='product-performance'
+              path="product-performance"
               element={<ProductPerformance />}
             />
             <Route
-              path='/product-performance/product-inventory'
+              path="/product-performance/product-inventory"
               element={<InventoryStatus />}
             />
 
             <Route
-              path='/product-performance/sale-trends'
+              path="/product-performance/sale-trends"
               element={<SaleTrends />}
             />
-            <Route path='/sales-overview' element={<SalesOverveiw />} />
+            <Route path="/sales-overview" element={<SalesOverveiw />} />
             <Route
-              path='/revenue-analytics'
+              path="/revenue-analytics"
               element={<RevenueAnalyticsMain />}
             />
-            <Route path='/order-chart' element={<OrderChartTracker />} />
-            <Route path='/add-product' element={<AddProduct />} />
+            <Route path="/order-chart" element={<OrderChartTracker />} />
+            <Route path="/add-product" element={<AddProduct />} />
             {/* stock inventory management routes */}
             <Route
-              path='/stock-inventory-management'
+              path="/stock-inventory-management"
               element={<StockInventoryList />}
             />
             <Route
-              path='/stock-inventory-management/supplier-management'
+              path="/stock-inventory-management/supplier-management"
               element={<SuppliersManagement />}
             />
             <Route
-              path='/stock-inventory-management/return-order-management'
+              path="/stock-inventory-management/return-order-management"
               element={<ReturnOrderManagement />}
             />
             <Route path='/shipping-and-tax' element={<ShippingAndTax />} />

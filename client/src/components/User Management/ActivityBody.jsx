@@ -68,7 +68,11 @@ const ActivityBody = () => {
               {/* Apply active class if previous index matches selectedBorderIndex */}
             </div>
             <div className=" ml-4">
-              <div className="flex items-center justify-between bg-[#f0f0f0] p-3 rounded-xl">
+              <div
+                className={`flex items-center justify-between p-3 rounded-xl ${
+                  selectedBorderIndex === index ? "bg-blue-200" : "bg-slate-200"
+                }`}
+              >
                 <div className="flex items-center gap-3">
                   <div className={`bg-gray-300 p-3 rounded-full`}>
                     <span className="text-blue-500 font-bold ext-whitet ">

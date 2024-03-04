@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import usersData from '../../../public/userData.json';
+import ManagementFooter from '../Order Management/ManagementFooter';
 import UserAction from './UserAction';
 const UsersTable = () => {
   const [updatedData, setUpdatedData] = useState(usersData?.users || []);
@@ -13,6 +14,17 @@ const UsersTable = () => {
     );
     setUpdatedData(filterData);
   };
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+
+  // Logic to calculate indexes of items to be displayed
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = updatedData.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Function to change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
       <div className='overflow-x-auto font-outfit'>
@@ -37,11 +49,13 @@ const UsersTable = () => {
               <th scope='col' className='px-6 py-2.5'>
                 Status
               </th>
-              <th scope='col' className='px-6 py-2.5'></th>
+              <th scope='col' className='px-6 py-2.5'>
+                Action
+              </th>
             </tr>
           </thead>
           <tbody>
-            {updatedData.map((item) => (
+            {currentItems?.map((item) => (
               <tr key={item.id} className='border-b border-dashed'>
                 <td className='whitespace-nowrap px-6 py-4 flex items-center gap-3'>
                   <img className='rounded-lg w-10' src={item.imgSrc} alt='' />
@@ -86,6 +100,14 @@ const UsersTable = () => {
           </tbody>
         </table>
       </div>
+      <ManagementFooter
+        indexOfFirstItem={indexOfFirstItem}
+        OrdersData={updatedData}
+        indexOfLastItem={indexOfLastItem}
+        currentPage={currentPage}
+        paginate={paginate}
+        itemsPerPage={itemsPerPage}
+      />
     </>
   );
 };

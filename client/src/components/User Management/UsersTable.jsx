@@ -84,7 +84,7 @@ const UsersTable = () => {
     },
   ];
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 5;
 
   // Logic to calculate indexes of items to be displayed
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -117,7 +117,9 @@ const UsersTable = () => {
               <th scope="col" className="px-6 py-2.5">
                 Status
               </th>
-              <th scope="col" className="px-6 py-2.5"></th>
+              <th scope="col" className="px-6 py-2.5">
+                Action
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -154,49 +156,13 @@ const UsersTable = () => {
                     </button>
                   )}
                 </td>
-                <td className="whitespace-nowrap px-6 py-4">
+                <td className="whitespace-nowrap px-6 py-4 text-center">
                   <UserAction />
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-        {data.map((item) => (
-          <tr key={item.id} className="border-b border-dashed">
-            <td className="whitespace-nowrap px-6 py-4 flex items-center gap-3">
-              <img className="rounded-lg w-10" src={item.imgSrc} alt="" />
-              <div className="flex flex-col">
-                <span className="font-medium">{item.Name}</span>
-                <span className="">{item.userName}</span>
-              </div>
-            </td>
-            <td className="whitespace-nowrap  py-4 font-medium">
-              <span>{item.date}</span>
-            </td>
-
-            <td className="whitespace-nowrap px-6 py-4 font-medium">
-              {item.email}
-            </td>
-            <td className="whitespace-nowrap px-7 py-4 font-medium">
-              {item.role}
-            </td>
-            <td className="whitespace-nowrap px-7 py-4">{item.lastActive}</td>
-            <td className="whitespace-nowrap px-6 py-4">
-              {item.status === "Active" ? (
-                <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-normal text-[#159b36]">
-                  {item.status}
-                </button>
-              ) : (
-                <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-2 w-20 font-normal text-[#db5a5a]">
-                  {item.status}
-                </button>
-              )}
-            </td>
-            <td className="whitespace-nowrap px-6 py-4">
-              <UserAction />
-            </td>
-          </tr>
-        ))}
       </div>
       <ManagementFooter
         indexOfFirstItem={indexOfFirstItem}

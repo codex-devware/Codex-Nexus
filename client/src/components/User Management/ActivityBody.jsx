@@ -41,7 +41,6 @@ const ActivityBody = () => {
   const handleBorderClick = (index) => {
     setSelectedBorderIndex(index);
     setIndex(index);
-    console.log(indexs, selectedBorderIndex);
   };
 
   return (

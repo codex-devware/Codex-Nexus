@@ -38,7 +38,7 @@ const OrderManageStat = () => {
     {
       icon: <PiMoneyDuotone fontSize={28} />,
       statName: "Payment Info",
-      statCount: "1243 $",
+      statCount: 1264,
       profitStatus: "increase",
       statStatus: "Payment Due",
       profit: true,

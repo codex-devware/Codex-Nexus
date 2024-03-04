@@ -4,12 +4,13 @@ export default function ShipmentTableBody({ shipmentTable }) {
   return (
     <>
       {shipmentTable.map((item) => (
-        <tr key={item.id} className='capitalize border-b border-dashed'>
-          <td className='capitalize whitespace-nowrap px-6 py-4 flex items-center gap-3'>
-            {item.idNumber}
-          </td>
+        <tr
+          key={item.id}
+          className='capitalize border-b py-3 !text-sm first-letter:border-dashed grid grid-cols-9 justify-center items-center table-container'
+        >
+          <td className='capitalize'>{item.idNumber}</td>
 
-          <td className='capitalize whitespace-nowrap px-6 py-4 font-medium'>
+          <td className='capitalize'>
             <span
               className={`${
                 item.status === 'in transit'
@@ -22,25 +23,13 @@ export default function ShipmentTableBody({ shipmentTable }) {
               {item.status}
             </span>
           </td>
-          <td className='capitalize whitespace-nowrap px-7 py-4 font-medium'>
-            {item.customer}
-          </td>
-          <td className='whitespace-nowrap px-7 py-4 capitalize'>
-            {item.contact}
-          </td>
-          <td className='capitalize whitespace-nowrap px-6 py-4'>
-            {item.pickup}
-          </td>
-          <td className='capitalize whitespace-nowrap px-6 py-4'>
-            {item.delivery}
-          </td>
-          <td className='capitalize whitespace-nowrap px-6 py-4'>
-            {item.trunk}
-          </td>
-          <td className='capitalize text-center whitespace-nowrap px-6 py-4'>
-            {item.weight}
-          </td>
-          <td className='flex justify-center capitalize text-center whitespace-nowrap px-6 py-4'>
+          <td className='capitalize'>{item.customer}</td>
+          <td className='capitalize'>{item.contact}</td>
+          <td className='capitalize'>{item.pickup}</td>
+          <td className='capitalize'>{item.delivery}</td>
+          <td className='capitalize '>{item.trunk}</td>
+          <td className='capitalize pl-3'>{item.weight}</td>
+          <td className='flex justify-center capitalize text-center'>
             <button
               className={`size-5 bg-gray-100 rounded  w-20 flex justify-center items-center hover:bg-gray-200 duration-150 py-4 ${
                 item.status === 'in transit'

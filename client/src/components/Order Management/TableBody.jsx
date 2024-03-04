@@ -16,8 +16,8 @@ const TableBody = ({ items }) => {
     <>
       <tr className="w-[1000px]">
         <td className="w-[1000px]">
-          <table className=" mb-3 w-full text-[#4a4a4a] ">
-            <tr className="grid grid-cols-9 border-2 rounded-lg bg-white items-center">
+          <table className=" mb-3 w-full text-[#4a4a4acb] ">
+            <tr className="grid grid-cols-9 border-3 rounded-lg bg-white items-center">
               <td className="px-4 py-3 font-semibold">#{orderCode}</td>
               <td className="px-4 py-3 col-start-2 col-end-4">
                 <span className="flex flex-wrap items-center font-semibold">
@@ -37,16 +37,17 @@ const TableBody = ({ items }) => {
                 </span>
               </td>
               <td className="px-4 py-3">{type}</td>
-              <td className={`${
-                      status.toLocaleLowerCase() === 'delivered'
-                        ? 'text-[#F0AA18]'
-                        : status.toLocaleLowerCase() ===
-                          'collected'
-                        ? 'text-[#7277ff]'
-                        : status.toLocaleLowerCase() === 'canceled'
-                        ? 'text-[#ff5959]'
-                        : 'bg-[#36ff16]'
-                    } px-4 py-3`}>
+              <td
+                className={`${
+                  status.toLocaleLowerCase() === "delivered"
+                    ? "text-[#1fd43d]"
+                    : status.toLocaleLowerCase() === "collected"
+                    ? "text-[#343bf3]"
+                    : status.toLocaleLowerCase() === "canceled"
+                    ? "text-[#f32d2d]"
+                    : "bg-[#36ff16]"
+                } px-4 py-3`}
+              >
                 <span className="flex items-center">
                   <FaDotCircle />
                   <span className="ml-1">{status}</span>
@@ -55,8 +56,7 @@ const TableBody = ({ items }) => {
               <td className="px-4 py-3">${amount}</td>
               <td className="px-4 py-3 flex items-center justify-start">
                 <div className="relative">
-                  <TableAction/>
-                
+                  <TableAction />
                 </div>
               </td>
             </tr>

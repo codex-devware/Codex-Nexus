@@ -1,6 +1,6 @@
 //import UserAction from "./UserAction";
 
-const ShipmentTableHead = ({children}) => {
+const ShipmentTableHead = ({ children }) => {
   const tableHeader = [
     'ID Number',
     'Status',
@@ -15,19 +15,17 @@ const ShipmentTableHead = ({children}) => {
   return (
     <>
       <div className='overflow-x-auto font-outfit rounded-xl border-dashed'>
-        <table className='table-auto min-w-full text-left text-sm font-light'>
-          <thead className='bg-[#F4F7F9] font-medium'>
-            <tr>
-              {tableHeader.map((el) => (
-                <th scope='col' key={el} className='pl-6 pr-3 py-2.5'>
-                  {el}
-                </th>
-              ))}
-            </tr>
+        <table className='table-auto table-container text-left text-sm font-light'>
+          <thead className='bg-[#F4F7F9] font-medium grid grid-cols-9 table-container'>
+            {tableHeader.map((el) => (
+              <th scope='col' key={el} className='py-2.5'>
+                {el}
+              </th>
+            ))}
           </thead>
-          <tbody>
-            {children}
-          </tbody>
+        </table>
+        <table className='table-container'>
+          <tbody className='table-container'>{children}</tbody>
         </table>
       </div>
     </>

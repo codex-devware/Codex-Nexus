@@ -1,4 +1,5 @@
 import { Progress } from "@nextui-org/react";
+import CountUp from "react-countup";
 import { IoMdTrendingDown, IoMdTrendingUp } from "react-icons/io";
 
 const RevenueAnalyticsStatShow = ({ data }) => {
@@ -26,7 +27,7 @@ const RevenueAnalyticsStatShow = ({ data }) => {
         </div>
 
         <h2 className=" font-semibold text-center sm:text-left text-3xl">
-          {statCount}
+          <CountUp end={statCount} duration={3}></CountUp>
         </h2>
       </div>
 

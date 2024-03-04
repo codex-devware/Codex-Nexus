@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { LuArrowDownLeftFromCircle } from "react-icons/lu";
 
@@ -16,7 +17,9 @@ const TotalVisitor = () => {
           <div className="">
             <p className="text-[16px]">Total Visitor</p>
             <h1 className="flex flex-wrap items-end gap-1">
-              <h2 className=" font-medium text-2xl">48,140</h2>
+              <h2 className=" font-medium text-2xl">
+                <CountUp end={48140} />
+              </h2>
             </h1>
           </div>
         </div>

@@ -1,0 +1,54 @@
+{
+  "orderDetails": [
+    {
+      "id": 1,
+      "imgSrc": "https://blinkstore.in/wp-content/uploads/sites/29/2023/08/image-13-22.jpg",
+      "itemName": "Hoddie",
+      "date": "20-01-2024",
+      "amount": "$415",
+      "status": "completed",
+      "customer": "Jubair",
+      "platform": "Walmart"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://media.istockphoto.com/id/1178379920/photo/mens-black-blank-sweatshirt-template-from-two-sides-natural-shape-on-invisible-mannequin-for.jpg?s=612x612&w=0&k=20&c=PgHvTo9oTr0kQ2m5UKv6tDKJ-3f5h9raiBbRlNdnBU8=",
+      "itemName": "Showaat Shirt",
+      "date": "20-01-2022",
+      "amount": "$156.44",
+      "status": "in-progress",
+      "customer": "Kawsar",
+      "platform": "Daaraz"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://img.freepik.com/free-vector/front-basic-white-grey-bomber-jacket-isolated_1308-59980.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704844800&semt=ais",
+      "itemName": "VIP Jacket",
+      "date": "20-01-2027",
+      "amount": "$644.40",
+      "status": "canceled",
+      "customer": "Pappu",
+      "platform": "Amazon"
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://blinkstore.in/wp-content/uploads/sites/29/2023/08/image-13-22.jpg",
+      "itemName": "Dashed Pants",
+      "date": "20-01-2027",
+      "amount": "$956",
+      "status": "in-progress",
+      "customer": "Babor",
+      "platform": "Ghorer Bazar"
+    },
+    {
+      "id": 5,
+      "imgSrc": "https://media.istockphoto.com/id/1178379920/photo/mens-black-blank-sweatshirt-template-from-two-sides-natural-shape-on-invisible-mannequin-for.jpg?s=612x612&w=0&k=20&c=PgHvTo9oTr0kQ2m5UKv6tDKJ-3f5h9raiBbRlNdnBU8=",
+      "itemName": "Mac T-Shirt",
+      "date": "20-01-2027",
+      "amount": "$451",
+      "status": "completed",
+      "customer": "Sourov",
+      "platform": "E-Shop Dev"
+    }
+  ]
+}

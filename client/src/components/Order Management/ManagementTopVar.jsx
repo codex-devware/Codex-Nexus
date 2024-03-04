@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
   return (
     <>
@@ -36,8 +38,8 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
           </form>
         </div>
         <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
-          <button
-            type="button"
+          <Link
+            to={"/add-product"}
             className="flex items-center justify-center text-white bg-[#1d4ed8] hover:bg-[#1e40af] focus:ring-4 focus:ring-[#93c5fd] font-medium rounded-lg text-sm px-4 py-2 focus:outline-none"
           >
             <svg
@@ -54,7 +56,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
               />
             </svg>
             Add product
-          </button>
+          </Link>
           <div className="flex items-center space-x-3 w-full md:w-auto">
             {/* <button
               id="actionsDropdownButton"

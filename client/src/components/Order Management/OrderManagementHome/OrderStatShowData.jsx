@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import { LuArrowUpRightFromCircle } from "react-icons/lu";
 
 const OrderStatShowData = ({ data }) => {
@@ -12,7 +13,7 @@ const OrderStatShowData = ({ data }) => {
   } = data;
   return (
     <>
-      <section className="flex flex-wrap w-56 mx-auto flex-col gap-6 font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+      <section className="flex flex-wrap w-[90%] mx-auto flex-col gap-6 font-outfit border p-5 rounded-xl  duration-300 ease-in-out cursor-pointer">
         <div className="flex flex-wrap flex-col gap-4">
           <div className="">
             <div className=" rounded-lg">
@@ -22,7 +23,9 @@ const OrderStatShowData = ({ data }) => {
           <div className="">
             <p className="text-[18px] font-semi-bold">{statName}</p>
             <h1 className=" gap-10  ">
-              <h2 className=" font-medium text-2xl">{statCount}</h2>
+              <h2 className=" font-medium text-2xl">
+                <CountUp end={statCount}></CountUp>
+              </h2>
               <h2 className=" font-medium text-sm">{statStatus}</h2>
             </h1>
           </div>

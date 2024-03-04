@@ -1,22 +1,35 @@
-const OrderDetailsHistoryTop = () => {
+const OrderDetailsHistoryTop = ({ setFilter }) => {
+  const btnClass = 'px-2 py-2 text-xs rounded-md border shadow';
   return (
-    <div className="font-outfit w-full">
-      <div className=" shadow-lg border rounded-lg">
-        <div className="flex flex-wrap justify-between p-6">
-          <div className="">
-            <h1 className="text-md font-semibold">Order Details</h1>
+    <div className='font-outfit w-full'>
+      <div className=' shadow border rounded-t-lg !border-b-0'>
+        <div className='flex flex-wrap justify-between p-6'>
+          <div className=''>
+            <h1 className='text-md font-semibold'>Order Details</h1>
           </div>
-          <div className="flex flex-wrap items-center gap-2">
-            <button className="px-2 py-2 text-xs bg-slate-50 text-gray-700 rounded-md border shadow-md">
+          <div className='flex flex-wrap items-center gap-2'>
+            <button
+              onClick={() => setFilter('all')}
+              className={`bg-slate-50 text-gray-700 ${btnClass}`}
+            >
               All Orders
             </button>
-            <button className="px-2 py-2 text-xs bg-slate-50 text-green-500 rounded-md border shadow-md">
+            <button
+              onClick={() => setFilter('completed')}
+              className={`bg-slate-50 text-green-500 ${btnClass}`}
+            >
               Completed
             </button>
-            <button className="px-2 py-2 text-xs text-orange-400 bg-slate-50 rounded-md border shadow-md">
+            <button
+              onClick={() => setFilter('in-progress')}
+              className={`text-orange-400 bg-slate-50 ${btnClass}`}
+            >
               In-Progress
             </button>
-            <button className="px-2 py-2 text-xs text-red-500 bg-slate-50 rounded-md border shadow-md">
+            <button
+              onClick={() => setFilter('canceled')}
+              className={`text-red-500 bg-slate-50 ${btnClass}`}
+            >
               Canceled
             </button>
           </div>

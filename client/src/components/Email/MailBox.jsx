@@ -33,15 +33,15 @@ const MailBox = () => {
         {/* here start our mail box  */}
     <div className="flex flex-wrap justify-between mt-6"> 
     {/* this is mail sidebar  */}
-      <div className={`w-3/12 sm:ml-[-1000px] ${classAdded} bg-white h-auto px-4 py-5 `}>
+      <div className={`w-3/12  ${classAdded} bg-white h-auto px-4 py-5 `}>
          {/* here we add this menu icon and button for side bar menu hide  */}
         {menuState && <div className="w-[20px] h-[20px] ml-[90%] mb-4 lg:hidden" onClick={() => setManuState(false)}> <IcCancel/></div> }
         <div className="flex items-center justify-center bg-blue-700 text-white py-2 px-2 align-center rounded-3xl mb-6"> <IcAddCom/> Compose</div>
         <div>
-          <div className={`bg-[#daeaff] ${mailAction}`}> <IcMail/> Inbox <label className="w-[25px] h-[25px] rounded-full bg-[#cdf] overflow-hidden text-center xl:ml-[60%] lg:ml-[60%] sm:ml-[35%] sm:text-[14px] ml-[75%]">3</label></div>
+          <div className={`bg-[#daeaff] ${mailAction}`}> <IcMail/> Inbox <label className="w-[25px] h-[25px] rounded-full bg-[#cdf] overflow-hidden text-center  ml-[60%] sm:text-[14px] ">3</label></div>
           <div className={mailAction}><IcStarted/> Started</div>
           <div className={mailAction}><IcSent/> Sent</div>
-          <div className={mailAction}><IcDraft/> Drafts <label className="w-[25px] h-[25px] rounded-full bg-[#cdf] overflow-hidden text-center xl:ml-[60%] lg:ml-[48%]  lg:text-[15px] sm:ml-[35%] sm:text-[14px] ml-[75%]">12</label></div>
+          <div className={mailAction}><IcDraft/> Drafts <label className="w-[25px] h-[25px] rounded-full bg-[#cdf] overflow-hidden text-center ml-[60%] sm:text-[14px] lg:text-[15px]">12</label></div>
           <div className={mailAction}><IcSpam/> Spam</div>
           <div className={mailAction}><IcTrash/> Trash</div>
         </div>

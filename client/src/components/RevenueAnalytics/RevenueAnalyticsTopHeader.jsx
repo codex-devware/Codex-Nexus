@@ -1,4 +1,4 @@
-import { CiCalendarDate, CiFilter } from "react-icons/ci";
+// import { CiCalendarDate, CiFilter } from "react-icons/ci";
 
 const RevenueAnalyticsTopHeader = () => {
   return (
@@ -11,7 +11,7 @@ const RevenueAnalyticsTopHeader = () => {
             status on this month!
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-3">
+        {/* <div className="flex flex-wrap justify-center items-center gap-3">
           <div className="">
             <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex flex-wrap items-center gap-1 border-2 py-1 px-3 text-[16px] rounded-md font-outfit font-medium">
               <span className="text-[#1E40AF]">
@@ -28,7 +28,7 @@ const RevenueAnalyticsTopHeader = () => {
               Filter
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

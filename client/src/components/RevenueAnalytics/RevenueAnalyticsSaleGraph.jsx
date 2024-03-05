@@ -76,6 +76,24 @@ const RevenueAnalyticsSaleGraph = () => {
       },
     },
   });
+  const [filterStartDate, setFilterStartDate] = useState(null);
+  const [filterEndDate, setFilterEndDate] = useState(null);
+
+  const applyFilter = () => {
+    // Filter the data based on the selected date range
+    const filteredData = chartState.series.map((series) => ({
+      ...series,
+      data: series.data.filter(([timestamp]) => {
+        return timestamp >= filterStartDate && timestamp <= filterEndDate;
+      }),
+    }));
+
+    // Update the chart state with filtered data
+    setChartState((prevChartState) => ({
+      ...prevChartState,
+      series: filteredData,
+    }));
+  };
 
   return (
     <div id="chart" className=" my-5">
@@ -90,12 +108,31 @@ const RevenueAnalyticsSaleGraph = () => {
           </h2>
         </div>
         <div>
-          <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium">
+          <div className="flex items-center gap-2">
             <span className="text-[#1E40AF]">
               <CiFilter />
             </span>{" "}
-            Filter
-          </button>
+            <label className="text-sm font-medium">Filter by Date:</label>
+            <input
+              type="date"
+              onChange={(e) =>
+                setFilterStartDate(new Date(e.target.value).getTime())
+              }
+            />
+            <span className="text-sm">to</span>
+            <input
+              type="date"
+              onChange={(e) =>
+                setFilterEndDate(new Date(e.target.value).getTime())
+              }
+            />
+            <button
+              className="hover:translate-y-[-2px] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium"
+              onClick={applyFilter}
+            >
+              Apply Filter
+            </button>
+          </div>
         </div>
       </div>
       <ReactApexChart

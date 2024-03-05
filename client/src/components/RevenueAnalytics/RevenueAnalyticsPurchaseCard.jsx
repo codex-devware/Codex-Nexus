@@ -24,7 +24,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: "#e67e22",
+          indicator: "bg-violet-500",
 
           label: "tracking-wider font-medium ",
         }}
@@ -36,11 +36,11 @@ const RevenueAnalyticsPurchaseCard = () => {
       <Progress
         size="md"
         radius="sm"
-        color="success"
+        color="default-200"
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-red-400",
+          indicator: "",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}

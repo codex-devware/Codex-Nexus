@@ -1,0 +1,40 @@
+{
+  "returnManagement": [
+    {
+      "id": 1,
+      "skuId": "CN00001",
+      "productName": "Computer",
+      "customerImg": null,
+      "customerName": "Md Kawsar",
+      "returnDate": "Jan 23, 2024",
+      "total": "$150"
+    },
+    {
+      "id": 2,
+      "skuId": "CN00002",
+      "productName": "Computer",
+      "customerImg": null,
+      "customerName": "Md Kawsar",
+      "returnDate": "Jan 23, 2024",
+      "total": "$150"
+    },
+    {
+      "id": 3,
+      "skuId": "CN00003",
+      "productName": "Computer",
+      "customerImg": null,
+      "customerName": "Md Kawsar",
+      "returnDate": "Jan 23, 2024",
+      "total": "$150"
+    },
+    {
+      "id": 4,
+      "skuId": "CN00004",
+      "productName": "Computer",
+      "customerImg": null,
+      "customerName": "Md Kawsar",
+      "returnDate": "Jan 23, 2024",
+      "total": "$150"
+    }
+  ]
+}

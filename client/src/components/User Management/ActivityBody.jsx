@@ -74,7 +74,13 @@ const ActivityBody = () => {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className={`bg-gray-300 p-3 rounded-full`}>
+                  <div
+                    className={`${
+                      selectedBorderIndex === index
+                        ? "bg-blue-300"
+                        : "bg-gray-300"
+                    } p-3 rounded-full`}
+                  >
                     <span className="text-blue-500 font-bold ext-whitet ">
                       {item.icon}
                     </span>

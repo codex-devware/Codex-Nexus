@@ -21,6 +21,7 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
     },
     extend: {},
+    
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui"), nextui()],

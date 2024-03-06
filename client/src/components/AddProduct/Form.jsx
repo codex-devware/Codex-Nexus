@@ -143,7 +143,7 @@ const Form = () => {
       <div className=" md:bg-white rounded-xl md:p-3 xl:flex justify-center">
         <div className="relative">
           <img
-            className="hidden xl:block w-full h-[78%] rounded-xl"
+            className="hidden xl:block w-full h-[65%] rounded-xl"
             src={BgBigScreenBanner}
             alt="sidebar"
           />
@@ -164,7 +164,7 @@ const Form = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col justify-center mx-auto relative  md:static mb-40 rounded-2xl  pb-16 bg-white md:px-0 md:py-5 md:mx-12 md:w-100 md:my-2">
+        <div className="flex flex-col mx-auto relative  md:static mb-40 rounded-2xl  pb-16 bg-white md:px-0 md:py-5 md:mx-12 md:w-100 md:my-2">
           {(displayThankyou && (
             <>
               <Thankyou />

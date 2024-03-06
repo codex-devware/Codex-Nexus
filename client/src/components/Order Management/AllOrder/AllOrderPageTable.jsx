@@ -1,6 +1,9 @@
+import { useDisclosure } from "@nextui-org/react";
 import { useState } from "react";
+import EditOrder from "./EditOrder";
 
 const AllOrderPageTable = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [data, setData] = useState([
     {
       id: 1,
@@ -64,6 +67,26 @@ const AllOrderPageTable = () => {
     setData(updatedData);
   };
 
+  const [selectedItem, setSelectedItem] = useState(null);
+  const handleEdit = (item) => {
+    setSelectedItem(item);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setSelectedItem({
+      ...selectedItem,
+      [name]: value,
+    });
+  };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    const updatedData = data.map((item) =>
+      item.id === selectedItem.id ? selectedItem : item
+    );
+    setData(updatedData);
+    setSelectedItem(null);
+  };
   return (
     <>
       <div data-aos="fade-up" className="overflow-x-auto border rounded-md">
@@ -126,8 +149,7 @@ const AllOrderPageTable = () => {
                     {item.status}
                   </button>
                 </td>
-
-                <td className="whitespace-nowrap px-6 py-4">{item.amount}</td>
+                <td className="whitespace-nowrap px-6 py-4">{item.amount}</td>{" "}
                 <td className="whitespace-nowrap flex gap-3 px-6 py-4 ">
                   <svg
                     onClick={() => handleDeleted(item.id)}
@@ -146,6 +168,10 @@ const AllOrderPageTable = () => {
                   </svg>
 
                   <svg
+                    onClick={(e) => {
+                      handleEdit(item);
+                      onOpen(e);
+                    }}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -165,6 +191,14 @@ const AllOrderPageTable = () => {
           </tbody>
         </table>
       </div>
+
+      <EditOrder
+        isOpen={isOpen}
+        onOpen={onOpen}
+        handleOnSubmit={handleOnSubmit}
+        onOpenChange={onOpenChange}
+        handleInputChange={handleInputChange}
+      />
     </>
   );
 };

@@ -8,7 +8,7 @@ export function MainLayout({ children }) {
     <>
       {/* resize */}
 
-      <div className='grid grid-cols-12 justify-center'>
+      <div className={`grid grid-cols-12 justify-center ${open && "lg:h-[100vh]"}`}>
         <div
           className={`fixed z-50 lg:relative bg-gray-400 ${
             open ? 'lg:col-start-1 col-end-3' : 'col-start-1 col-end-1'

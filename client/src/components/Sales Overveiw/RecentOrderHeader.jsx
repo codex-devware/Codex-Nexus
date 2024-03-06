@@ -1,6 +1,6 @@
 import { PiDotsThreeOutlineVerticalFill } from 'react-icons/pi';
 
-const RecentOrderHeader = ({ title, isDeleted, onDelete }) => {
+const RecentOrderHeader = ({ title, isDeleted, onDelete, data, onSearch }) => {
   return (
     <>
       <div className='flex flex-wrap justify-between p-6'>
@@ -11,13 +11,21 @@ const RecentOrderHeader = ({ title, isDeleted, onDelete }) => {
           <div className='flex flex-wrap gap-2'>
             <p>Search: </p>
             <input
-              className='border w-28 rounded-md focus:outline-[#1E40AF]'
+              onChange={(e) => onSearch(e.target.value)}
+              className='border text-xs p-1 w-28 rounded-md focus:outline-[#1E40AF]'
               type='text'
             />
           </div>
           <div className=''>
             {isDeleted ? (
-              <button onClick={onDelete}>Apply Delete</button>
+              <button
+                className={`${
+                  data?.length > 0 ? 'bg-red-500 text-white' : 'bg-slate-400'
+                } py-1 px-2 rounded-lg text-xs font-semibold`}
+                onClick={onDelete}
+              >
+                Bulk Delete
+              </button>
             ) : (
               <span>
                 <PiDotsThreeOutlineVerticalFill />

@@ -3,7 +3,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
   return (
     <>
       <div
-        className={`navbar flex  ${
+        className={`navbar flex ${
           openToggle ? "lg:pr-56 " : "lg:pr-20"
         } justify-between align-middle h-20 bg-blue-500`}
       >
@@ -20,7 +20,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
         </div>
 
         <div className="flex justify-end">
-          <div>
+          <div className="">
             <ul className="hidden lg:flex m-2 gap-6 items-center">
               <li>
                 <input
@@ -48,7 +48,7 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu  shadow bg-base-100 rounded w-72 mt-4 -ml-4"
+                    className="dropdown-content z-[1] menu  shadow bg-base-100 rounded w-72 mt-4 -ml-28 "
                   >
                     <div className=" flex justify-between">
                       <h2 className=" text-sm font-outfit">Notifications</h2>
@@ -248,20 +248,16 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
                       {/* <h4 className='text-xs bg-transparent border-none shadow-none hover:bg-transparent -mt-4'></h4> */}
                     </li>
                     <li>
-                      <a>Profile</a>
-                    </li>
-                    <li>
                       <a>Balance: 000$</a>
                     </li>
-
+                    <li>
+                      <a>Log out</a>
+                    </li>
                     <li>
                       <a>Task Manager</a>
                     </li>
                     <li>
                       <a>Settings</a>
-                    </li>
-                    <li>
-                      <a>Log out</a>
                     </li>
                   </ul>
                 </div>

@@ -23,10 +23,22 @@ const ReturnOrderManagement = () => {
     const filterData = updatedData.filter((item) => item.id !== id);
     setUpdatedData(filterData);
   };
+  const handleSearch = (search) => {
+    const results = updatedData.filter((item) =>
+      Object.values(item).some(
+        (value) =>
+          typeof value === 'string' &&
+          value.toLowerCase().includes(search.toLowerCase())
+      )
+    );
+    setUpdatedData(results);
+  };
 
   return (
     <>
       <RecentOrderHeader
+        data={bulkDelete}
+        onSearch={handleSearch}
         onDelete={handleBulkDelete}
         isDeleted={true}
         title={'Return Order Management'}
@@ -36,7 +48,7 @@ const ReturnOrderManagement = () => {
           <thead className='bg-[#F4F7F9] font-medium'>
             <tr>
               <th scope='col' className='px-6 py-2.5'>
-                SKU ID
+                Select
               </th>
               <th scope='col' className='px-6 py-2.5'>
                 SKU ID

@@ -1,5 +1,3 @@
-import { PiDotsThreeOutlineVerticalFill } from 'react-icons/pi';
-
 const RecentOrderHeader = ({ title, isDeleted, onDelete, data, onSearch }) => {
   return (
     <>
@@ -27,9 +25,7 @@ const RecentOrderHeader = ({ title, isDeleted, onDelete, data, onSearch }) => {
                 Bulk Delete
               </button>
             ) : (
-              <span>
-                <PiDotsThreeOutlineVerticalFill />
-              </span>
+              ''
             )}
           </div>
         </div>

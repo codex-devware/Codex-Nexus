@@ -4,61 +4,42 @@ import Button from "./Button";
 
 const MailBoxHeader = ({ menuState, setManuState }) => {
   // button bg toggle state
-  const [buttonId, setButtonId] = useState(null);
+  const [activeButtonId, setActiveButtonId] = useState(null);
 
-  const handleBtnBg = (id) => {
-    setButtonId((prevId) => (prevId === id ? "" : id));
+  const handleSetActiveButtonId = (id) => {
+    setActiveButtonId(id);
   };
 
-  // button style
-  let headerActionBtn =
-    "px-6 py-2 bg-[#fff] mb-3 ml-3 flex justify-between items-center rounded-sm font-medium text-sm ease-in duration-200";
+  const buttons = [
+    { title: "Calendar", icon: <IcCalendar /> },
+    { title: "Export", icon: <IcExport /> },
+    { title: "Share", icon: <IcShare /> },
+    { title: "Add New", icon: <IcAddE /> },
+  ];
 
-  // button toggle style
-  let toggleBtnColor = "bg-[#5F63F2] text-white ";
+  // button style
+  let defaultBtnStyle =
+    "px-6  py-2  mb-3 ml-3 flex justify-between items-center rounded-sm font-medium text-sm ease-in duration-200 ";
 
   return (
     <div className="lg:flex lg:flex-wrap sm:block sm:text-center justify-between items-center mt-8">
       <p className="font-medium text-xl sm:mb-4">Inbox</p>
       <div className="action-head flex flex-wrap justify-center items-center md:justify-between">
-        <Button
-          btnCom={{
-            title: "Calender",
-            defaultStyle: headerActionBtn,
-            toggleStyle: buttonId === 0 ? toggleBtnColor : "",
-            toggle: () => handleBtnBg(0),
-            icon: <IcCalendar color={buttonId === 0 ? "text-white" : ""} />,
-          }}
-        />
-
-        <Button
-          btnCom={{
-            title: "Export",
-            defaultStyle: headerActionBtn,
-            toggleStyle: buttonId === 1 ? toggleBtnColor : "",
-            toggle: () => handleBtnBg(1),
-            icon: <IcExport color={buttonId === 1 ? "text-white" : ""} />,
-          }}
-        />
-        <Button
-          btnCom={{
-            title: "Share",
-            defaultStyle: headerActionBtn,
-            toggleStyle: buttonId === 2 ? toggleBtnColor : "",
-            toggle: () => handleBtnBg(2),
-            icon: <IcShare color={buttonId === 2 ? "text-white" : ""} />,
-          }}
-        />
-
-        <Button
-          btnCom={{
-            title: "Add New",
-            defaultStyle: headerActionBtn,
-            toggleStyle: buttonId === 3 ? toggleBtnColor : "",
-            toggle: () => handleBtnBg(3),
-            icon: <IcAddE color={buttonId === 3 ? "text-white" : ""} />,
-          }}
-        />
+        {buttons.map((button, index) => (
+          <Button
+            key={index}
+            btnCom={{
+              title: button.title,
+              defaultStyle: defaultBtnStyle,
+              toggleStyle:
+                activeButtonId === index
+                  ? "bg-[#5F63F2] text-white"
+                  : "bg-[#fff] text-black",
+              icon: button.icon,
+              onClick: () => handleSetActiveButtonId(index),
+            }}
+          />
+        ))}
 
         {!menuState && (
           <div

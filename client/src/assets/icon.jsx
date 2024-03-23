@@ -159,14 +159,14 @@ export const IcEmail = () => (
   </svg>
 );
 
-export const IcCalendar = ({ color }) => (
+export const IcCalendar = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className={`w-4 h-4  mr-2 text-blue-800 ease-in duration-200 ${color}`}
+    className={`w-4 h-4  mr-2 `}
   >
     <path
       strokeLinecap="round"
@@ -176,14 +176,14 @@ export const IcCalendar = ({ color }) => (
   </svg>
 );
 
-export const IcExport = ({ color }) => (
+export const IcExport = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className={`w-4 h-4 text-blue-800 mr-2 ease-in duration-200 ${color}`}
+    className={`w-4 h-4 mr-2`}
   >
     <path
       strokeLinecap="round"
@@ -192,14 +192,14 @@ export const IcExport = ({ color }) => (
     />
   </svg>
 );
-export const IcShare = ({ color }) => (
+export const IcShare = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth="1.5"
     stroke="currentColor"
-    className={`w-4 h-4 text-blue-800 mr-2 ease-in duration-200 ${color}`}
+    className={`w-4 h-4 mr-2 `}
   >
     <path
       strokeLinecap="round"
@@ -209,14 +209,14 @@ export const IcShare = ({ color }) => (
   </svg>
 );
 
-export const IcAddE = (color) => (
+export const IcAddE = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className={`w-4 h-4  mr-2 ${color}`}
+    className={`w-4 h-4  mr-2`}
   >
     <path
       strokeLinecap="round"

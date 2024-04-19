@@ -108,6 +108,7 @@ const PerformanceOverviewGraph = () => {
           series={state.series}
           type="line"
           height={350}
+          className={"darkChart"}
         />
       </div>
       <div id="html-dist"></div>

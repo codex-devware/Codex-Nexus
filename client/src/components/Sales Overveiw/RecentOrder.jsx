@@ -11,7 +11,7 @@ const RecentOrder = () => {
   return (
     <>
       <div className="font-outfit w-full">
-        <div data-aos="fade-up" className="shadow-lg rounded-lg">
+        <div data-aos="fade-up" className="shadow-lg dark:bg-white dark:text-[#1E293B]  rounded-lg">
           <RecentOrderHeader title={"Recent Order"} />
           <RecentOrderTable />
           <div className="px-6">

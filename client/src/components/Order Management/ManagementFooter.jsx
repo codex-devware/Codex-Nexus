@@ -9,11 +9,11 @@ const ManagementFooter = ({
   return (
     <>
       <nav
-        className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center space-y-3 md:space-y-0 py-4"
+        className="flex flex-col  md:flex-row gap-4 justify-between items-start md:items-center space-y-3 md:space-y-0 py-4"
         aria-label="Table navigation"
       >
         {/* Pagination info */}
-        <span className="text-sm font-normal text-gray-500 border-2 border-gray-300 px-2 py-2 rounded-md">
+        <span className="text-sm font-normal text-gray-500 dark:bg-[#F4F7F9]  border-2 border-gray-300 px-2 py-2 rounded-md">
           Showing
           <span className="font-semibold text-gray-900 ml-2 mr-2">
             {indexOfFirstItem + 1}-

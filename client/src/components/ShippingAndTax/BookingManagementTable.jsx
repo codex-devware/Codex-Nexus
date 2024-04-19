@@ -6,7 +6,7 @@ const BookingManagementTable = ({ data }) => {
       <RecentOrderHeader title={"Return Order Management"} />
       <div className="overflow-x-auto ">
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#F4F7F9] font-medium">
+          <thead className="bg-[#F4F7F9] font-medium dark:text-[#1E293B]">
             <tr>
               <th scope="col" className="px-6 py-2.5">
                 SKU ID

@@ -89,6 +89,7 @@ const TopSuppliersChart = () => {
         series={chartData.series}
         type="bar"
         height={350}
+        className={"darkChart"}
       />
     </div>
   );

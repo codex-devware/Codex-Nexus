@@ -28,7 +28,7 @@ const MailBox = () => {
         {/* this is mail sidebar  */}
         <Sidebar menuState={menuState} setManuState={setManuState} mailAction={mailAction} classAdded={classAdded}/>
         {/* this is main mail box  */}
-        <div className="w-[70%] h-[600px] bg-white px-5">
+        <div className="w-[70%] h-[600px] bg-white custom-dark-mode darkBackground px-5">
           <InboxHeader/>
           
           {/* mails are here  */}

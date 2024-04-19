@@ -45,7 +45,7 @@ const ReturnOrderManagement = () => {
       />
       <div className='overflow-x-auto '>
         <table className='table-auto min-w-full text-left text-sm font-light'>
-          <thead className='bg-[#F4F7F9] font-medium'>
+          <thead className='bg-[#F4F7F9] dark:text-[#1E293B] font-medium'>
             <tr>
               <th scope='col' className='px-6 py-2.5'>
                 Select
@@ -83,7 +83,7 @@ const ReturnOrderManagement = () => {
                     }
                   />
                 </td>
-                <td className='whitespace-nowrap px-6 py-4 font-medium'>
+                <td className='whitespace-nowrap px-6 py-4 font-medium '>
                   {item.skuId}
                 </td>
                 <td className='whitespace-nowrap px-6 py-4 font-medium'>

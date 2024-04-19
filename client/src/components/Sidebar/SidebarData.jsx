@@ -9,8 +9,8 @@ const SidebarData = ({ sections, open }) => {
     <>
       <ul>
         <Link to={path}>
-          <li className=" text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md duration-200">
-            <span className=" text-2xl block float-left opacity-80">
+          <li className=" text-gray-800 dark:text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md duration-200">
+            <span className={` text-2xl block float-left opacity-80 dark:text-white`}>
               {icon}
             </span>
             <span
@@ -33,7 +33,7 @@ const SidebarData = ({ sections, open }) => {
           <ul>
             {subSection.map((item, index) => (
               <Link key={index} to={item.path}>
-                <li className="text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12  hover:bg-gray-700 rounded-md duration-500">
+                <li className="text-gray-800 dark:text-white  text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12  hover:bg-gray-700 rounded-md duration-500">
                   {item.title}
                 </li>
               </Link>

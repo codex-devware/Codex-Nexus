@@ -13,16 +13,16 @@ const MailBoxHeader = ({menuState, setManuState}) => {
     <div className="lg:flex lg:flex-wrap sm:block sm:text-center justify-between items-center mt-8">
         <p className="font-medium text-xl sm:mb-4">Inbox</p>
         <div className="action-head flex flex-wrap justify-center items-center md:justify-between">
-          <button className={headerActionBtn}>
+          <button className={`${headerActionBtn} dark:text-[#1E293B]`}>
             <IcCalendar /> Calendar
           </button>
-          <button className={headerActionBtn}>
+          <button className={`${headerActionBtn} dark:text-[#1E293B]`}>
             <IcExport /> Export
           </button>
-          <button className={headerActionBtn}>
+          <button className={`${headerActionBtn} dark:text-[#1E293B]`}>
             <IcShare /> Share
           </button>
-          <button className={`bg-[#0464ff] text-white ${headerActionBtn}`}>
+          <button className={`bg-[#0464ff] text-white custom-dark-mode darkBackground dark:border-1 dark:border-[#DCE5FF] ${headerActionBtn}`}>
             <IcAddE /> Add New
           </button>
           {/* here we add this menu icon and button for side bar menu show  */}

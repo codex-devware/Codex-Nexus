@@ -104,6 +104,7 @@ const ReturnManagementChart = () => {
         series={chartData.series}
         type="bar"
         height={440}
+        className={"darkChart"}
       />
     </div>
   );

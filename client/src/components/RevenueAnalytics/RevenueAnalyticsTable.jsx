@@ -72,7 +72,7 @@ const RevenueAnalyticsTable = () => {
         <h1 className=" text-sm sm:text-lg font-bold font-sora">
           Top Selling Products
         </h1>
-        <div className=" flex flex-wrap justify-center items-center gap-2 font-outfit">
+        <div className=" flex flex-wrap justify-center items-center gap-2 font-outfit text-[#1E293B]">
           <select className="select select-accent select-sm w-32">
             <option disabled selected className="">
               Sort By Sold
@@ -96,7 +96,7 @@ const RevenueAnalyticsTable = () => {
         className="overflow-x-auto border rounded-md mb-4 mx-4"
       >
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#ebebeb6c] text-gray-700 border font-semibold text-sm">
+          <thead className="bg-[#ebebeb6c] text-gray-700 border font-semibold text-sm dark:bg-white">
             <tr>
               <th scope="col" className="pl-6 pr-4 py-2.5">
                 Code
@@ -128,9 +128,9 @@ const RevenueAnalyticsTable = () => {
             {data.map((item) => (
               <tr
                 key={item.id}
-                className="border cursor-pointer hover:bg-[#ebebeb] duration-300 border-dashed "
+                className="border cursor-pointer hover:bg-[#ebebeb] duration-300 border-dashed  dark:hover:bg-[#2d3e5b]"
               >
-                <td className="whitespace-nowrap pl-6 pr-4 text-gray-700 py-4 font-medium">
+                <td className="whitespace-nowrap pl-6 pr-4 text-gray-700 py-4 font-medium dark:text-white">
                   {item.id}
                 </td>
                 <td className="whitespace-nowrap pr-6 py-4 flex items-center gap-2">

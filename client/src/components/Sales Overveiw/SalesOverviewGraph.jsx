@@ -32,9 +32,11 @@ const SalesOverviewGraph = () => {
             })} `;
           },
         },
+        
       },
       title: {
         text: "Monthly Sales Overview",
+        
       },
       tooltip: {
         x: {
@@ -66,6 +68,7 @@ const SalesOverviewGraph = () => {
         series={chartData.series}
         type="bar"
         height={380}
+        className={"bg-white rounded-md p-2"}
       />
     </div>
   );

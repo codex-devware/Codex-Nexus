@@ -21,7 +21,7 @@ export default function Shipment() {
         <select
           value={filter}
           onChange={handleFilterChange}
-          className='hover:translate-y-[-2px] duration-300 ease-in-out flex flex-wrap items-center gap-2 border-2 py-2 px-3 rounded-md font-outfit font-medium'
+          className='hover:translate-y-[-2px]  duration-300 ease-in-out flex flex-wrap items-center gap-2 border-2 py-2 px-3 rounded-md font-outfit font-medium'
         >
           <option value=''>Filter</option>
           <option value='delivered'>Delivered</option>

@@ -28,7 +28,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
               <input
                 type="text"
                 id="simple-search"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#3b82f6] outline-[#3b82f6] focus:border-[#3b82f6] block w-full pl-10 p-2 "
+                className="bg-gray-50 dark:bg-[#1E293B] dark:text-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#3b82f6] outline-[#3b82f6] focus:border-[#3b82f6] block w-full pl-10 p-2 "
                 placeholder="Search"
                 required=""
                 value={searchTerm}

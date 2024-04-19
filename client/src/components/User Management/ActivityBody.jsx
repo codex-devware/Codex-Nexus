@@ -45,13 +45,13 @@ const ActivityBody = () => {
 
   return (
     <>
-      <div className="flex font-sora items-center gap-4 my-5 mt-4">
+      <div className="flex font-sora items-center gap-4 my-5 mt-4 ">
         <span>Recent Activity</span>
         <span className="h-[2px] rounded-xl w-20 bg-gradient-to-r from-[#750675] via-gray-500 to-white"></span>
       </div>
       {/*ol tag is a main dotted border which main things for down coloring animate when selected the next radius border button */}
       <ol
-        className={`border-l-2 border-dotted mb-10 ${
+        className={`border-l-2 border-dotted mb-10 dark:text-[#1E293B]   ${
           selectedBorderIndex === indexs ? "border-blue-500" : "border-gray-400"
         } rounded`}
       >
@@ -60,7 +60,7 @@ const ActivityBody = () => {
             <div className={``}>
               {/* Apply active class if index matches selectedBorderIndex */}
               <div
-                className={`-ml-[6px] mr-3 h-[9px] w-[9px] rounded-full cursor-pointer   ${
+                className={`-ml-[6px] mr-3 h-[9px] w-[9px] rounded-full  cursor-pointer   ${
                   selectedBorderIndex === index ? "bg-blue-500" : "bg-slate-300"
                 }`}
                 onClick={() => handleBorderClick(index)}

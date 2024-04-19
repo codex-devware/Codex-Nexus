@@ -66,6 +66,7 @@ const StockInventoryChart = () => {
         series={chartData.series}
         type="bar"
         height={430}
+        className={"darkChart"}
       />
     </div>
   );

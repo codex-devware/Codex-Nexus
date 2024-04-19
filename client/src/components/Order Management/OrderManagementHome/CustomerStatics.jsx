@@ -30,6 +30,7 @@ const CustomerStatics = () => {
         options={chartData.options}
         series={chartData.series}
         type="donut"
+        className={"custom-dark-mode darkChart"}
       />
     </div>
   );

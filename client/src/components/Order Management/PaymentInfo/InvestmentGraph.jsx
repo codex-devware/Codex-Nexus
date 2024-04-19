@@ -86,6 +86,7 @@ const InvestmentGraph = () => {
         series={chartState.series}
         type="area"
         height={350}
+        className={"darkChart"}
       />
     </div>
   );

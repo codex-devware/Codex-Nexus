@@ -25,6 +25,7 @@ const TotalSalesGraph = () => {
       chart: {
         type: "area",
         stacked: false,
+
         height: 350,
         zoom: {
           type: "x",
@@ -44,6 +45,9 @@ const TotalSalesGraph = () => {
       title: {
         text: "Stock Price Movement",
         align: "left",
+        style: {
+          className: "dark:text-[#fff]",
+        },
       },
       fill: {
         type: "gradient",
@@ -60,6 +64,9 @@ const TotalSalesGraph = () => {
           formatter: function (val) {
             return (val / 1000000).toFixed(0);
           },
+          style: {
+            colors: "dark:text-[#fff]",
+          },
         },
         title: {
           text: "Price",
@@ -67,6 +74,9 @@ const TotalSalesGraph = () => {
       },
       xaxis: {
         type: "datetime",
+        style: {
+          colors: "dark:text-[#fff]",
+        },
       },
       tooltip: {
         shared: false,
@@ -86,6 +96,7 @@ const TotalSalesGraph = () => {
         series={chartState.series}
         type="area"
         height={350}
+        className={"darkChart "}
       />
     </div>
   );

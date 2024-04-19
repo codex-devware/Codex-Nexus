@@ -32,3 +32,26 @@
     justify-self: center;
   }
 }
+
+
+
+@media (prefers-color-scheme: dark) {
+  .dark .darkBackground {
+    background-color: #0E1629;
+  }
+  .dark .darkCard {
+    background-color: #182234;
+    border: 1px solid rgba(248, 250, 252, .08);
+    color: white;
+  }
+  .dark .darkIcon {
+    color: white;
+  }
+  .dark .darkChart {
+    background-color: white;
+    border: 1px solid rgba(248, 250, 252, .08);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}

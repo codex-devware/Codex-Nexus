@@ -16,13 +16,13 @@ const Login = () => {
           <form className="px-8 pt-6 pb-8 mb-4 font-outfit rounded">
             <div className="mb-4">
               <label
-                className="block mb-2 text-sm font-bold text-gray-700"
+                className="block mb-2 text-sm font-bold text-gray-700 dark:text-[#F4F7F9]"
                 htmlFor="email"
               >
                 Email
               </label>
               <input
-                className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 mb-3 text-sm leading-tight dark:text-[#F4F7F9] text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
                 placeholder="Email"
@@ -30,13 +30,13 @@ const Login = () => {
             </div>
             <div className="mb-4">
               <label
-                className="block mb-2 text-sm font-bold text-gray-700"
+                className="block mb-2 text-sm font-bold text-gray-700 dark:text-[#F4F7F9]"
                 htmlFor="email"
               >
                 Password
               </label>
               <input
-                className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 mb-3 text-sm leading-tight dark:text-[#F4F7F9] text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="password"
                 type="password"
                 placeholder="Password"

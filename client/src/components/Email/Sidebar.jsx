@@ -12,7 +12,7 @@ import {
   
 const Sidebar = ({menuState , setManuState, mailAction, classAdded}) => {
   return (
-    <div className={`w-3/12  ${classAdded} bg-white h-auto px-4 py-5 `}>
+    <div className={`w-3/12  ${classAdded}  bg-white dark:rounded-lg h-auto px-4 py-5 `}>
           {/* here we add this menu icon and button for side bar menu hide  */}
           {menuState && (
             <div
@@ -28,7 +28,7 @@ const Sidebar = ({menuState , setManuState, mailAction, classAdded}) => {
             <IcAddCom /> Compose
           </div>
           <div>
-            <div className={`bg-[#daeaff] ${mailAction}`}>
+            <div className={`bg-[#daeaff]  ${mailAction}`}>
               {" "}
               <IcMail /> Inbox{" "}
               <label className="w-[25px] h-[25px] rounded-full bg-[#cdf] overflow-hidden text-center 2xl:ml-[70%] xl:ml-[60%] lg:ml-[45%] ml-[60%] sm:text-[14px] ">

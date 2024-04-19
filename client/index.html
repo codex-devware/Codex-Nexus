@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="image/logo.png" />
@@ -9,5 +9,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- for theme mode status -->
+    <script>
+      
+      const themeChanger=()=>{
+          const modeStatus=JSON.parse(localStorage.getItem("ModeOfDaseboard"));
+
+          if(modeStatus.mode){
+            document.querySelector('html').setAttribute("class","dark")
+          }
+          else{
+            document.querySelector('html').setAttribute("class","light")
+          }
+        }
+
+        themeChanger();
+    </script>
   </body>
 </html>

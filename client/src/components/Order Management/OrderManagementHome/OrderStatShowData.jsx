@@ -13,11 +13,11 @@ const OrderStatShowData = ({ data }) => {
   } = data;
   return (
     <>
-      <section className="flex flex-wrap w-[90%] mx-auto flex-col gap-6 font-outfit border p-5 rounded-xl  duration-300 ease-in-out cursor-pointer">
+      <section className="flex flex-wrap w-[90%] mx-auto custom-dark-mode darkCard flex-col gap-6 font-outfit border p-5 rounded-xl  duration-300 ease-in-out cursor-pointer">
         <div className="flex flex-wrap flex-col gap-4">
           <div className="">
             <div className=" rounded-lg">
-              <span className="text-[#1e40afb2]">{icon}</span>
+              <span className="text-[#1e40afb2] custom-dark-mode darkIcon">{icon}</span>
             </div>
           </div>
           <div className="">

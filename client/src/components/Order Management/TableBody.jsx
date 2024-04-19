@@ -16,8 +16,8 @@ const TableBody = ({ items }) => {
     <>
       <tr className="w-[1000px]">
         <td className="w-[1000px]">
-          <table className=" mb-3 w-full text-[#4a4a4acb] ">
-            <tr className="grid grid-cols-9 border-3 rounded-lg bg-white items-center">
+          <table className=" mb-3 w-full text-[#4a4a4acb] dark:text-white ">
+            <tr className="grid grid-cols-9 border-3 rounded-lg dark:bg-[#1E293B] bg-white items-center">
               <td className="px-4 py-3 font-semibold">#{orderCode}</td>
               <td className="px-4 py-3 col-start-2 col-end-4">
                 <span className="flex flex-wrap items-center font-semibold">

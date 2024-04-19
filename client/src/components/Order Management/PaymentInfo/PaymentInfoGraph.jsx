@@ -47,6 +47,7 @@ const PaymentInfoGraph = () => {
         series={options.series}
         type="area"
         height={300}
+        className={"darkChart ms-2"}
       />
     </div>
   );

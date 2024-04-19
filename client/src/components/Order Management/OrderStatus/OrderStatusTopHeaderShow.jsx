@@ -17,10 +17,10 @@ const OrderStatusTopHeaderShow = ({ data }) => {
     update,
   } = data;
   return (
-    <div className="flex flex-wrap gap-4 justify-center sm:justify-between  shadow font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+    <div className="flex flex-wrap gap-4 justify-center sm:justify-between darkCard  shadow font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
       <div className="flex sm:justify-between sm:items-start justify-center items-center flex-col gap-4">
         <div className="">
-          <span className="text-[#1E40AF]">{icon}</span>
+          <span className="text-[#1E40AF]  darkIcon">{icon}</span>
         </div>
         <div className="">
           <h1 className="flex flex-wrap items-end gap-1">

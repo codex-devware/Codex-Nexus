@@ -29,7 +29,7 @@ const UsersTable = () => {
     <>
       <div className='overflow-x-auto font-outfit'>
         <table className='table-auto min-w-full text-left text-sm font-light'>
-          <thead className='bg-[#F4F7F9] font-medium'>
+          <thead className='bg-[#F4F7F9]   dark:text-[#1E293B] font-medium'>
             <tr>
               <th scope='col' className='pl-6 pr-4 py-2.5'>
                 Name
@@ -56,7 +56,7 @@ const UsersTable = () => {
           </thead>
           <tbody>
             {currentItems?.map((item) => (
-              <tr key={item.id} className='border-b border-dashed'>
+              <tr key={item.id} className='border-b border-dashed dark:bg-[#F4F7F9] dark:text-[#1E293B]'>
                 <td className='whitespace-nowrap px-6 py-4 flex items-center gap-3'>
                   <img className='rounded-lg w-10' src={item.imgSrc} alt='' />
                   <div className='flex flex-col'>

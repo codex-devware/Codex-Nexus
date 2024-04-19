@@ -90,8 +90,8 @@ const RevenueAnalyticsSaleGraph = () => {
           </h2>
         </div>
         <div>
-          <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium">
-            <span className="text-[#1E40AF]">
+          <button className="hover:translate-y-[-2px] dark:bg-white dark:text-[#1E293B] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium">
+            <span className="text-[#1E40AF] ">
               <CiFilter />
             </span>{" "}
             Filter
@@ -103,6 +103,7 @@ const RevenueAnalyticsSaleGraph = () => {
         series={chartState.series}
         type="area"
         height={350}
+        className={"darkChart"}
       />
     </div>
   );

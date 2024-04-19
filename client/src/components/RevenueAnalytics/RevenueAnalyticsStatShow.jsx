@@ -15,13 +15,13 @@ const RevenueAnalyticsStatShow = ({ data }) => {
   } = data;
 
   return (
-    <div className="shadow font-outfit flex flex-col gap-2 border p-4 w-[300px] sm:w-full mx-auto rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+    <div className="shadow font-outfit flex flex-col gap-2 border darkCard p-4 w-[300px] sm:w-full mx-auto rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
       <div className="">
         <div className="flex items-center justify-between">
           <h1 className="flex gap-1">
             <span className="text-[16px] font-medium">{statName}</span>
           </h1>
-          <h2 className="text-[#1E40AF] px-2 py-2 rounded-md bg-slate-200">
+          <h2 className="text-[#1E40AF] darkIcon px-2 py-2 rounded-md ">
             {icon}
           </h2>
         </div>

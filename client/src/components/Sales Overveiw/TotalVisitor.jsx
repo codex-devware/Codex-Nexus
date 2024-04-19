@@ -5,7 +5,7 @@ import { LuArrowDownLeftFromCircle } from "react-icons/lu";
 const TotalVisitor = () => {
   return (
     <>
-      <div className=" flex flex-col gap-2 justify-between font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+      <div className="custom-dark-mode darkCard flex flex-col gap-2 justify-between font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
         <div className="flex  gap-2">
           <div className="">
             <div className="bg-[#f1f3ff] p-3 rounded-lg">

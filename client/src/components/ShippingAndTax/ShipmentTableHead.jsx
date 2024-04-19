@@ -16,7 +16,7 @@ const ShipmentTableHead = ({ children }) => {
     <>
       <div className='overflow-x-auto font-outfit rounded-xl border-dashed'>
         <table className='table-auto table-container text-left text-sm font-light'>
-          <thead className='bg-[#F4F7F9] font-medium grid grid-cols-9 table-container'>
+          <thead className='bg-[#F4F7F9] font-medium grid grid-cols-9 table-container dark:bg-white dark:text-[#1E293B]'>
             {tableHeader.map((el) => (
               <th scope='col' key={el} className='py-2.5'>
                 {el}

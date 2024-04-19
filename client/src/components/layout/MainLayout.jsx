@@ -10,7 +10,7 @@ export function MainLayout({ children }) {
 
       <div className={`grid grid-cols-12 justify-center ${open && "lg:h-[100vh]"}`}>
         <div
-          className={`fixed z-50 lg:relative bg-gray-400 ${
+          className={`fixed z-50 lg:relative bg-gray-400 custom-dark-mode darkBackground dark:border-r-2 dark:border-white ${
             open ? 'lg:col-start-1 col-end-3' : 'col-start-1 col-end-1'
           }`}
         >
@@ -32,7 +32,7 @@ export function MainLayout({ children }) {
               <Topbar openToggle={open} setOpenToggle={setOpen} />
             </div>
           </div>
-          <div className='rounded-t-lg min-h-screen h-full border xl:px-12 bg-gray-50  max-lg:px-4 px-4'>
+          <div className='rounded-t-lg min-h-screen h-full border xl:px-12 bg-gray-50 custom-dark-mode darkBackground dark:text-white dark:border-[#1E293B]  max-lg:px-4 px-4'>
             {children}
           </div>
         </div>

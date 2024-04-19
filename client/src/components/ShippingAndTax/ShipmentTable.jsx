@@ -4,7 +4,7 @@ const ShipmentTable = ({ data }) => {
   return (
     <>
       <div className=" flex justify-between gap-2 items-center">
-        <h1 className="sm:text-md text-xs font-semibold font-sora">
+        <h1 className="sm:text-md text-xs font-semibold font-sora ms-2">
           Shipment Items
         </h1>
         <div className="flex-none">
@@ -26,7 +26,7 @@ const ShipmentTable = ({ data }) => {
         </div>
       </div>
       {data.map((item) => (
-        <section key={item.id} className=" flex flex-col  p-4">
+        <section key={item.id} className=" flex flex-col  p-4 darkCard dark:rounded dark:ms-1 dark:mb-2">
           {/* top section  */}
 
           <div>
@@ -57,8 +57,8 @@ const ShipmentTable = ({ data }) => {
                 <span className="font-light">01 Feb,2024</span>
                 <h3 className="font-semibold text-md">Banani, Dhaka</h3>
               </div>
-              <div className="w-5 flex align-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <div className="w-5 flex align-middle ">
+                <svg xmlns="http://www.w3.org/2000/svg" className="dark:text-white fill-current" viewBox="0 0 512 512">
                   <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                 </svg>
               </div>

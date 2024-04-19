@@ -3,7 +3,7 @@ const PaymentInfo = ({ info }) => {
 
   return (
     <>
-      <section className='w-full border p-5 py-8  rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer'>
+      <section className='w-full border p-5 py-8 darkCard  rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer'>
         <div className='flex gap-4  justify-center'>
           <div className='rounded-lg flex justify-center items-center '>
             <span className='bg-white p-3 rounded-full'>{icon}</span>

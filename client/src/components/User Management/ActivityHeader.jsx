@@ -19,9 +19,9 @@ const ActivityHeader = () => {
 
           <div
             onClick={handleToggle}
-            className="flex items-center gap-5 bg-slate-100 px-3 py-1 rounded-xl cursor-pointer"
+            className="flex items-center gap-5 bg-slate-100 px-3 py-1 rounded-xl cursor-pointer dark:text-[#1E293B]"
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 ">
               <div className=""></div>
               <div className="flex flex-col">
                 <span className="text-sm">Last 7 Days</span>
@@ -41,8 +41,8 @@ const ActivityHeader = () => {
           </div>
         </div>
         {showMenu && (
-          <>
-            <div className="absolute flex items-center gap-5 bg-slate-100 px-3 py-1 right-[76px] sm:right-12 mt-2 w-72 rounded-md shadow-md">
+          <div className="dark:text-[#1E293B]">
+            <div className="absolute flex items-center gap-5  bg-slate-100 px-3 py-1 right-[76px] sm:right-12 mt-2 w-72 rounded-md shadow-md">
               <div className="flex items-center gap-3">
                 <div className=""></div>
                 <div className="flex flex-col">
@@ -74,7 +74,7 @@ const ActivityHeader = () => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         )}
 
         <div className="border-b mt-12">

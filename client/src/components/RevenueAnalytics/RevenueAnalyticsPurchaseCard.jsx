@@ -7,7 +7,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         <h1 className="sm:text-md text-xs font-semibold font-sora">
           Purchase Items
         </h1>
-        <select className="select select-accent select-sm w-32">
+        <select className="select select-accent select-sm w-32 text-[#1E293B]">
           <option disabled selected className="">
             Product
           </option>

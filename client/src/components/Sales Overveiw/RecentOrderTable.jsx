@@ -31,7 +31,7 @@ const RecentOrderTable = () => {
     <>
       <div className="overflow-x-auto    ">
         <table className="table-auto min-w-full text-left text-sm font-light ">
-          <thead className="bg-[#F4F7F9]  font-medium">
+          <thead className="bg-[#F4F7F9]  font-medium darkTableHeader">
             <tr>
               <th scope="col" className="pl-6 pr-4 py-2.5 ">
                 <input type="checkbox" />
@@ -52,7 +52,7 @@ const RecentOrderTable = () => {
           </thead>
           <tbody>
             {data.map((item) => (
-              <tr key={item.id} className="border-b border-dashed">
+              <tr key={item.id} className="border-b border-dashed darkTableRow">
                 <td className="whitespace-nowrap pl-6 pr-4 py-4 font-medium">
                   <input type="checkbox" />
                 </td>
@@ -72,11 +72,11 @@ const RecentOrderTable = () => {
                 </td>
                 <td className="whitespace-nowrap px-4 py-4">
                   {item.status === "Success" ? (
-                    <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-semibold text-[#159b36]">
+                    <button className="bg-green-200 text-green-500 rounded-lg py-1 px-4 w-20 font-semibold ">
                       {item.status}
                     </button>
                   ) : (
-                    <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-4 w-20 font-semibold text-[#db5a5a]">
+                    <button className="bg-red-100 text-red-600 rounded-lg py-1 px-4 w-20 font-semibold ">
                       {item.status}
                     </button>
                   )}

@@ -140,7 +140,7 @@ const Form = () => {
 
   return (
     <div className="container">
-      <div className=" md:bg-white dark:text-[#1E293B]  rounded-xl md:p-3 xl:flex justify-center">
+      <div className=" md:bg-white darkChart dark:text-[#1E293B]  rounded-xl md:p-3 xl:flex justify-center">
         <div className="relative">
           <img
             className="hidden xl:block w-full h-[78%] rounded-xl"
@@ -164,7 +164,7 @@ const Form = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col justify-center mx-auto relative  md:static mb-40 rounded-2xl  pb-16 bg-white md:px-0 md:py-5 md:mx-12 md:w-100 md:my-2">
+        <div className="flex flex-col justify-center mx-auto relative  md:static mb-40 rounded-2xl  pb-16 darkChart bg-white md:px-0 md:py-5 md:mx-12 md:w-100 md:my-2">
           {(displayThankyou && (
             <>
               <Thankyou />
@@ -195,7 +195,7 @@ const Form = () => {
                     />
                   ))}
               </div>
-              <div className="flex justify-between  bottom-0 left-0 w-full bg-white md:p-0 md:static items-center ">
+              <div className="flex justify-between  bottom-0 left-0 w-full darkChart bg-white md:p-0 md:static items-center ">
                 <div
                   onClick={prevStep}
                   className={`font-medium text-[#9699ab] dark:text-[#1E293B] select-none cursor-pointer transition duration-100 hover:text-[#02295a] ${goBackVisible}`}

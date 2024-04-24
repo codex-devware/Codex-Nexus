@@ -6,9 +6,9 @@ export default function ShipmentTableBody({ shipmentTable }) {
       {shipmentTable.map((item) => (
         <tr
           key={item.id}
-          className='capitalize border-b py-3 !text-sm first-letter:border-dashed grid grid-cols-9 justify-center items-center table-container'
+          className='capitalize border-b text-center darkTableRow py-3 !text-sm first-letter:border-dashed grid grid-cols-9 justify-center items-center table-container'
         >
-          <td className='capitalize'>{item.idNumber}</td>
+          <td className='capitalize '>{item.idNumber}</td>
 
           <td className='capitalize'>
             <span

@@ -65,10 +65,10 @@ const OrderStatusTable = () => {
     <>
       <div
         data-aos="fade-up"
-        className="overflow-x-auto border rounded-md mb-4 mx-4"
+        className="overflow-x-auto border rounded-md mb-4 mx-4 darkTableDesign"
       >
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#ebebeb] font-medium dark:text-[#1E293B]">
+          <thead className="bg-[#ebebeb] font-medium darkTableHeader">
             <tr>
               <th scope="col" className="pl-6 pr-4 py-2.5">
                 Code
@@ -100,7 +100,7 @@ const OrderStatusTable = () => {
             {data.map((item) => (
               <tr
                 key={item.id}
-                className="border-b cursor-pointer hover:bg-[#ebebeb] dark:hover:bg-[#2d3e5b] duration-300 border-dashed"
+                className="border-b cursor-pointer darkTableRow hover:bg-[#ebebeb58]  duration-300 border-dashed"
               >
                 <td className="whitespace-nowrap pl-6 pr-4 text-gray-700 dark:text-white py-4 font-medium">
                   {item.id}

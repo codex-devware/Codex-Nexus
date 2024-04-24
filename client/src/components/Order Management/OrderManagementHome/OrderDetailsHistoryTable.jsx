@@ -14,10 +14,10 @@ const OrderDetailsHistoryTable = ({ filter }) => {
   const tdClass = 'py-3 flex justify-center items-center';
   return (
     <>
-      <div className='overflow-x-auto border !border-t-0 rounded-b-md '>
-        <table className='table-container table-auto min-w-full text-left text-sm font-light'>
-          <thead className='table-container bg-[#ebebeb] dark:text-[#1E293B] font-medium'>
-            <tr className='table-container grid grid-cols-6'>
+      <div className='overflow-x-auto border !border-t-0 rounded-b-md darkTableDesign'>
+        <table className='table-container table-auto min-w-full text-left text-sm font-light '>
+          <thead className='table-container bg-[#ebebeb] darkTableHeader font-medium'>
+            <tr className='table-container grid grid-cols-6 '>
               {tableHeader.map((item) => (
                 <th scope='col' key={item} className={`capitalize ${tdClass}`}>
                   {item}
@@ -29,7 +29,7 @@ const OrderDetailsHistoryTable = ({ filter }) => {
             {data.map((item) => (
               <tr
                 key={item.id}
-                className='table-container grid grid-cols-6 border-b cursor-pointer hover:bg-[#ebebeb58] dark:hover:bg-[#2d3e5b] duration-300 border-dashed'
+                className='table-container darkTableRow grid grid-cols-6 border-b cursor-pointer hover:bg-[#ebebeb58]  duration-300 border-dashed'
               >
                 <td className={`${tdClass} !justify-start pl-6`}>
                   <img

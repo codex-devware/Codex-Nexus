@@ -51,7 +51,7 @@ const ActivityBody = () => {
       </div>
       {/*ol tag is a main dotted border which main things for down coloring animate when selected the next radius border button */}
       <ol
-        className={`border-l-2 border-dotted mb-10 dark:text-[#1E293B]   ${
+        className={`border-l-2 border-dotted mb-10    ${
           selectedBorderIndex === indexs ? "border-blue-500" : "border-gray-400"
         } rounded`}
       >
@@ -60,14 +60,14 @@ const ActivityBody = () => {
             <div className={``}>
               {/* Apply active class if index matches selectedBorderIndex */}
               <div
-                className={`-ml-[6px] mr-3 h-[9px] w-[9px] rounded-full  cursor-pointer   ${
+                className={`-ml-[6px] mr-3 h-[9px] w-[9px] rounded-full  cursor-pointer    ${
                   selectedBorderIndex === index ? "bg-blue-500" : "bg-slate-300"
                 }`}
                 onClick={() => handleBorderClick(index)}
               ></div>
               {/* Apply active class if previous index matches selectedBorderIndex */}
             </div>
-            <div className=" ml-4">
+            <div className=" ml-4 darkButton">
               <div
                 className={`flex items-center justify-between p-3 rounded-xl ${
                   selectedBorderIndex === index ? "bg-blue-200" : "bg-slate-200"
@@ -81,12 +81,12 @@ const ActivityBody = () => {
                         : "bg-gray-300"
                     } p-3 rounded-full`}
                   >
-                    <span className="text-blue-500 font-bold ext-whitet ">
+                    <span className="text-blue-500 font-bold ext-whitet darkButton">
                       {item.icon}
                     </span>
                   </div>
                   <div className="">
-                    <div className="flex font-sora items-center gap-3">
+                    <div className="flex font-sora items-center gap-3 ">
                       <span className="text-sm font-semibold">
                         {item.title}
                       </span>

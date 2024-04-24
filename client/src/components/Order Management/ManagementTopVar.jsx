@@ -105,7 +105,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
             <button
               id="filterDropdownButton"
               data-dropdown-toggle="filterDropdown"
-              className="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-[#1d4ed8] focus:z-10 focus:ring-4 focus:ring-gray-200"
+              className="w-full darkButton md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-[#1d4ed8] focus:z-10 focus:ring-4 focus:ring-gray-200"
               type="button"
             >
               <svg

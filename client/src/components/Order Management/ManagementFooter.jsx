@@ -13,7 +13,7 @@ const ManagementFooter = ({
         aria-label="Table navigation"
       >
         {/* Pagination info */}
-        <span className="text-sm font-normal text-gray-500 dark:bg-[#F4F7F9]  border-2 border-gray-300 px-2 py-2 rounded-md">
+        <span className="text-sm font-normal text-gray-500 darkButton  border-2 border-gray-300 px-2 py-2 rounded-md">
           Showing
           <span className="font-semibold text-gray-900 ml-2 mr-2">
             {indexOfFirstItem + 1}-
@@ -34,7 +34,7 @@ const ManagementFooter = ({
             <button
               onClick={() => paginate(currentPage - 1)}
               disabled={currentPage === 1}
-              className="flex items-center justify-center h-full py-1.5 px-3 ml-0 text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
+              className="flex items-center justify-center h-full py-1.5 px-3 ml-0 darkButton text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               <span className="sr-only">Previous</span>
               &lt;
@@ -48,10 +48,10 @@ const ManagementFooter = ({
             <li key={index}>
               <button
                 onClick={() => paginate(index + 1)}
-                className={`flex items-center justify-center text-sm py-2 px-3 leading-tight ${
+                className={`flex items-center justify-center text-sm py-2 px-3 leading-tight  ${
                   currentPage === index + 1
                     ? "text-primary-600 bg-primary-50 border border-primary-300 hover:bg-primary-100 hover:text-primary-700"
-                    : "text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
+                    : "text-gray-500 bg-white border darkButton border-gray-300 hover:bg-gray-100 hover:text-gray-700"
                 }`}
               >
                 {index + 1}
@@ -66,7 +66,7 @@ const ManagementFooter = ({
               disabled={
                 currentPage === Math.ceil(OrdersData?.length / itemsPerPage)
               }
-              className="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
+              className="flex items-center justify-center h-full py-1.5 px-3 leading-tight darkButton text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               <span className="sr-only">Next</span>
               &gt;

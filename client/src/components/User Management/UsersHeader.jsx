@@ -11,7 +11,7 @@ const UsersHeader = () => {
           <div className=''>
             <Link
               to='/security/register'
-              className='hover:translate-y-[-2px] duration-300 ease-in-out flex flex-wrap items-center gap-2 border-2 py-2 px-3 rounded-md font-outfit font-medium'
+              className='hover:translate-y-[-2px] darkButton duration-300 ease-in-out flex flex-wrap items-center gap-2 border-2 py-2 px-3 rounded-md font-outfit font-medium'
             >
               <span className='text-[#1E40AF]'></span> User Application
             </Link>

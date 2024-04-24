@@ -12,7 +12,7 @@ import {
   
 const Sidebar = ({menuState , setManuState, mailAction, classAdded}) => {
   return (
-    <div className={`w-3/12  ${classAdded}  bg-white dark:rounded-lg h-auto px-4 py-5 `}>
+    <div className={`w-3/12  ${classAdded}  bg-white  dark:rounded-lg h-auto px-4 py-5 `}>
           {/* here we add this menu icon and button for side bar menu hide  */}
           {menuState && (
             <div

@@ -3,8 +3,8 @@ const TableHeader = () => {
     <>
       <tr>
         <td className="">
-          <table className=" w-full  text-black mb-3 font-semibold">
-            <tr className="grid grid-cols-9 border-2 rounded-lg bg-white">
+          <table className=" w-full  text-black mb-3 font-semibold ">
+            <tr className="grid grid-cols-9 border-2 rounded-lg bg-white  darkTableHeader">
               <th scope="col" className="px-4 py-3">
                 Id
               </th>

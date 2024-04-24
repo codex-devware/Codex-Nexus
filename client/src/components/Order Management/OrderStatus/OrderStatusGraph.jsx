@@ -97,7 +97,7 @@ const OrderStatusGraph = () => {
   return (
     <Card
       data-aos="fade-down"
-      className=" mx-6 border-dashed border-[1px] shadow-md"
+      className=" mx-6 border-dashed border-[1px] shadow-md darkChart"
     >
       <CardHeader
         floated={false}

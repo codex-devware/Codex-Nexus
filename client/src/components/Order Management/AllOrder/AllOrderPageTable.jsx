@@ -89,9 +89,9 @@ const AllOrderPageTable = () => {
   };
   return (
     <>
-      <div data-aos="fade-up" className="overflow-x-auto border rounded-md">
+      <div data-aos="fade-up" className="overflow-x-auto border rounded-md darkTableDesign">
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#ebebeb] dark:text-[#1E293B] font-medium">
+          <thead className="bg-[#ebebeb] darkTableHeader font-medium">
             <tr>
               <th scope="col" className="pl-6 pr-4 py-2.5"></th>
               <th scope="col" className="pr-3 py-2.5">
@@ -116,7 +116,7 @@ const AllOrderPageTable = () => {
             {data.map((item) => (
               <tr
                 key={item.id}
-                className="border-b cursor-pointer hover:bg-[#ebebeb] dark:hover:bg-[#2d3e5b] duration-300 border-dashed"
+                className="border-b cursor-pointer darkTableRow hover:bg-[#ebebeb58]  duration-300 border-dashed"
               >
                 <td className="whitespace-nowrap pl-6 pr-4 py-4 font-medium"></td>
                 <td className="whitespace-nowrap pr-6 py-4 flex items-center gap-3">

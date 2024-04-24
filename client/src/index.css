@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +11,7 @@
 }
 
 :root {
-  --base-color: '';
+  --base-color: "";
   --white-color: #fff;
 }
 .sidebarScroll::-webkit-scrollbar {
@@ -33,25 +33,40 @@
   }
 }
 
-
-
-@media (prefers-color-scheme: dark) {
-  .dark .darkBackground {
-    background-color: #0E1629;
-  }
-  .dark .darkCard {
-    background-color: #182234;
-    border: 1px solid rgba(248, 250, 252, .08);
-    color: white;
-  }
-  .dark .darkIcon {
-    color: white;
-  }
-  .dark .darkChart {
-    background-color: white;
-    border: 1px solid rgba(248, 250, 252, .08);
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
+/* dark mode css start */
+.dark .darkBackground {
+  background-color: #0e1629;
 }
+.dark .darkCard {
+  background-color: #182234;
+  border: 1px solid rgba(248, 250, 252, 0.08);
+  color: white;
+}
+.dark .darkIcon {
+  color: #f1f3ff;
+}
+.dark .darkChart {
+  background-color: #dce5ff;
+  border: 1px solid rgba(248, 250, 252, 0.08);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.dark .darkTableHeader{
+   background-color: #2d3e5b;
+   border: 1px solid rgba(248, 250, 252, 0.08);
+   color: #f1f3ff;
+}
+.dark .darkTableRow{
+  border: 1px solid rgba(248, 250, 252, 0.08);
+  background-color: #1E293B;
+}
+.dark .darkTableDesign{
+  color: #f1f3ff;
+  border: 1px solid rgba(248, 250, 252, 0.08);
+}
+.dark .darkButton{
+  background: #dce5ff;
+  color: #182234
+}
+/* dark mode css end */

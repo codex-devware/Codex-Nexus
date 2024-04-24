@@ -45,7 +45,7 @@ const ReturnOrderManagement = () => {
       />
       <div className='overflow-x-auto '>
         <table className='table-auto min-w-full text-left text-sm font-light'>
-          <thead className='bg-[#F4F7F9] dark:text-[#1E293B] font-medium'>
+          <thead className='bg-[#F4F7F9] darkTableHeader font-medium'>
             <tr>
               <th scope='col' className='px-6 py-2.5'>
                 Select
@@ -74,7 +74,7 @@ const ReturnOrderManagement = () => {
           </thead>
           <tbody>
             {updatedData.map((item) => (
-              <tr key={item.id} className='border-b border-dashed'>
+              <tr key={item.id} className='border-b border-dashed darkTableRow'>
                 <td className='pl-5whitespace-nowrap px-6 py-4 font-medium'>
                   <input
                     type='checkbox'
@@ -105,7 +105,7 @@ const ReturnOrderManagement = () => {
                   {item.total}
                 </td>
                 <td className='whitespace-nowrap px-6 py-4 font-medium'>
-                  <button className='btn btn-circle bg-transparent border-none shadow-none'>
+                  <button className='btn btn-circle bg-transparent border-none shadow-none darkButton'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       height='20'

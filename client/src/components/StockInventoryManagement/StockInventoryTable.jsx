@@ -44,7 +44,7 @@ const StockInventoryTable = () => {
     <>
       <div className="overflow-x-auto">
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#F4F7F9] font-medium  dark:text-[#1E293B]">
+          <thead className="bg-[#F4F7F9] font-medium  darkTableHeader">
             <tr>
               <th scope="col" className="pl-6 pr-4 py-2.5 ">
                 <input type="checkbox" />
@@ -78,7 +78,7 @@ const StockInventoryTable = () => {
           </thead>
           <tbody>
             {data.map((item) => (
-              <tr key={item.id} className="border-b border-dashed">
+              <tr key={item.id} className="border-b border-dashed darkTableRow">
                 <td className="whitespace-nowrap pl-6 pr-4 py-4 font-medium">
                   <input type="checkbox" />
                 </td>

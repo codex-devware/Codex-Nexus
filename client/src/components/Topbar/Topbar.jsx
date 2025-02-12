@@ -4,11 +4,11 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
     <>
       <div
         className={`navbar flex ${
-          openToggle ? "lg:pr-56 " : "lg:pr-20"
+          openToggle ? "lg:pl-12 lg:pr-56 " : "lg:pr-20"
         } justify-between align-middle h-20 bg-blue-500`}
       >
         <div className="flex">
-          <a className="btn bg-transparent border-none shadow-none hover:bg-transparent text-xl">
+          <a className="btn bg-transparent text-gray-50 border-none shadow-none hover:bg-transparent text-xl">
             E-commerce Dashboard
           </a>
           <button

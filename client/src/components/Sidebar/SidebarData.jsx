@@ -1,47 +1,69 @@
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
+
 const SidebarData = ({ sections, open }) => {
-  //main state
   const [openSubMenu, setSubMenu] = useState(false);
   const { section, subSection, icon, path } = sections;
-  return (
-    <>
-      <ul>
-        <Link to={path}>
-          <li className=" text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-700 hover:text-white rounded-md duration-200">
-            <span className=" text-2xl block float-left opacity-80">
-              {icon}
-            </span>
-            <span
-              onClick={() => setSubMenu(!openSubMenu)}
-              className={`text-[14px] font-medium flex-1 flex items-center  gap-4 duration-150 ${
-                !open && "hidden"
-              }`}
-            >
-              {section}
+  const [activeMenu, setActiveMenu] = useState("Dashboard");
 
-              {subSection.length > 0 && (
-                <BsChevronDown
-                  className={`${openSubMenu && "rotate-180 duration-300"}`}
-                />
-              )}
-            </span>
-          </li>
-        </Link>
-        {subSection.length > 0 && openSubMenu && open && (
-          <ul>
-            {subSection.map((item, index) => (
-              <Link key={index} to={item.path}>
-                <li className="text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-12  hover:bg-gray-700 rounded-md duration-500">
-                  {item.title}
-                </li>
-              </Link>
-            ))}
-          </ul>
-        )}
-      </ul>
-    </>
+  console.log(activeMenu);
+  return (
+    <ul>
+      <Link
+        to={path}
+        onClick={() => {
+          setActiveMenu(section);
+        }}
+      >
+        <li
+          onClick={() => {
+            setSubMenu(!openSubMenu);
+          }}
+          className={`text-gray-800 text-sm flex items-center justify-center gap-x-4 cursor-pointer p-2 transition-colors duration-300 hover:bg-gray-700 hover:text-white rounded-md border-b-2 my-3 ${
+            activeMenu === section ? "bg-gray-700 text-white" : ""
+          }`}
+        >
+          <span className="text-2xl block opacity-80">{icon}</span>
+          <span
+            className={classNames(
+              "text-[14px] font-medium flex-1 flex items-center justify-between gap-4",
+              { hidden: !open }
+            )}
+          >
+            {/* {console.log(section === activeMenu)} */}
+            {section}
+            {subSection.length > 0 && (
+              <BsChevronDown
+                className={classNames("transition-transform duration-300", {
+                  "rotate-180": openSubMenu,
+                })}
+              />
+            )}
+          </span>
+        </li>
+      </Link>
+      {subSection.length > 0 && openSubMenu && open && (
+        <ul className="pl-8 mt-2">
+          {subSection.map((item, index) => (
+            <Link
+              key={index}
+              to={item.path}
+              onClick={() => setActiveMenu(subSection)}
+            >
+              <li
+                className={`text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 transition-colors duration-300 hover:bg-gray-600 hover:text-white rounded-md shadow-sm ${
+                  activeMenu === subSection ? "bg-gray-700 text-white" : ""
+                }`}
+              >
+                {item.title}
+              </li>
+            </Link>
+          ))}
+        </ul>
+      )}
+    </ul>
   );
 };
 

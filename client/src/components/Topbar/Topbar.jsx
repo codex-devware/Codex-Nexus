@@ -1,5 +1,8 @@
 import mdKawsar from "../../assets/mdKawsar.png";
-const Topbar = ({ setOpenToggle, openToggle }) => {
+import { FaTimes } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
+
+const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
   return (
     <>
       <div
@@ -7,16 +10,30 @@ const Topbar = ({ setOpenToggle, openToggle }) => {
           openToggle ? "lg:pl-12 lg:pr-56 " : "lg:pr-20"
         } justify-between align-middle h-20 bg-blue-500`}
       >
-        <div className="flex">
+        <div className="flex items-center">
+          <div className="text-white">
+            {open ? (
+              <FaTimes size={25}
+                className="z-[999] lg:block text-4xl rounded-full cursor-pointer transition-transform duration-300"
+                onClick={() => setOpen(!open)}
+              />
+            ) : (
+              <AiOutlineMenu size={25}
+                className="z-[999] lg:block text-4xl rounded-full cursor-pointer transition-transform duration-300"
+                onClick={() => setOpen(!open)}
+              />
+            )}
+          </div>
           <a className="btn bg-transparent text-gray-50 border-none shadow-none hover:bg-transparent text-xl">
             E-commerce Dashboard
           </a>
-          <button
+
+          {/* <button
             className="lg:hidden"
             onClick={() => setOpenToggle(!openToggle)}
           >
             +
-          </button>
+          </button> */}
         </div>
 
         <div className="flex justify-end">

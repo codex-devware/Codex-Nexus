@@ -29,7 +29,7 @@ export function MainLayout({ children }) {
         >
           <div className='h-20'>
             <div className={`fixed z-40 w-full`}>
-              <Topbar openToggle={open} setOpenToggle={setOpen} />
+              <Topbar openToggle={open} open={open} setOpen={setOpen} setOpenToggle={setOpen} />
             </div>
           </div>
           <div className='rounded-t-lg min-h-screen h-full border xl:px-12 bg-gray-50  max-lg:px-4 px-4'>

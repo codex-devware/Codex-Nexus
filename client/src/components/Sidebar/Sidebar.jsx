@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Importing the menu and cross icons
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Data } from "./Data";
 import SidebarData from "./SidebarData";
 import classNames from "classnames";
@@ -17,7 +17,7 @@ const Sidebar = ({ setOpen, open }) => {
             }
           )}
         >
-          {open ? (
+          {/* {open ? (
             <FaTimes
               className="z-[999] lg:block text-4xl rounded-full absolute top-3 left-6 pb-2 px-2 cursor-pointer transition-transform duration-300"
               onClick={() => setOpen(!open)}
@@ -27,6 +27,15 @@ const Sidebar = ({ setOpen, open }) => {
               className="z-[999] lg:block text-4xl rounded-full absolute top-3 left-6 pb-2 px-2 cursor-pointer transition-transform duration-300"
               onClick={() => setOpen(!open)}
             />
+          )} */}
+
+          {open ? (
+            <FaTimes
+              className="z-[999] lg:block text-4xl rounded-full absolute top-3 left-6 pb-2 px-2 cursor-pointer transition-transform duration-300 opacity-1 sm:opacity-0"
+              onClick={() => setOpen(!open)}
+            />
+          ) : (
+            ""
           )}
           <div className="pt-2">
             {Data?.map((sections, index) => (

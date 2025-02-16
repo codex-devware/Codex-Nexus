@@ -7,33 +7,25 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
     <>
       <div
         className={`navbar flex ${
-          openToggle ? "lg:pl-12 lg:pr-56 " : "lg:pr-20"
-        } justify-between align-middle h-20 bg-blue-500`}
+          openToggle ? "lg:pl-8 lg:pr-56 " : "lg:pr-20"
+        } justify-between align-middle lg:pl-6 h-20 bg-gray-50 shadow-md`}
       >
         <div className="flex items-center">
-          <div className="text-white">
+          <div className="">
             {open ? (
-              <FaTimes size={25}
+              <FaTimes
+                size={25}
                 className="z-[999] lg:block text-4xl rounded-full cursor-pointer transition-transform duration-300"
                 onClick={() => setOpen(!open)}
               />
             ) : (
-              <AiOutlineMenu size={25}
+              <AiOutlineMenu
+                size={25}
                 className="z-[999] lg:block text-4xl rounded-full cursor-pointer transition-transform duration-300"
                 onClick={() => setOpen(!open)}
               />
             )}
           </div>
-          <a className="btn bg-transparent text-gray-50 border-none shadow-none hover:bg-transparent text-xl">
-            E-commerce Dashboard
-          </a>
-
-          {/* <button
-            className="lg:hidden"
-            onClick={() => setOpenToggle(!openToggle)}
-          >
-            +
-          </button> */}
         </div>
 
         <div className="flex justify-end">
@@ -52,7 +44,7 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
                   <div
                     tabIndex={0}
                     role="button"
-                    className="bg-[#F9FAFB] p-3 rounded-full"
+                    className="p-3 rounded-full border"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +144,7 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
               <li>
                 <div className="dropdown dropdown-hover ">
                   <div
-                    className="bg-[#F9FAFB] p-3 rounded-full"
+                    className="p-3 border rounded-full"
                     tabIndex={0}
                     role="button"
                   >
@@ -224,7 +216,7 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
               {/* day night toggle  */}
               <li>
                 <div className="dropdown dropdown-hover ">
-                  <div className="bg-[#F9FAFB] p-3 rounded-full" role="button">
+                  <div className="p-3 border rounded-full" role="button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="16"

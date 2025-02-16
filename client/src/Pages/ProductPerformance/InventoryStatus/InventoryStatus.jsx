@@ -1,5 +1,3 @@
 export default function InventoryStatus() {
-  return (
-    <div>InventoryStatus</div>
-  )
+  return <div>InventoryStatus</div>;
 }

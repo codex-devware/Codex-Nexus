@@ -1,31 +1,31 @@
-import AddProduct from '@/Pages/AddProduct/AddProduct';
-import AllOrderMain from '@/Pages/OrderManagement/AllOrder/AllOrderMain';
-import OrderHistory from '@/Pages/OrderManagement/OrderHistory/OrderHistory';
-import OrderManagement from '@/Pages/OrderManagement/OrderManagement';
-import InventoryStatus from '@/Pages/ProductPerformance/InventoryStatus/InventoryStatus';
-import ProductPerformance from '@/Pages/ProductPerformance/ProductPerformance';
-import SaleTrends from '@/Pages/ProductPerformance/SaleTrends/SaleTrends';
-import RevenueAnalyticsMain from '@/Pages/RevenueAnalytics/RevenueAnalyticsMain';
-import Shipment from '@/Pages/ShippingAndTax/Shipment';
-import ShippingAndTax from '@/Pages/ShippingAndTax/ShippingAndTax';
-import MailBox from '@/components/Email/MailBox';
-import OrderDetails from '@/components/Home/OrderDetails/OrderDetails';
-import OrderStatus from '@/components/Order Management/OrderStatus/OrderStatus';
-import PaymentData from '@/components/Order Management/PaymentInfo/PaymentData';
-import OrderChartTracker from '@/components/Sales Overveiw/OrderChartTracker';
-import SalesOverveiw from '@/components/Sales Overveiw/SalesOverveiw';
-import Login from '@/components/Security/Login/Login';
-import Register from '@/components/Security/Register/Register';
-import ReturnOrderManagement from '@/components/StockInventoryManagement/ReturnManagement';
-import StockInventoryList from '@/components/StockInventoryManagement/StockInventoryList';
-import SuppliersManagement from '@/components/StockInventoryManagement/SuppliersManagement';
-import ActivityLog from '@/components/User Management/ActivityLog';
-import Users from '@/components/User Management/Users';
-import { MainLayout } from '@/components/layout/MainLayout';
-import Aos from 'aos';
-import { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
+import AddProduct from "@/Pages/AddProduct/AddProduct";
+import AllOrderMain from "@/Pages/OrderManagement/AllOrder/AllOrderMain";
+import OrderHistory from "@/Pages/OrderManagement/OrderHistory/OrderHistory";
+import OrderManagement from "@/Pages/OrderManagement/OrderManagement";
+import InventoryStatus from "@/Pages/ProductPerformance/InventoryStatus/InventoryStatus";
+import ProductPerformance from "@/Pages/ProductPerformance/ProductPerformance";
+import SaleTrends from "@/Pages/ProductPerformance/SaleTrends/SaleTrends";
+import RevenueAnalyticsMain from "@/Pages/RevenueAnalytics/RevenueAnalyticsMain";
+import Shipment from "@/Pages/ShippingAndTax/Shipment";
+import ShippingAndTax from "@/Pages/ShippingAndTax/ShippingAndTax";
+import MailBox from "@/components/Email/MailBox";
+import OrderDetails from "@/components/Home/OrderDetails/OrderDetails";
+import OrderStatus from "@/components/Order Management/OrderStatus/OrderStatus";
+import PaymentData from "@/components/Order Management/PaymentInfo/PaymentData";
+import OrderChartTracker from "@/components/Sales Overveiw/OrderChartTracker";
+import SalesOverveiw from "@/components/Sales Overveiw/SalesOverveiw";
+import Login from "@/components/Security/Login/Login";
+import Register from "@/components/Security/Register/Register";
+import ReturnOrderManagement from "@/components/StockInventoryManagement/ReturnManagement";
+import StockInventoryList from "@/components/StockInventoryManagement/StockInventoryList";
+import SuppliersManagement from "@/components/StockInventoryManagement/SuppliersManagement";
+import ActivityLog from "@/components/User Management/ActivityLog";
+import Users from "@/components/User Management/Users";
+import { MainLayout } from "@/components/layout/MainLayout";
+import Aos from "aos";
+import { useEffect, useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "../Pages/Home/Home";
 
 const Routers = () => {
   const [resize, setResize] = useState(80);
@@ -90,13 +90,13 @@ const Routers = () => {
               path="/stock-inventory-management/return-order-management"
               element={<ReturnOrderManagement />}
             />
-            <Route path='/shipping-and-tax' element={<ShippingAndTax />} />
-            <Route path='/shipping-and-tax/shipment' element={<Shipment />} />
-            <Route path='/users' element={<Users />} />
-            <Route path='/users/user-active-log' element={<ActivityLog />} />
-            <Route path='/security/register' element={<Register />} />
-            <Route path='/security/login' element={<Login />} />
-            <Route path='/email' element={<MailBox />} />
+            <Route path="/shipping-and-tax" element={<ShippingAndTax />} />
+            <Route path="/shipping-and-tax/shipment" element={<Shipment />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/users/user-active-log" element={<ActivityLog />} />
+            <Route path="/security/register" element={<Register />} />
+            <Route path="/security/login" element={<Login />} />
+            <Route path="/email" element={<MailBox />} />
           </Routes>
         </MainLayout>
       </Router>

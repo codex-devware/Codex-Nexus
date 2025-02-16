@@ -30,10 +30,6 @@ const YourInfo = ({ yourInfo, onChangeYourInfo, isEmpty }) => {
     },
   ]);
 
-  // useEffect(() => {
-  //   console.log(isEmpty);
-  // }, [isEmpty]);
-
   return (
     <div>
       <SectionHeading

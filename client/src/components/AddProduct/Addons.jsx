@@ -3,10 +3,6 @@ import AddonComponent from "./AddonComponent";
 import SectionHeading from "./SectionHeading";
 
 const Addons = ({ onBoxCheck, planDuration, addonOptions }) => {
-  const [bg, setBg] = useState("black");
-
-  useEffect(() => {}, []);
-
   return (
     <div>
       <SectionHeading

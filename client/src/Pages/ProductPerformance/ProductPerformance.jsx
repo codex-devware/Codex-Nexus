@@ -1,5 +1,3 @@
 export default function ProductPerformance() {
-  return (
-    <div>ProductPerformance</div>
-  )
+  return <div>ProductPerformance</div>;
 }

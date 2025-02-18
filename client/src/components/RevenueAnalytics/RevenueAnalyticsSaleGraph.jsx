@@ -36,6 +36,7 @@ const RevenueAnalyticsSaleGraph = () => {
           autoSelected: "zoom",
         },
       },
+      colors: ["var(--secondary-color)"],
       dataLabels: {
         enabled: false,
       },
@@ -78,9 +79,9 @@ const RevenueAnalyticsSaleGraph = () => {
   });
 
   return (
-    <div id="chart" className=" my-5">
-      <div className=" flex justify-between">
-        <div className=" ml-3">
+    <div id="chart" className="bg-white p-2 my-5">
+      <div className="flex justify-between">
+        <div className="ml-3">
           <h1 className=" text-sm sm:text-lg font-medium">
             Total Sale Analytics
           </h1>
@@ -91,7 +92,7 @@ const RevenueAnalyticsSaleGraph = () => {
         </div>
         <div>
           <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium">
-            <span className="text-[#1E40AF]">
+            <span className="text-blue/20">
               <CiFilter />
             </span>{" "}
             Filter

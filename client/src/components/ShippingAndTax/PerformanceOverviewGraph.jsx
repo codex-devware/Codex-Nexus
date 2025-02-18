@@ -25,6 +25,7 @@ const PerformanceOverviewGraph = () => {
           enabled: false,
         },
       },
+      colors: ["var(--secondary-color)", "var(--highlight-color)"],
       dataLabels: {
         enabled: false,
       },
@@ -102,7 +103,7 @@ const PerformanceOverviewGraph = () => {
 
   return (
     <div>
-      <div id="chart">
+      <div id="chart" className="mt-10 bg-white p-1">
         <ReactApexChart
           options={state.options}
           series={state.series}

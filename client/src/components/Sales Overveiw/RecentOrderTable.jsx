@@ -72,11 +72,11 @@ const RecentOrderTable = () => {
                 </td>
                 <td className="whitespace-nowrap px-4 py-4">
                   {item.status === "Success" ? (
-                    <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-semibold text-[#159b36]">
+                    <button className="bg-highlight/20 rounded-lg py-1 px-4 w-20 font-semibold text-highlight">
                       {item.status}
                     </button>
                   ) : (
-                    <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-4 w-20 font-semibold text-[#db5a5a]">
+                    <button className="bg-primary/20 rounded-lg py-1 px-4 w-20 font-semibold text-primary">
                       {item.status}
                     </button>
                   )}

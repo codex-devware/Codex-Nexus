@@ -56,7 +56,7 @@ const UsersTable = () => {
           </thead>
           <tbody>
             {currentItems?.map((item) => (
-              <tr key={item.id} className="border-b border-dashed">
+              <tr key={item.id} className="border-b border-dashed bg-white">
                 <td className="whitespace-nowrap px-6 py-4 flex items-center gap-3">
                   <img className="rounded-lg w-10" src={item.imgSrc} alt="" />
                   <div className="flex flex-col">
@@ -79,11 +79,11 @@ const UsersTable = () => {
                 </td>
                 <td className="whitespace-nowrap px-6 py-4">
                   {item.status === "active" ? (
-                    <button className="bg-[#a6ee9d73] rounded-lg py-1 px-4 w-20 font-normal text-[#159b36]">
+                    <button className="bg-highlight/20 rounded-lg py-1 px-4 w-20 font-normal text-highlight">
                       {item.status}
                     </button>
                   ) : (
-                    <button className="bg-[#f7c6c6e3] rounded-lg py-1 px-2 w-20 font-normal text-[#db5a5a]">
+                    <button className="bg-primary/20 rounded-lg py-1 px-2 w-20 font-normal text-primary">
                       {item.status}
                     </button>
                   )}

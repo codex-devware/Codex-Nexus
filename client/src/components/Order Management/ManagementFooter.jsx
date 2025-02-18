@@ -9,7 +9,7 @@ const ManagementFooter = ({
   return (
     <>
       <nav
-        className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center space-y-3 md:space-y-0 py-4"
+        className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center space-y-3 md:space-y-0 py-4 bg-white"
         aria-label="Table navigation"
       >
         {/* Pagination info */}

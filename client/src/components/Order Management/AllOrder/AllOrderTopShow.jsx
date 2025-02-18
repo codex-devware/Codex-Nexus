@@ -3,11 +3,11 @@ import CountUp from "react-countup";
 const AllOrderTopShow = ({ data }) => {
   const { statName, statCount, progress, icon, color } = data;
   return (
-    <div className="flex flex-wrap justify-between shadow font-outfit border px-8 py-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+    <div className="flex flex-wrap justify-between shadow font-outfit border px-8 py-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer bg-white">
       <div className="flex justify-between  gap-4">
         <div className="">
           <div className="bg-[#f1f3ff] p-3 rounded-lg">
-            <span className="text-[#1E40AF]">{icon}</span>
+            <span className="text-blue">{icon}</span>
           </div>
         </div>
         <div className="">

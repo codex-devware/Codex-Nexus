@@ -14,7 +14,7 @@ const Register = () => {
             <h3 className="pt-4 text-2xl text-center font-sora font-semibold">
               Create an Account!
             </h3>
-            <form className="px-8 pt-6 pb-8 mb-4 font-outfit  rounded">
+            <form className="px-8 pt-6 pb-8 mb-4 font-outfit rounded">
               <div className="mb-4 md:flex md:justify-between">
                 <div className="mb-4 md:mr-2 md:mb-0">
                   <label
@@ -94,7 +94,7 @@ const Register = () => {
               </div>
               <div className="mb-4 text-center">
                 <button
-                  className="w-full px-4 py-2 font-bold text-white bg-violet-600 rounded-full hover:bg-violet-700 focus:outline-none focus:shadow-outline duration-150"
+                  className="w-full px-4 py-2 font-bold text-white bg-secondary /60 rounded-full hover:bg-secondary/90 focus:outline-none focus:shadow-outline duration-150"
                   type="button"
                 >
                   Register Account
@@ -103,7 +103,7 @@ const Register = () => {
               <hr className=" border-t" />
               <div className="text-center">
                 <button
-                  className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                  className="inline-block text-sm text-secondary/50 align-baseline hover:text-secondary/80"
                   href="#"
                 >
                   Forgot Password?
@@ -111,7 +111,7 @@ const Register = () => {
               </div>
               <div className="text-center">
                 <Link
-                  className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                  className="inline-block text-sm text-secondary/50 align-baseline hover:text-secondary/80"
                   to={"/security/login"}
                 >
                   Already have an account? Login!

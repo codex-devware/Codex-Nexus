@@ -46,13 +46,11 @@ const OrderManageStat = () => {
     },
   ];
   return (
-    <>
-      <section className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-1 mt-8 mb-6">
-        {orderStatData?.map((data, index) => (
-          <OrderStatShowData key={index} data={data} />
-        ))}
-      </section>
-    </>
+    <section className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-1 mt-8 mb-6">
+      {orderStatData?.map((data, index) => (
+        <OrderStatShowData key={index} data={data} />
+      ))}
+    </section>
   );
 };
 

@@ -91,7 +91,7 @@ const AllOrderPageTable = () => {
     <>
       <div data-aos="fade-up" className="overflow-x-auto border rounded-md">
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#ebebeb] font-medium">
+          <thead className="bg-white font-medium">
             <tr>
               <th scope="col" className="pl-6 pr-4 py-2.5"></th>
               <th scope="col" className="pr-3 py-2.5">
@@ -116,7 +116,7 @@ const AllOrderPageTable = () => {
             {data.map((item) => (
               <tr
                 key={item.id}
-                className="border-b cursor-pointer hover:bg-[#ebebeb] duration-300 border-dashed"
+                className="border-b cursor-pointer bg-white hover:bg-[#ebebeb] duration-300 border-dashed"
               >
                 <td className="whitespace-nowrap pl-6 pr-4 py-4 font-medium"></td>
                 <td className="whitespace-nowrap pr-6 py-4 flex items-center gap-3">
@@ -134,15 +134,15 @@ const AllOrderPageTable = () => {
                   <button
                     className={`bg-[#F7E4DA] ${
                       item.status === "Delivered"
-                        ? "bg-green-200 text-green-500"
+                        ? "bg-highlight/20 text-highlight"
                         : ""
                     }  ${
                       item.status === "Pending"
-                        ? "bg-orange-200 text-orange-500"
+                        ? "bg-primary/20 text-primary"
                         : ""
                     } ${
                       item.status === "Canceled"
-                        ? "bg-red-100 text-red-600"
+                        ? "bg-primary/50 text-primary"
                         : ""
                     }  rounded-md py-1 px-3 text-xs`}
                   >
@@ -158,7 +158,7 @@ const AllOrderPageTable = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-9 px-2 py-2 rounded bg-red-100 text-red-600"
+                    className="size-9 px-2 py-2 rounded bg-primary/10 text-red-600"
                   >
                     <path
                       strokeLinecap="round"
@@ -177,7 +177,7 @@ const AllOrderPageTable = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-9 px-2 py-2 rounded bg-blue-100 text-blue-600"
+                    className="size-9 px-2 py-2 rounded bg-blue/30 text-secondary"
                   >
                     <path
                       strokeLinecap="round"

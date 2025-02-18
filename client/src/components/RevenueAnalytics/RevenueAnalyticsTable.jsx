@@ -68,11 +68,11 @@ const RevenueAnalyticsTable = () => {
   ];
   return (
     <>
-      <div className=" flex justify-between px-4 mb-4">
-        <h1 className=" text-sm sm:text-lg font-bold font-sora">
+      <div className="flex justify-between px-4 mb-4">
+        <h1 className="text-sm sm:text-lg font-bold font-sora">
           Top Selling Products
         </h1>
-        <div className=" flex flex-wrap justify-center items-center gap-2 font-outfit">
+        <div className="flex flex-wrap justify-center items-center gap-2 font-outfit">
           <select className="select select-accent select-sm w-32">
             <option disabled selected className="">
               Sort By Sold
@@ -150,8 +150,8 @@ const RevenueAnalyticsTable = () => {
                   <button
                     className={`bg-[#F7E4DA] ${
                       item.status === true
-                        ? "bg-green-100 text-green-500"
-                        : " bg-red-100 text-red-500"
+                        ? "bg-highlight/20 text-highlight"
+                        : " bg-primary/20 text-primary"
                     }  
                      rounded-md py-1 px-3 text-xs`}
                   >

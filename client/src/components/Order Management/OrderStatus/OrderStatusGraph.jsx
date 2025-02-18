@@ -26,7 +26,7 @@ const chartConfig = {
     dataLabels: {
       enabled: false,
     },
-    colors: ["#020617"],
+    // colors: ["red"],
     stroke: {
       lineCap: "round",
       curve: "smooth",
@@ -97,7 +97,7 @@ const OrderStatusGraph = () => {
   return (
     <Card
       data-aos="fade-down"
-      className=" mx-6 border-dashed border-[1px] shadow-md"
+      className="mx-6 border-dashed border-[1px]"
     >
       <CardHeader
         floated={false}

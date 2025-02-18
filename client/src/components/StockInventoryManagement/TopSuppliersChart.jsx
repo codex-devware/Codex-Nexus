@@ -34,6 +34,12 @@ const TopSuppliersChart = () => {
           enabled: true,
         },
       },
+      colors: [
+        "var(--highlight-color)",
+        "var(--primary-color)",
+        "var(--accent-color)",
+        "var(--secondary-color)",
+      ],
       responsive: [
         {
           breakpoint: 480,
@@ -83,7 +89,7 @@ const TopSuppliersChart = () => {
   });
 
   return (
-    <div id="chart">
+    <div id="chart" className="bg-white">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

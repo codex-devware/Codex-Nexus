@@ -22,6 +22,7 @@ const SalesOverviewGraph = () => {
         type: "bar",
         height: 380,
       },
+      colors: ["var(--secondary-color)"],
       xaxis: {
         type: "category",
         labels: {
@@ -60,7 +61,7 @@ const SalesOverviewGraph = () => {
   });
 
   return (
-    <div className="shadow-lg rounded-lg" id="chart">
+    <div className="bg-white" id="chart">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

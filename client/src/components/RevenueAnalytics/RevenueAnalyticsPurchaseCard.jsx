@@ -24,7 +24,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: "#e67e22",
+          indicator: "bg-primary",
 
           label: "tracking-wider font-medium ",
         }}
@@ -40,7 +40,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-red-400",
+          indicator: "bg-secondary",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}
@@ -55,7 +55,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-violet-500",
+          indicator: "bg-accent",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}
@@ -71,7 +71,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: "",
+          indicator: "bg-primary",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}
@@ -86,7 +86,7 @@ const RevenueAnalyticsPurchaseCard = () => {
         classNames={{
           base: "full",
           track: "drop-shadow-md border border-default",
-          indicator: " bg-violet-600",
+          indicator: "bg-highlight",
           label: "tracking-wider font-medium ",
           value: "text-foreground/60",
         }}

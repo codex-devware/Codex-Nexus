@@ -3,13 +3,10 @@ import UsersTable from "./UsersTable";
 
 const Users = () => {
   return (
-    <>
-      <section className="">
-        <UsersHeader />
-        <UsersTable />
-        {/* <ManagementFooter /> */}
-      </section>
-    </>
+    <section>
+      <UsersHeader />
+      <UsersTable />
+    </section>
   );
 };
 

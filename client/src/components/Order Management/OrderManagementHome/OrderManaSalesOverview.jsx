@@ -54,12 +54,12 @@ const OrderManaSalesOverview = () => {
               {
                 from: 0,
                 to: 214, // Set the range and color as per your requirement
-                color: "#95a5a6", // Change the color as per your requirement
+                color: "var(--secondary-color)", // Change the color as per your requirement
               },
               {
                 from: 215,
                 to: 554, // Set the range and color as per your requirement
-                color: "#34495e", // Change the color as per your requirement
+                color: "var(--highlight-color)", // Change the color as per your requirement
               },
             ],
           },
@@ -72,7 +72,7 @@ const OrderManaSalesOverview = () => {
   });
 
   return (
-    <div className="shadow-lg rounded-lg p-4" id="chart">
+    <div className="bg-white p-4" id="chart">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

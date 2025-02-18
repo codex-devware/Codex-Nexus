@@ -1,12 +1,12 @@
-import ManagementFooter from '@/components/Order Management/ManagementFooter';
-import ManagementTopVar from '@/components/Order Management/ManagementTopVar';
-import TableBody from '@/components/Order Management/TableBody';
-import TableHeader from '@/components/Order Management/TableHeader';
-import { useState } from 'react';
-import orders from '../../../../public/orderHistory.json';
+import ManagementFooter from "@/components/Order Management/ManagementFooter";
+import ManagementTopVar from "@/components/Order Management/ManagementTopVar";
+import TableBody from "@/components/Order Management/TableBody";
+import TableHeader from "@/components/Order Management/TableHeader";
+import { useState } from "react";
+import orders from "../../../../public/orderHistory.json";
 
 const OrderHistory = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
   const OrdersData = orders.orderHistory;
@@ -29,49 +29,47 @@ const OrderHistory = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <>
-      <section data-aos="fade-up" className="bg-gray-50 p-3 sm:p-5 w-auto">
-        <div>
-          <div className=' relative  overflow-hidden'>
-            <h1 className='font-outfit text-[26px] font-bold mb-3'>
-              Order History
-            </h1>
-            <ManagementTopVar
-              searchTerm={searchTerm}
-              onSearchChange={setSearchTerm}
-            />
-            <div className=''>
-              <div className='overflow-x-auto'>
-                <table className='text-[14px] text-left text-gray-500 font-outfit w-[1000px] xl:w-full overflow-x-auto'>
-                  <TableHeader />
-                  {currentItems.length === 0 ? (
-                    <div>
-                      <h2 className='text-center text-2xl pt-3'>
-                        No Order Found
-                      </h2>
-                    </div>
-                  ) : (
-                    <>
-                      {currentItems?.map((items) => (
-                        <TableBody key={items.id} items={items} />
-                      ))}
-                    </>
-                  )}
-                </table>
-              </div>
+    <section data-aos="fade-up" className="bg-gray-50 p-3 sm:p-5 w-auto">
+      <div>
+        <div className=" relative  overflow-hidden">
+          <h1 className="font-outfit text-[26px] font-bold mb-3">
+            Order History
+          </h1>
+          <ManagementTopVar
+            searchTerm={searchTerm}
+            onSearchChange={setSearchTerm}
+          />
+          <div className="">
+            <div className="overflow-x-auto">
+              <table className="text-[14px] text-left text-gray-500 font-outfit w-[1000px] xl:w-full overflow-x-auto">
+                <TableHeader />
+                {currentItems.length === 0 ? (
+                  <div>
+                    <h2 className="text-center text-2xl pt-3">
+                      No Order Found
+                    </h2>
+                  </div>
+                ) : (
+                  <>
+                    {currentItems?.map((items) => (
+                      <TableBody key={items.id} items={items} />
+                    ))}
+                  </>
+                )}
+              </table>
             </div>
-            <ManagementFooter
-              OrdersData={OrdersData}
-              indexOfFirstItem={indexOfFirstItem}
-              indexOfLastItem={indexOfLastItem}
-              currentPage={currentPage}
-              itemsPerPage={itemsPerPage}
-              paginate={paginate}
-            />
           </div>
+          <ManagementFooter
+            OrdersData={OrdersData}
+            indexOfFirstItem={indexOfFirstItem}
+            indexOfLastItem={indexOfLastItem}
+            currentPage={currentPage}
+            itemsPerPage={itemsPerPage}
+            paginate={paginate}
+          />
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

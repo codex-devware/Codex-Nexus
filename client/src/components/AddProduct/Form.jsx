@@ -140,7 +140,7 @@ const Form = () => {
 
   return (
     <div className="container">
-      <div className=" md:bg-white rounded-xl md:p-3 xl:flex justify-center">
+      <div className="md:bg-white rounded-xl md:p-3 xl:flex justify-center">
         <div className="relative">
           <img
             className="hidden xl:block w-full h-[78%] rounded-xl"
@@ -198,21 +198,21 @@ const Form = () => {
               <div className="flex justify-between  bottom-0 left-0 w-full bg-white md:p-0 md:static items-center ">
                 <div
                   onClick={prevStep}
-                  className={`font-medium text-[#9699ab] select-none cursor-pointer transition duration-100 hover:text-[#02295a] ${goBackVisible}`}
+                  className={`font-medium text-[#9699ab] select-none cursor-pointer transition duration-100 hover:text-blue/20 ${goBackVisible}`}
                 >
                   Go back
                 </div>
                 {stepNumber === 3 ? (
                   <div
                     onClick={() => setDisplayThankyou(true)}
-                    className="font-medium text-[14px] bg-[#473dff] select-none text-white py-2 px-3 rounded-lg cursor-pointer transition duration-100  mt-4 hover:opacity-90"
+                    className="font-medium text-[14px] bg-secondary select-none text-white py-2 px-3 rounded-lg cursor-pointer transition duration-100  mt-4 hover:opacity-90"
                   >
                     Confirm
                   </div>
                 ) : (
                   <div
                     onClick={nextStep}
-                    className="font-medium text-[14px] bg-[#02295a] select-none text-white py-2 px-3 mt-3 rounded-lg cursor-pointer transition duration-100 hover:opacity-90"
+                    className="font-medium text-[14px] bg-secondary select-none text-white py-2 px-3 mt-3 rounded-lg cursor-pointer transition duration-100 hover:opacity-90"
                   >
                     Next Step
                   </div>

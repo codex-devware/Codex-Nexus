@@ -52,7 +52,7 @@ const ProductGallery = () => {
                         placeholder="Write your image url"
                         accept="image/png, image/jpg, image/jpeg"
                       />
-                      <div className="text-[14px] bg-indigo-600 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-1 hover:bg-indigo-500">
+                      <div className="text-[14px] bg-secondary/20 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-1 hover:bg-blue/50">
                         Select
                       </div>
                     </label>

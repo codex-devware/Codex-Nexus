@@ -16,7 +16,7 @@ const MailBoxHeader = ({ menuState, setManuState }) => {
         <button className={headerActionBtn}>
           <IcShare /> Share
         </button>
-        <button className={`bg-[#0464ff] text-white ${headerActionBtn}`}>
+        <button className={`bg-blue/50 text-white ${headerActionBtn}`}>
           <IcAddE /> Add New
         </button>
         {/* here we add this menu icon and button for side bar menu show  */}

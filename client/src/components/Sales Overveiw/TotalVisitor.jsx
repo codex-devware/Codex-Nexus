@@ -5,26 +5,24 @@ import { LuArrowDownLeftFromCircle } from "react-icons/lu";
 const TotalVisitor = () => {
   return (
     <>
-      <div className=" flex flex-col gap-2 justify-between font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
-        <div className="flex  gap-2">
-          <div className="">
-            <div className="bg-[#f1f3ff] p-3 rounded-lg">
-              <span className="text-[#1E40AF]">
-                <FaPeopleGroup fontSize={23} />
-              </span>
-            </div>
+      <div className=" flex flex-col gap-3 justify-between font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer bg-white">
+        <div className="flex items-center gap-3">
+          <div className="bg-accent p-3 rounded-lg">
+            <span className="text-white">
+              <FaPeopleGroup fontSize={23} />
+            </span>
           </div>
-          <div className="">
+          <div>
             <p className="text-[16px]">Total Visitor</p>
             <h1 className="flex flex-wrap items-end gap-1">
-              <h2 className=" font-medium text-2xl">
+              <h2 className="font-medium text-2xl">
                 <CountUp end={48140} />
               </h2>
             </h1>
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center border border-[#52b439] text-[#1ae64d] px-2  w-36 py-1 rounded-xl text-sm gap-2">
+        <div className="flex flex-wrap items-center border border-accent/50 text-accent px-2  w-36 py-1 rounded-xl text-sm gap-2">
           <span className="text-[13px]">
             <LuArrowDownLeftFromCircle />
           </span>

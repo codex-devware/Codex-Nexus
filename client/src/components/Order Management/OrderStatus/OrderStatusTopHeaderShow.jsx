@@ -17,10 +17,10 @@ const OrderStatusTopHeaderShow = ({ data }) => {
     update,
   } = data;
   return (
-    <div className="flex flex-wrap gap-4 justify-center sm:justify-between  shadow font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer">
+    <div className="flex flex-wrap gap-4 justify-center sm:justify-between  shadow font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer bg-white">
       <div className="flex sm:justify-between sm:items-start justify-center items-center flex-col gap-4">
         <div className="">
-          <span className="text-[#1E40AF]">{icon}</span>
+          <span className="text-blue/20">{icon}</span>
         </div>
         <div className="">
           <h1 className="flex flex-wrap items-end gap-1">
@@ -34,8 +34,8 @@ const OrderStatusTopHeaderShow = ({ data }) => {
         <div
           className={`first-line flex flex-wrap items-center border ${
             profit
-              ? "border-green-300 text-green-600"
-              : "border-[#EE7214] text-[#FF004D]"
+              ? "border-highlight/30 text-highlight"
+              : "border-primary text-primary"
           }  px-2 py-1 rounded-xl text-sm gap-1`}
         >
           <span className="text-[13px]">

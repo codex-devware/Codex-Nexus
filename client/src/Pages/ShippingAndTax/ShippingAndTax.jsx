@@ -51,7 +51,7 @@ const ShippingAndTax = () => {
     },
   ];
   return (
-    <section className="grid grid-cols-12">
+    <section className="grid gap-4 grid-cols-12">
       <div className="col-start-1 lg:col-end-10 col-end-13">
         <PerformanceOverviewGraph />
         <BookingManagementTable data={data} />

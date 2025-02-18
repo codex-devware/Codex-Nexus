@@ -52,7 +52,9 @@ const ActivityBody = () => {
       {/*ol tag is a main dotted border which main things for down coloring animate when selected the next radius border button */}
       <ol
         className={`border-l-2 border-dotted mb-10 ${
-          selectedBorderIndex === indexs ? "border-blue-500" : "border-gray-400"
+          selectedBorderIndex === indexs
+            ? "border-secondary"
+            : "border-gray-400"
         } rounded`}
       >
         {saleData?.map((item, index) => (
@@ -61,7 +63,7 @@ const ActivityBody = () => {
               {/* Apply active class if index matches selectedBorderIndex */}
               <div
                 className={`-ml-[6px] mr-3 h-[9px] w-[9px] rounded-full cursor-pointer   ${
-                  selectedBorderIndex === index ? "bg-blue-500" : "bg-slate-300"
+                  selectedBorderIndex === index ? "bg-blue" : "bg-slate-300"
                 }`}
                 onClick={() => handleBorderClick(index)}
               ></div>
@@ -70,18 +72,16 @@ const ActivityBody = () => {
             <div className=" ml-4">
               <div
                 className={`flex items-center justify-between p-3 rounded-xl ${
-                  selectedBorderIndex === index ? "bg-blue-200" : "bg-slate-200"
+                  selectedBorderIndex === index ? "bg-blue" : "bg-slate-200"
                 }`}
               >
                 <div className="flex items-center gap-3">
                   <div
                     className={`${
-                      selectedBorderIndex === index
-                        ? "bg-blue-300"
-                        : "bg-gray-300"
+                      selectedBorderIndex === index ? "bg-blue" : "bg-gray-300"
                     } p-3 rounded-full`}
                   >
-                    <span className="text-blue-500 font-bold ext-whitet ">
+                    <span className="text-secondary font-bold ext-whitet ">
                       {item.icon}
                     </span>
                   </div>

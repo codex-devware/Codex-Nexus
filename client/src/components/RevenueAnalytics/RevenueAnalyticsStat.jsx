@@ -16,7 +16,7 @@ const RevenueAnalyticsStat = () => {
       valName2: "Clothing",
       valName3: "Gadgets",
       update: "increasing yesterday",
-      color: "bg-violet-600",
+      color: "bg-highlight",
     },
     {
       icon: <FaBusinessTime opacity={0.7} fontSize={26} />,
@@ -30,7 +30,7 @@ const RevenueAnalyticsStat = () => {
       profit: false,
       update: "decrease today",
       staus: 440,
-      color: "bg-red-600",
+      color: "bg-primary",
     },
     {
       icon: <FaUsersRays opacity={0.7} fontSize={26} />,
@@ -42,7 +42,7 @@ const RevenueAnalyticsStat = () => {
       profit: true,
       update: "decrease today",
       staus: 440,
-      color: "bg-orange-600",
+      color: "bg-highlight",
     },
   ];
   return (

@@ -9,7 +9,7 @@ const OrderChartTracker = () => {
   }, []);
   return (
     <>
-      <section className="flex flex-wrap gap-4">
+      <section className="flex items-center flex-wrap gap-5">
         <div data-aos="fade-up" className="lg:w-[68%] w-full">
           <TotalSalesGraph />
         </div>

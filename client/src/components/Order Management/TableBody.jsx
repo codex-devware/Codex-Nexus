@@ -40,12 +40,12 @@ const TableBody = ({ items }) => {
               <td
                 className={`${
                   status.toLocaleLowerCase() === "delivered"
-                    ? "text-[#1fd43d]"
+                    ? "text-highlight"
                     : status.toLocaleLowerCase() === "collected"
-                    ? "text-[#343bf3]"
+                    ? "text-secondary"
                     : status.toLocaleLowerCase() === "canceled"
-                    ? "text-[#f32d2d]"
-                    : "bg-[#36ff16]"
+                    ? "text-primary"
+                    : "bg-accent"
                 } px-4 py-3`}
               >
                 <span className="flex items-center">
@@ -62,7 +62,7 @@ const TableBody = ({ items }) => {
             </tr>
           </table>
         </td>
-      </tr>
+      </tr> 
     </>
   );
 };

@@ -9,21 +9,21 @@ const AllOrderTop = () => {
       statName: "Total Orders",
       statCount: 850,
       progress: 59,
-      color: "text-blue-500",
+      color: "text-secondary",
     },
     {
       icon: <GoStopwatch fontSize={28} />,
       statName: "Pending Orders",
       statCount: 640,
       progress: 64,
-      color: "text-orange-600",
+      color: "text-primary",
     },
     {
       icon: <TbShoppingCartCheck fontSize={28} />,
       statName: "Delivered Orders",
       statCount: 744,
       progress: 47,
-      color: "text-green-600",
+      color: "text-highlight",
     },
   ];
   return (

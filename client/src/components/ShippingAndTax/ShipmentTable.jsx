@@ -3,7 +3,7 @@ import { Progress } from "@nextui-org/react";
 const ShipmentTable = ({ data }) => {
   return (
     <>
-      <div className=" flex justify-between gap-2 items-center">
+      <div className=" flex justify-between gap-2 items-center mt-8">
         <h1 className="sm:text-md text-xs font-semibold font-sora">
           Shipment Items
         </h1>
@@ -41,9 +41,9 @@ const ShipmentTable = ({ data }) => {
                 base: "max-w-full",
                 track: "drop-shadow-md border border-default",
                 indicator: ` ${
-                  item.status === "Delivered" && "bg-success-400"
-                }  ${item.status === "Pending" && "bg-yellow-400 "} ${
-                  item.status === "Canceled" && "bg-red-400 "
+                  item.status === "Delivered" && "bg-green-500"
+                }  ${item.status === "Pending" && "bg-secondary "} ${
+                  item.status === "Canceled" && "bg-primary"
                 }`,
                 label: "tracking-wider font-medium ",
                 value: "text-foreground/60",

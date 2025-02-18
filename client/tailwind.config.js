@@ -20,7 +20,14 @@ module.exports = {
       outfit: ["Outfit", "sans-serif"],
       inter: ["Inter", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#EA4C1D",
+        secondary: "#19B6F6",
+        accent: "#9D56F7",
+        highlight: "#0AC97F",
+      },
+    },
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui"), nextui()],

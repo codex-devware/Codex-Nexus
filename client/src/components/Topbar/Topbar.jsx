@@ -2,7 +2,7 @@ import mdKawsar from "../../assets/mdKawsar.png";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 
-const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
+const Topbar = ({ openToggle, open, setOpen }) => {
   return (
     <>
       <div
@@ -11,7 +11,7 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
         } justify-between align-middle lg:pl-6 h-20 bg-gray-50 shadow-md`}
       >
         <div className="flex items-center">
-          <div className="">
+          <div>
             {open ? (
               <FaTimes
                 size={25}
@@ -29,7 +29,7 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
         </div>
 
         <div className="flex justify-end">
-          <div className="">
+          <div>
             <ul className="hidden lg:flex m-2 gap-6 items-center">
               <li>
                 <input
@@ -238,7 +238,7 @@ const Topbar = ({ setOpenToggle, openToggle, open, setOpen }) => {
                     className="bg-transparent border-none shadow-none"
                   >
                     <div className="avatar">
-                      <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1">
+                      <div className="w-8 rounded-full ring-2 ring-secondary ring-offset-base-100 ring-offset-1">
                         <img src={mdKawsar} />
                       </div>
                     </div>

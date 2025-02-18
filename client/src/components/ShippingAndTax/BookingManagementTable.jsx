@@ -58,15 +58,15 @@ const BookingManagementTable = ({ data }) => {
                   <button
                     className={`bg-[#F7E4DA] ${
                       item.status === "Delivered"
-                        ? "bg-green-200 text-green-500"
+                        ? "bg-highlight/20 text-highlight"
                         : ""
                     }  ${
                       item.status === "Pending"
-                        ? "bg-orange-200 text-orange-500"
+                        ? "bg-secondary/20 text-secondary"
                         : ""
                     } ${
                       item.status === "Canceled"
-                        ? "bg-red-100 text-red-600"
+                        ? "bg-primary/20 text-primary"
                         : ""
                     }  rounded-md py-1 px-3 text-xs`}
                   >

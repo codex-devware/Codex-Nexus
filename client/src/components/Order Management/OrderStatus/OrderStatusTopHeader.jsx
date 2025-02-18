@@ -16,7 +16,7 @@ const OrderStatusTopHeader = () => {
       valName2: "Clothing",
       valName3: "Gadgets",
       update: "increasing yesterday",
-      color: "text-blue-500",
+      color: "text-secondary",
     },
     {
       icon: <FaBusinessTime opacity={0.7} fontSize={26} />,
@@ -32,17 +32,15 @@ const OrderStatusTopHeader = () => {
       profit: false,
       update: "decrease today",
       staus: 440,
-      color: "text-orange-600",
+      color: "text-primary",
     },
   ];
   return (
-    <>
-      <section className="grid xl:grid-cols-2  lg:grid-cols-2 md:grid-cols-1 grid-cols-1 px-4 gap-2 mt-8 mb-6">
-        {AllOrderStatData?.map((data, index) => (
-          <OrderStatusTopHeaderShow key={index} data={data} />
-        ))}
-      </section>
-    </>
+    <section className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 px-4 gap-2 mt-8 mb-6">
+      {AllOrderStatData?.map((data, index) => (
+        <OrderStatusTopHeaderShow key={index} data={data} />
+      ))}
+    </section>
   );
 };
 

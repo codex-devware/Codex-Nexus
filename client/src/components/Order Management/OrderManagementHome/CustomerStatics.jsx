@@ -8,6 +8,12 @@ const CustomerStatics = () => {
       chart: {
         type: "donut",
       },
+      colors: [
+        "var(--highlight-color)",
+        "var(--secondary-color)",
+        "var(--accent-color)",
+        "var(--primary-color)",
+      ],
       labels: ["Product In-Stock", "Completed", "In-Progress", "Canceled"],
       responsive: [
         {
@@ -25,7 +31,7 @@ const CustomerStatics = () => {
     },
   });
   return (
-    <div id="chart">
+    <div id="chart" className="bg-white">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

@@ -26,7 +26,7 @@ const ReturnManagementChart = () => {
         height: 440,
         stacked: true,
       },
-      colors: ["#008FFB", "#FF4560"],
+      colors: ["var(--highlight-color)", "var(--primary-color)"],
       plotOptions: {
         bar: {
           horizontal: true,
@@ -98,7 +98,7 @@ const ReturnManagementChart = () => {
   });
 
   return (
-    <div id="chart">
+    <div id="chart" className="bg-white p-1">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

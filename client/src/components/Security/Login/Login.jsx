@@ -44,7 +44,7 @@ const Login = () => {
             </div>
             <div className="mb-6 text-center">
               <button
-                className="w-full px-4 py-2 font-bold text-white bg-violet-600 rounded-full hover:bg-violet-700 duration-150 focus:outline-none focus:shadow-outline"
+                className="w-full px-4 py-2 font-bold text-white bg-secondary/70 rounded-full hover:bg-secondary/90 duration-150 focus:outline-none focus:shadow-outline"
                 type="button"
               >
                 Login
@@ -52,13 +52,13 @@ const Login = () => {
             </div>
             <hr className="mb-6 border-t" />
             <div className="text-center">
-              <Link className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800">
+              <Link className="inline-block text-sm text-secondary align-baseline hover:text-blue-800">
                 Forgot Password?
               </Link>
             </div>
             <div className="text-center">
               <Link
-                className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                className="inline-block text-sm text-secondary align-baseline hover:text-blue-800"
                 to={"/security/register"}
               >
                 {"have'nt"} an account? register!

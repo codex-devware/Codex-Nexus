@@ -6,7 +6,7 @@ export default function ShipmentTableBody({ shipmentTable }) {
       {shipmentTable.map((item) => (
         <tr
           key={item.id}
-          className='capitalize border-b py-3 !text-sm first-letter:border-dashed grid grid-cols-9 justify-center items-center table-container'
+          className='capitalize border-b py-3 !text-sm first-letter:border-dashed grid grid-cols-9 justify-center items-center table-container bg-white'
         >
           <td className='capitalize'>{item.idNumber}</td>
 
@@ -14,10 +14,10 @@ export default function ShipmentTableBody({ shipmentTable }) {
             <span
               className={`${
                 item.status === 'in transit'
-                  ? 'bg-blue-300 text-white'
+                  ? 'bg-primary/20 text-primary'
                   : item.status === 'delivered'
-                  ? 'text-white bg-green-300'
-                  : 'bg-red-300 text-white'
+                  ? 'text-highlight bg-highlight/30'
+                  : 'bg-secondary/30 text-secondary'
               } rounded-lg py-1 px-4 w-20 font-normal`}
             >
               {item.status}
@@ -33,10 +33,10 @@ export default function ShipmentTableBody({ shipmentTable }) {
             <button
               className={`size-5 bg-gray-100 rounded  w-20 flex justify-center items-center hover:bg-gray-200 duration-150 py-4 ${
                 item.status === 'in transit'
-                  ? 'text-blue-500 '
+                  ? 'text-secondary '
                   : item.status === 'delivered'
-                  ? ' text-green-500'
-                  : 'text-red-500 '
+                  ? ' text-highlight'
+                  : 'text-primary '
               }`}
             >
               <GrMap />

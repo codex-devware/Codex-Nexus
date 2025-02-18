@@ -35,6 +35,7 @@ const InvestmentGraph = () => {
           autoSelected: "zoom",
         },
       },
+      colors: ["var(--secondary-color)"],
       dataLabels: {
         enabled: false,
       },

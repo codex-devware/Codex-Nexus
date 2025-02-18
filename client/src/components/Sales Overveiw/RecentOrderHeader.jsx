@@ -12,7 +12,7 @@ const RecentOrderHeader = ({ title, isDeleted, onDelete, data, onSearch }) => {
             <p>Search: </p>
             <input
               onChange={(e) => onSearch(e.target.value)}
-              className='border text-xs p-1 w-28 rounded-md focus:outline-[#1E40AF]'
+              className='border text-xs p-1 w-28 rounded-md focus:outline-secondary'
               type='text'
             />
           </div>
@@ -20,7 +20,7 @@ const RecentOrderHeader = ({ title, isDeleted, onDelete, data, onSearch }) => {
             {isDeleted ? (
               <button
                 className={`${
-                  data?.length > 0 ? 'bg-red-500 text-white' : 'bg-slate-400'
+                  data?.length > 0 ? 'bg-primary/50 text-white' : 'bg-slate-400'
                 } py-1 px-2 rounded-lg text-xs font-semibold`}
                 onClick={onDelete}
               >

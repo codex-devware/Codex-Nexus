@@ -13,7 +13,12 @@
 :root {
   --base-color: "";
   --white-color: #fff;
+  --primary-color: theme(colors.primary);
+  --secondary-color: theme(colors.secondary);
+  --accent-color: theme(colors.accent);
+  --highlight-color: theme(colors.highlight);
 }
+
 .sidebarScroll::-webkit-scrollbar {
   width: 3px;
 }

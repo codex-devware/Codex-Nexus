@@ -35,6 +35,7 @@ const TotalSalesGraph = () => {
           autoSelected: "zoom",
         },
       },
+      colors: ["var(--secondary-color)"],
       dataLabels: {
         enabled: false,
       },
@@ -80,7 +81,7 @@ const TotalSalesGraph = () => {
   });
 
   return (
-    <div id="chart" className="my-20">
+    <div id="chart" className="my-20 bg-white p-2">
       <ReactApexChart
         options={chartState.options}
         series={chartState.series}

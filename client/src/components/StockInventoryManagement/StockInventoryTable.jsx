@@ -78,7 +78,7 @@ const StockInventoryTable = () => {
           </thead>
           <tbody>
             {data.map((item) => (
-              <tr key={item.id} className="border-b border-dashed">
+              <tr key={item.id} className="border-b border-dashed bg-white">
                 <td className="whitespace-nowrap pl-6 pr-4 py-4 font-medium">
                   <input type="checkbox" />
                 </td>
@@ -105,7 +105,7 @@ const StockInventoryTable = () => {
                   {item.inStockQTY}
                 </td>
                 <td className="whitespace-nowrap px-6 py-4">
-                  <button className="bg-[#1eae16] rounded-lg py-2 px-5 font-semibold text-[#f4f8f5]">
+                  <button className="bg-highlight/90 rounded-lg py-2 px-5 font-semibold text-[#f4f8f5]">
                     Succeed
                   </button>
                 </td>

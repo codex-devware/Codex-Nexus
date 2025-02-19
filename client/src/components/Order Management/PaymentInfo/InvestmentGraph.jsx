@@ -51,7 +51,7 @@ const InvestmentGraph = () => {
         gradient: {
           shadeIntensity: 1,
           inverseColors: false,
-          opacityFrom: 0.5,
+          opacityFrom: 0,
           opacityTo: 0,
           stops: [0, 90, 100],
         },
@@ -81,7 +81,7 @@ const InvestmentGraph = () => {
   });
 
   return (
-    <div id="chart" className="my-20">
+    <div id="chart" className="my-20 bg-white p-3">
       <ReactApexChart
         options={chartState.options}
         series={chartState.series}

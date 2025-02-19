@@ -22,7 +22,7 @@ const Sidebar = ({ menuState, setManuState, mailAction, classAdded }) => {
           <IcCancel />
         </div>
       )}
-      <div className="flex items-center justify-center bg-blue text-white py-2 px-2 align-center rounded-3xl mb-6">
+      <div className="flex items-center justify-center bg-secondary text-white py-2 px-2 align-center rounded-3xl mb-6">
         {" "}
         <IcAddCom /> Compose
       </div>

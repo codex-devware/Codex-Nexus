@@ -103,7 +103,7 @@ const PerformanceOverviewGraph = () => {
 
   return (
     <div>
-      <div id="chart" className="mt-10 bg-white p-1">
+      <div id="chart" className="mt-10 bg-white p-1 py-2">
         <ReactApexChart
           options={state.options}
           series={state.series}

@@ -15,7 +15,7 @@ const OrderDetailsHistoryTable = ({ filter }) => {
   return (
     <div className="overflow-x-auto border !border-t-0 rounded-b-md bg-white">
       <table className="table-container table-auto min-w-full text-left text-sm font-light">
-        <thead className="table-container bg-[#ebebeb] font-medium">
+        <thead className="table-container border font-medium">
           <tr className="table-container grid grid-cols-6">
             {tableHeader.map((item) => (
               <th scope="col" key={item} className={`capitalize ${tdClass}`}>

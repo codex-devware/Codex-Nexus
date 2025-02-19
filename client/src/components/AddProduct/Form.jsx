@@ -198,7 +198,7 @@ const Form = () => {
               <div className="flex justify-between  bottom-0 left-0 w-full bg-white md:p-0 md:static items-center ">
                 <div
                   onClick={prevStep}
-                  className={`font-medium text-[#9699ab] select-none cursor-pointer transition duration-100 hover:text-blue/20 ${goBackVisible}`}
+                  className={`font-medium text-[#9699ab] select-none cursor-pointer transition duration-100 hover:text-secondary/20 ${goBackVisible}`}
                 >
                   Go back
                 </div>

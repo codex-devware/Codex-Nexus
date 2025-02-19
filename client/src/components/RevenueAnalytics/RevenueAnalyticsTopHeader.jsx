@@ -20,7 +20,7 @@ const RevenueAnalyticsTopHeader = () => {
         >
           <div className="">
             <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex flex-wrap items-center gap-1 border-2 py-1 px-3 text-[16px] rounded-md font-outfit font-medium bg-white">
-              <span className="text-blue/30">
+              <span className="text-secondary">
                 <CiCalendarDate />
               </span>{" "}
               Date Range
@@ -28,7 +28,7 @@ const RevenueAnalyticsTopHeader = () => {
           </div>
           <div className="">
             <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium bg-white">
-              <span className="text-blue/30">
+              <span className="text-secondary">
                 <CiFilter />
               </span>{" "}
               Filter

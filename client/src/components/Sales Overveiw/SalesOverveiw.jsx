@@ -3,10 +3,10 @@ import SalesRevenueTracker from "./SalesRevenueTracker";
 
 const SalesOverveiw = () => {
   return (
-    <section>
+    <>
       <OverveiwHeader />
       <SalesRevenueTracker />
-    </section>
+    </>
   );
 };
 

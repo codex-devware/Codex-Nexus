@@ -18,14 +18,14 @@ const OrderDetailsHistory = () => {
 
       <div
         data-aos="fade-up"
-        className="lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full"
+        className="lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-white border-dashed border-[1px] w-full"
       >
         <CustomerStatics />
       </div>
 
       <div
         data-aos="fade-down"
-        className="lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-gray-50 shadow-md border-dashed border-[1px] w-full"
+        className="lg:w-[48%] mx-auto mt-6 rounded-md mb-6 bg-white border-dashed border-[1px] w-full"
       >
         <OrderManaSalesOverview />
       </div>

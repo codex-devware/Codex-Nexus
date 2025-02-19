@@ -8,16 +8,14 @@ const OrderChartTracker = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <>
-      <section className="flex items-center flex-wrap gap-5">
-        <div data-aos="fade-up" className="lg:w-[68%] w-full">
-          <TotalSalesGraph />
-        </div>
-        <div data-aos="fade-down" className="lg:w-[30%] w-full">
-          <SalesOverviewGraph />
-        </div>
-      </section>
-    </>
+    <section className="flex items-center flex-wrap gap-5">
+      <div data-aos="fade-up" className="lg:w-[68%] w-full">
+        <TotalSalesGraph />
+      </div>
+      <div data-aos="fade-down" className="lg:w-[30%] w-full">
+        <SalesOverviewGraph />
+      </div>
+    </section>
   );
 };
 

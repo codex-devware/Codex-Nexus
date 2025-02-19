@@ -9,12 +9,12 @@ const MailBox = () => {
   let classAdded = "";
 
   if (menuState) {
-    classAdded += "w-[300px] ml-[0px] !important absolute shadow-md";
+    classAdded += "w-[300px] ml-[0px] !important absolute";
   } else {
     classAdded += " ml-[-1000px] lg:ml-0";
   }
 
-  let mailAction = "flex items-center my-1 px-2 py-2 rounded-sm text-blue-600 ";
+  let mailAction = "flex items-center my-1 px-2 py-2 rounded-sm text-secondary/60 ";
 
   return (
     <div>

@@ -16,13 +16,13 @@ const MailBoxHeader = ({ menuState, setManuState }) => {
         <button className={headerActionBtn}>
           <IcShare /> Share
         </button>
-        <button className={`bg-blue/50 text-white ${headerActionBtn}`}>
+        <button className={`bg-secondary/50 text-white ${headerActionBtn}`}>
           <IcAddE /> Add New
         </button>
         {/* here we add this menu icon and button for side bar menu show  */}
         {!menuState && (
           <div
-            className="lg:hidden px-5 py-2 ml-3 rounded-sm bg-white shadow-md  mb-4 text-center"
+            className="lg:hidden px-5 py-2 ml-3 rounded-sm bg-white mb-4 text-center"
             onClick={() => setManuState(true)}
           >
             <IcMenu />

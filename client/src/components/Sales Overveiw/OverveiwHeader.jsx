@@ -18,12 +18,12 @@ const OverveiwHeader = () => {
         </div>
         <div data-aos="fade-up" className="flex flex-wrap gap-4">
           <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex flex-wrap items-center gap-2 border-2 py-2 px-3 rounded-md font-outfit font-medium bg-white">
-            <span className="text-primary">
+            <span className="text-secondary">
               <FiDownload />
             </span>{" "}
             Download Report
           </button>
-          <button className="hover:translate-y-[-2px] duration-300 ease-in-out py-2 px-3 border-2 border-primary rounded-md font-outfit bg-primary text-white">
+          <button className="hover:translate-y-[-2px] duration-300 ease-in-out py-2 px-3 rounded-md font-outfit bg-secondary text-white">
             Add Product
           </button>
         </div>

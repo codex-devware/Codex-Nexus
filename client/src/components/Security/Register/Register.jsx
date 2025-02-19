@@ -73,9 +73,6 @@ const Register = () => {
                     type="password"
                     placeholder="Write your pass"
                   />
-                  {/* <p className="text-xs italic text-red-500">
-                    Please choose a password.
-                  </p> */}
                 </div>
                 <div className="md:ml-2">
                   <label

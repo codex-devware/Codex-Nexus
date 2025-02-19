@@ -8,7 +8,7 @@ const Topbar = ({ openToggle, open, setOpen }) => {
       <div
         className={`navbar flex ${
           openToggle ? "lg:pl-8 lg:pr-56 " : "lg:pr-20"
-        } justify-between align-middle lg:pl-6 h-20 bg-gray-50 shadow-md`}
+        } justify-between align-middle lg:pl-6 h-20 bg-gray-50`}
       >
         <div className="flex items-center">
           <div>
@@ -61,7 +61,7 @@ const Topbar = ({ openToggle, open, setOpen }) => {
                   >
                     <div className=" flex justify-between">
                       <h2 className=" text-sm font-outfit">Notifications</h2>
-                      <h2 className=" text-sm font-outfit underline cursor-pointer text-blue-600">
+                      <h2 className=" text-sm font-outfit underline cursor-pointer text-secondary/60">
                         Mark all as read
                       </h2>
                     </div>
@@ -134,7 +134,7 @@ const Topbar = ({ openToggle, open, setOpen }) => {
                       </div>
                     </div>
 
-                    <h1 className=" text-sm font-semibold font-sora text-blue-500 underline cursor-pointer text-center border-t-2 px-4 py-2 mt-4">
+                    <h1 className=" text-sm font-semibold font-sora text-secondary/50 underline cursor-pointer text-center border-t-2 px-4 py-2 mt-4">
                       View All
                     </h1>
                   </div>

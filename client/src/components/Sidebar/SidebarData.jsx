@@ -52,7 +52,7 @@ const SidebarData = ({ sections, open }) => {
               onClick={() => setActiveMenu(item.title)}
             >
               <li
-                className={`text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 transition-colors duration-300 hover:bg-secondary hover:text-white rounded-md shadow-sm ${
+                className={`text-gray-800 text-sm flex items-center gap-x-4 cursor-pointer p-2 transition-colors duration-300 hover:bg-secondary hover:text-white rounded-md ${
                   activeMenu === item.title ? "bg-secondary text-white" : ""
                 }`}
               >

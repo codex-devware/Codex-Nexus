@@ -26,9 +26,8 @@ const ShipmentTable = ({ data }) => {
         </div>
       </div>
       {data.map((item) => (
-        <section key={item.id} className=" flex flex-col  p-4">
+        <section key={item.id} className=" flex flex-col bg-white mb-4 p-4">
           {/* top section  */}
-
           <div>
             <div className="flex justify-between pb-4">
               <h3 className="text-xl font-semibold">{item.skuId}</h3>
@@ -41,7 +40,7 @@ const ShipmentTable = ({ data }) => {
                 base: "max-w-full",
                 track: "drop-shadow-md border border-default",
                 indicator: ` ${
-                  item.status === "Delivered" && "bg-green-500"
+                  item.status === "Delivered" && "bg-highlight/50"
                 }  ${item.status === "Pending" && "bg-secondary "} ${
                   item.status === "Canceled" && "bg-primary"
                 }`,
@@ -68,7 +67,6 @@ const ShipmentTable = ({ data }) => {
               </div>
             </div>
           </div>
-          <hr />
         </section>
       ))}
     </>

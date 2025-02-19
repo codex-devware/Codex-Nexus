@@ -64,7 +64,7 @@ const OrderStatusTable = () => {
   return (
     <div
       data-aos="fade-up"
-      className="overflow-x-auto border rounded-md mb-4 mx-4"
+      className="overflow-x-auto border rounded-md my-8 mx-4"
     >
       <table className="table-auto min-w-full text-left text-sm font-light">
         <thead className="bg-[#ebebeb] font-medium">

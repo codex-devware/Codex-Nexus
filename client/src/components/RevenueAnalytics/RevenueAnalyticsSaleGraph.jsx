@@ -49,7 +49,7 @@ const RevenueAnalyticsSaleGraph = () => {
         gradient: {
           shadeIntensity: 1,
           inverseColors: false,
-          opacityFrom: 0.5,
+          opacityFrom: 0,
           opacityTo: 0,
           stops: [0, 90, 100],
         },
@@ -82,17 +82,17 @@ const RevenueAnalyticsSaleGraph = () => {
     <div id="chart" className="bg-white p-2 my-5">
       <div className="flex justify-between">
         <div className="ml-3">
-          <h1 className=" text-sm sm:text-lg font-medium">
+          <h1 className="text-sm sm:text-lg font-medium">
             Total Sale Analytics
           </h1>
           <h2 className=" text-md sm:text-xl font-sora font-bold">
             $68000
-            <span className=" text-xs ml-2 text-green-600">+20%</span>
+            <span className=" text-xs ml-2 text-highlight/60">+20%</span>
           </h2>
         </div>
         <div>
           <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex text-[16px] flex-wrap items-center gap-1 border-2 py-1 px-3 rounded-md font-outfit font-medium">
-            <span className="text-blue/20">
+            <span className="text-secondary">
               <CiFilter />
             </span>{" "}
             Filter

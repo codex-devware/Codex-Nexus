@@ -18,7 +18,7 @@ const OrderDetails = () => {
               <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
             </svg>
           </li>
-          <li className="text-blue-800">Order Details</li>
+          <li className="text-secondary">Order Details</li>
         </ul>
       </div>
       <div className="border-2 m-4 rounded">
@@ -52,7 +52,7 @@ const OrderDetails = () => {
               </span>
               <span>3 Products</span>
             </div>
-            <button className="font-bold text-xl text-blue-700 ">
+            <button className="font-bold text-xl text-secondary/70 ">
               Back To List
             </button>
           </div>

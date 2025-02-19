@@ -19,10 +19,8 @@ const OrderStatusTopHeaderShow = ({ data }) => {
   return (
     <div className="flex flex-wrap gap-4 justify-center sm:justify-between  shadow font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer bg-white">
       <div className="flex sm:justify-between sm:items-start justify-center items-center flex-col gap-4">
-        <div className="">
-          <span className="text-blue/20">{icon}</span>
-        </div>
-        <div className="">
+        <span className="text-secondary">{icon}</span>
+        <div>
           <h1 className="flex flex-wrap items-end gap-1">
             <span className="text-[16px] font-medium">{statName}</span>
           </h1>
@@ -52,8 +50,7 @@ const OrderStatusTopHeaderShow = ({ data }) => {
           classNames={{
             base: "max-w-md",
             track: "drop-shadow-md border border-default",
-            indicator:
-              "bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-400",
+            indicator: "bg-gradient-to-r from-secondary to-highlight",
             label: "tracking-wider font-medium text-default-600",
             value: "text-foreground/60",
           }}
@@ -67,7 +64,7 @@ const OrderStatusTopHeaderShow = ({ data }) => {
           classNames={{
             base: "max-w-md",
             track: "drop-shadow-md border border-default",
-            indicator: "bg-gradient-to-r from-indigo-100 to-purple-600",
+            indicator: "bg-gradient-to-r from-secondary to-highlight",
             label: "tracking-wider font-medium text-default-600",
             value: "text-foreground/60",
           }}
@@ -81,8 +78,7 @@ const OrderStatusTopHeaderShow = ({ data }) => {
           classNames={{
             base: "max-w-md",
             track: "drop-shadow-md border border-default",
-            indicator:
-              "bg-gradient-to-r from-green-300 via-blue-400 to-purple-500",
+            indicator: "bg-gradient-to-r from-secondary to-highlight",
             label: "tracking-wider font-medium text-default-600",
             value: "text-foreground/60",
           }}

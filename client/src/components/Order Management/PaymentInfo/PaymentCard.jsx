@@ -20,7 +20,7 @@ const PaymentCard = () => {
           <span>Exp: 12/26</span>
         </div>
       </div>
-      <div className="mt-4 shadow-md rounded p-6 ">
+      <div className="mt-4 rounded p-6 bg-white">
         <div className="flex justify-between items-center">
           <span className=" font-bold text-[#777]">Debit Card</span>
           <img

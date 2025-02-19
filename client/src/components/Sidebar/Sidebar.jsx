@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = ({ open }) => {
   return (
-    <section className="min-h-screen h-full bg-gray-50 shadow-md">
+    <section className="min-h-screen h-full bg-gray-50">
       <div className="flex">
         <div
           className={classNames(

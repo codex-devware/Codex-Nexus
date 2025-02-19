@@ -38,11 +38,11 @@ const AddonComponent = ({
             checked={check}
           />
           <div className="">
-            <div className="font-bold text-blue/20">{title}</div>
+            <div className="font-bold text-secondary/20">{title}</div>
             <div className="text-[#9699ab] text-[14px]">{desc}</div>
           </div>
         </div>
-        <div className="text-blue/90 text-[14px] font-bold">
+        <div className="text-secondary/90 text-[14px] font-bold">
           +${price}/{planDuration}
         </div>
       </div>

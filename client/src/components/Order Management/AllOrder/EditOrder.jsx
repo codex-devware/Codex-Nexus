@@ -71,13 +71,13 @@ const EditOrder = ({
                       </div>
 
                       <ModalFooter className='py-0 justify-between px-0 pb-3'>
-                        <button className=' px-2 bottom-0 py-1 text-sm mt-3 bg-blue rounded-md text-white'>
+                        <button className=' px-2 bottom-0 py-1 text-sm mt-3 bg-secondary rounded-md text-white'>
                           Update
                         </button>
                         <button
                           color='danger'
                           type='button'
-                          className=' border border-red-300 px-2 bottom-0 py-1 text-sm mt-3 rounded-md text-red-500'
+                          className=' border border-red-300 px-2 bottom-0 py-1 text-sm mt-3 rounded-md text-primary/50'
                           onClick={onClose}
                         >
                           Close

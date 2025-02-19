@@ -19,7 +19,7 @@ const UserAction = ({ handleFilter, id, onBlocked }) => {
                   onClick={() => onBlocked(id)}
                   className=" flex items-center gap-1 cursor-pointer px-3 py-1 duration-300 ease-in-out hover:bg-[#e9e9e9]"
                 >
-                  <span className="text-red-600">
+                  <span className="text-primary/60">
                     <MdBlock fontSize={20} />
                   </span>
                   <span>Block User</span>
@@ -28,7 +28,7 @@ const UserAction = ({ handleFilter, id, onBlocked }) => {
                   onClick={() => handleFilter(id)}
                   className=" flex items-center gap-1 cursor-pointer px-3 py-1 duration-300 ease-in-out hover:bg-[#e9e9e9]"
                 >
-                  <span className="text-red-600">
+                  <span className="text-primary/60">
                     <MdDeleteOutline fontSize={20} />
                   </span>
                   <span>Delete User</span>

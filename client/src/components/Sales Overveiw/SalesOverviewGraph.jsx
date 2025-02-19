@@ -61,7 +61,7 @@ const SalesOverviewGraph = () => {
   });
 
   return (
-    <div className="bg-white" id="chart">
+    <div className="bg-white pt-2" id="chart">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

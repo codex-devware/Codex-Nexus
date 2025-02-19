@@ -18,7 +18,7 @@ const StockInventoryChart = () => {
     options: {
       chart: {
         type: "bar",
-        height: 430,
+        height: 450,
       },
       colors: ["var(--highlight-color)", "var(--primary-color)"],
       plotOptions: {
@@ -61,12 +61,12 @@ const StockInventoryChart = () => {
   });
 
   return (
-    <div id="chart" className="bg-white">
+    <div id="chart" className="bg-white mt-10 pt-4">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}
         type="bar"
-        height={430}
+        height={450}
       />
     </div>
   );

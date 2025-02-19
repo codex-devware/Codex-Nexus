@@ -6,7 +6,7 @@ const TotalSales = () => {
   return (
     <div className="flex flex-col gap-3 justify-between font-outfit border p-5 rounded-xl hover:translate-y-[-2px] duration-300 ease-in-out cursor-pointer bg-white">
       <div className="flex items-center gap-3">
-        <div className="bg-primary p-3 rounded-lg">
+        <div className="bg-secondary p-3 rounded-lg">
           <span className="text-white">
             <FiShoppingCart fontSize={23} />
           </span>
@@ -21,7 +21,7 @@ const TotalSales = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center border border-primary/50 text-primary px-2 w-36 py-1 rounded-xl text-sm gap-1">
+      <div className="flex flex-wrap items-center border border-secondary/50 text-secondary px-2 w-36 py-1 rounded-xl text-sm gap-1">
         <span className="text-[13px]">
           <LuArrowDownLeftFromCircle />
         </span>

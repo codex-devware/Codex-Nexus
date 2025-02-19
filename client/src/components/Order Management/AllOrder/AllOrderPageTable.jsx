@@ -158,7 +158,7 @@ const AllOrderPageTable = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-9 px-2 py-2 rounded bg-primary/10 text-red-600"
+                    className="size-9 px-2 py-2 rounded bg-primary/10 text-primary"
                   >
                     <path
                       strokeLinecap="round"
@@ -177,7 +177,7 @@ const AllOrderPageTable = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-9 px-2 py-2 rounded bg-blue/30 text-secondary"
+                    className="size-9 px-2 py-2 rounded bg-secondary/30 text-secondary"
                   >
                     <path
                       strokeLinecap="round"

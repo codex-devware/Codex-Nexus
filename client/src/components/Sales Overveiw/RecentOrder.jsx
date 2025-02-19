@@ -9,17 +9,15 @@ const RecentOrder = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <>
-      <div className="font-outfit w-full bg-white">
-        <div data-aos="fade-up" className="rounded-lg">
-          <RecentOrderHeader title={"Recent Order"} />
-          <RecentOrderTable />
-          <div className="px-6">
-            <ManagementFooter />
-          </div>
+    <div className="font-outfit w-full bg-white">
+      <div data-aos="fade-up" className="rounded-lg">
+        <RecentOrderHeader title={"Recent Order"} />
+        <RecentOrderTable />
+        <div className="px-6">
+          <ManagementFooter />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

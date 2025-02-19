@@ -2,11 +2,11 @@ import RecentOrderHeader from "../Sales Overveiw/RecentOrderHeader";
 
 const BookingManagementTable = ({ data }) => {
   return (
-    <>
+    <div className="bg-white mt-8">
       <RecentOrderHeader title={"Return Order Management"} />
-      <div className="overflow-x-auto ">
+      <div className="overflow-x-auto">
         <table className="table-auto min-w-full text-left text-sm font-light">
-          <thead className="bg-[#F4F7F9] font-medium">
+          <thead className="bg-white border font-medium">
             <tr>
               <th scope="col" className="px-6 py-2.5">
                 SKU ID
@@ -78,7 +78,7 @@ const BookingManagementTable = ({ data }) => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -23,7 +23,7 @@ const FormField = ({
       <div className="flex justify-between items-center">
         <label>{label}</label>
         <p
-          className={`${displayRequired} font-medium text-[14px] text-red`}
+          className={`${displayRequired} font-medium text-[14px] text-primary`}
         >
           This field is required
         </p>
@@ -32,7 +32,7 @@ const FormField = ({
         <input
           onChange={onChangeYourInfo}
           name={name}
-          className={`font-medium w-full mt-1 p-2 pl-3  rounded-lg border ${redBorder} text-blue/10 text-[15px] hover:border-[#02295a] focus:border-white focus:ring-[#bfe2fd]`}
+          className={`font-medium w-full mt-1 p-2 pl-3  rounded-lg border ${redBorder} text-secondary/10 text-[15px] hover:border-[#02295a] focus:border-white focus:ring-[#bfe2fd]`}
           type="text"
           placeholder={placeholder}
           value={value}

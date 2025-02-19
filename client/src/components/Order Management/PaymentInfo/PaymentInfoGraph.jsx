@@ -52,7 +52,7 @@ const PaymentInfoGraph = () => {
   };
 
   return (
-    <div id="chart" className="mt-6">
+    <div id="chart" className="mt-6 bg-white pt-2 ms-6">
       <ReactApexChart
         options={options}
         series={options.series}

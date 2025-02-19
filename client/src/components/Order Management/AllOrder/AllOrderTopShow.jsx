@@ -7,7 +7,7 @@ const AllOrderTopShow = ({ data }) => {
       <div className="flex justify-between  gap-4">
         <div className="">
           <div className="bg-[#f1f3ff] p-3 rounded-lg">
-            <span className="text-blue">{icon}</span>
+            <span className="text-secondary">{icon}</span>
           </div>
         </div>
         <div className="">

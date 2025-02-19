@@ -89,7 +89,7 @@ const TopSuppliersChart = () => {
   });
 
   return (
-    <div id="chart" className="bg-white">
+    <div id="chart" className="bg-white pt-4">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

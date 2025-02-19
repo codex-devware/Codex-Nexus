@@ -1,40 +1,38 @@
-import { PiDotsThreeOutlineVerticalFill } from 'react-icons/pi';
+import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
 
 const RecentOrderHeader = ({ title, isDeleted, onDelete, data, onSearch }) => {
   return (
-    <>
-      <div className='flex flex-wrap justify-between p-6'>
-        <div className=''>
-          <h1 className='text-xl font-semibold'>{title || 'Recent orders'}</h1>
+    <div className="flex flex-wrap justify-between p-6">
+      <div className="">
+        <h1 className="text-xl font-semibold">{title || "Recent orders"}</h1>
+      </div>
+      <div className="flex flex-wrap items-center gap-6">
+        <div className="flex flex-wrap gap-2">
+          <p>Search: </p>
+          <input
+            onChange={(e) => onSearch(e.target.value)}
+            className="border text-xs p-1 w-28 rounded-md focus:outline-secondary"
+            type="text"
+          />
         </div>
-        <div className='flex flex-wrap items-center gap-6'>
-          <div className='flex flex-wrap gap-2'>
-            <p>Search: </p>
-            <input
-              onChange={(e) => onSearch(e.target.value)}
-              className='border text-xs p-1 w-28 rounded-md focus:outline-secondary'
-              type='text'
-            />
-          </div>
-          <div className=''>
-            {isDeleted ? (
-              <button
-                className={`${
-                  data?.length > 0 ? 'bg-primary/50 text-white' : 'bg-slate-400'
-                } py-1 px-2 rounded-lg text-xs font-semibold`}
-                onClick={onDelete}
-              >
-                Bulk Delete
-              </button>
-            ) : (
-              <span>
-                <PiDotsThreeOutlineVerticalFill />
-              </span>
-            )}
-          </div>
+        <div className="">
+          {isDeleted ? (
+            <button
+              className={`${
+                data?.length > 0 ? "bg-primary/50 text-white" : "bg-slate-400"
+              } py-1 px-2 rounded-lg text-xs font-semibold`}
+              onClick={onDelete}
+            >
+              Bulk Delete
+            </button>
+          ) : (
+            <span>
+              <PiDotsThreeOutlineVerticalFill />
+            </span>
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

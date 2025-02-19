@@ -3,10 +3,10 @@ import UsersTable from "./UsersTable";
 
 const Users = () => {
   return (
-    <section>
+    <>
       <UsersHeader />
       <UsersTable />
-    </section>
+    </>
   );
 };
 

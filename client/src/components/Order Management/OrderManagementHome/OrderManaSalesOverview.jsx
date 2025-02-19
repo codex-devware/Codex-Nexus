@@ -72,7 +72,7 @@ const OrderManaSalesOverview = () => {
   });
 
   return (
-    <div className="bg-white p-4" id="chart">
+    <div className="p-4" id="chart">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

@@ -16,7 +16,7 @@ const OrderManageTopHeader = () => {
         <div data-aos="fade-up" className="flex flex-wrap gap-4">
           <div className="">
             <button className="hover:translate-y-[-2px] duration-300 ease-in-out flex flex-wrap items-center gap-2 border-2 py-2 px-3 rounded-md font-outfit font-medium bg-white">
-              <span className="text-blue">
+              <span className="text-secondary">
                 <FiDownload />
               </span>
               Download Order Report

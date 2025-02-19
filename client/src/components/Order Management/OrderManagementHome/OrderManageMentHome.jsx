@@ -4,11 +4,11 @@ import OrderManageTopHeader from "./OrderManageTopHeader";
 
 const OrderManageMentHome = () => {
   return (
-    <section>
+    <>
       <OrderManageTopHeader />
       <OrderManageStat />
       <OrderDetailsHistory />
-    </section>
+    </>
   );
 };
 

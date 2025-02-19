@@ -31,7 +31,7 @@ const CustomerStatics = () => {
     },
   });
   return (
-    <div id="chart" className="bg-white">
+    <div id="chart">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

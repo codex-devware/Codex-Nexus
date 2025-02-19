@@ -52,13 +52,13 @@ const Login = () => {
             </div>
             <hr className="mb-6 border-t" />
             <div className="text-center">
-              <Link className="inline-block text-sm text-secondary align-baseline hover:text-blue-800">
+              <Link className="inline-block text-sm text-secondary align-baseline hover:text-secondary/80">
                 Forgot Password?
               </Link>
             </div>
             <div className="text-center">
               <Link
-                className="inline-block text-sm text-secondary align-baseline hover:text-blue-800"
+                className="inline-block text-sm text-secondary align-baseline hover:text-secondary/80"
                 to={"/security/register"}
               >
                 {"have'nt"} an account? register!

@@ -6,7 +6,7 @@ const Thankyou = () => {
       <div>
         <img src={thankyouIcon} alt="Thank you" />
       </div>
-      <div className="font-bold text-blue/20 text-3xl">Thank you!</div>
+      <div className="font-bold text-secondary/20 text-3xl">Thank you!</div>
       <p className="text-[#9699ab] text-[14px] w-96">
         Thanks for confirming your Product! now you can chill yayaa. and goto
         sleep now

@@ -21,7 +21,7 @@ const RevenueAnalyticsStatShow = ({ data }) => {
           <h1 className="flex gap-1">
             <span className="text-[16px] font-medium">{statName}</span>
           </h1>
-          <h2 className="text-blue/20 px-2 py-2 rounded-md bg-slate-200">
+          <h2 className="text-secondary px-2 py-2 rounded-md bg-secondary/20">
             {icon}
           </h2>
         </div>

@@ -41,7 +41,7 @@
                 />
               </div>
             </div>
-            <div className="rounded-t-lg min-h-screen h-full border xl:px-12 bg-gray-50  max-lg:px-4 px-4">
+            <div className="rounded-t-lg min-h-screen h-full border xl:px-12 bg-[#F5F6FA]  max-lg:px-4 px-4">
               {children}
             </div>
           </div>

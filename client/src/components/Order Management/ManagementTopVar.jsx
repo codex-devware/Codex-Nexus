@@ -40,7 +40,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
         <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
           <Link
             to={"/add-product"}
-            className="flex items-center justify-center text-white bg-secondary/90 hover:bg-blue/50 focus:ring-4 focus:ring-blue font-medium rounded-lg text-sm px-4 py-2 focus:outline-none"
+            className="flex items-center justify-center text-white bg-secondary/90 hover:bg-secondary/50 focus:ring-4 focus:ring-blue font-medium rounded-lg text-sm px-4 py-2 focus:outline-none"
           >
             <svg
               className="h-3.5 w-3.5 mr-2"
@@ -61,7 +61,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
             <button
               id="filterDropdownButton"
               data-dropdown-toggle="filterDropdown"
-              className="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue/40 focus:z-10 focus:ring-4 focus:ring-gray-200"
+              className="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-secondary/40 focus:z-10 focus:ring-4 focus:ring-gray-200"
               type="button"
             >
               <svg
@@ -108,7 +108,7 @@ const ManagementTopVar = ({ searchTerm, onSearchChange }) => {
                     id="apple"
                     type="checkbox"
                     value=""
-                    className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-blue/50 focus:ring-[#3b82f6]  focus:ring-2"
+                    className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-secondary/50 focus:ring-[#3b82f6]  focus:ring-2"
                   />
                   <label
                     htmlFor="apple"

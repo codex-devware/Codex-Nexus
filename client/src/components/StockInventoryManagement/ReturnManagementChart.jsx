@@ -98,7 +98,7 @@ const ReturnManagementChart = () => {
   });
 
   return (
-    <div id="chart" className="bg-white p-1">
+    <div id="chart" className="bg-white p-3">
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}

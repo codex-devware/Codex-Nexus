@@ -9,6 +9,12 @@ const MailBox = () => {
   // select mail
   const [mailSelect, setMailSelect] = useState(false);
 
+  const [activeButtonId, setActiveButtonId] = useState(null);
+
+  const handleSetActiveButtonId = (id) => {
+    setActiveButtonId(id);
+  };
+
   const handleSelectAllMails = (isChecked) => {
     setMailSelect(isChecked);
   };
@@ -26,7 +32,12 @@ const MailBox = () => {
   return (
     <div>
       {/* header of the mail box  */}
-      <MailBoxHeader menuState={menuState} setManuState={setManuState} />
+      <MailBoxHeader
+        menuState={menuState}
+        setManuState={setManuState}
+        activeButtonId={activeButtonId}
+        onSetActiveButtonId={handleSetActiveButtonId}
+      />
 
       {/* here start our mail box  */}
       <div className="flex flex-wrap justify-between mt-6">

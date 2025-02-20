@@ -2,14 +2,13 @@ import { IcAddE, IcCalendar, IcExport, IcMenu, IcShare } from "@/assets/icon";
 import { useState } from "react";
 import Button from "./Button";
 
-const MailBoxHeader = ({ menuState, setManuState }) => {
-  // button bg toggle state
-  const [activeButtonId, setActiveButtonId] = useState(null);
-
-  const handleSetActiveButtonId = (id) => {
-    setActiveButtonId(id);
-  };
-
+const MailBoxHeader = ({
+  menuState,
+  setManuState,
+  activeButtonId,
+  onSetActiveButtonId,
+}) => {
+  
   const buttons = [
     { title: "Calendar", icon: <IcCalendar /> },
     { title: "Export", icon: <IcExport /> },
@@ -36,7 +35,7 @@ const MailBoxHeader = ({ menuState, setManuState }) => {
                   ? "bg-[#5F63F2] text-white"
                   : "bg-[#fff] text-black",
               icon: button.icon,
-              onClick: () => handleSetActiveButtonId(index),
+              onClick: () => onSetActiveButtonId(index),
             }}
           />
         ))}
